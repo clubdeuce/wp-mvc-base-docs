@@ -1,0 +1,693 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \Base_Model_Metabox</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/WP%20Base.html"><i class="icon-folder-open"></i> WP Base</a></li>
+<li><a href="../packages/pkgtoken.html"><i class="icon-folder-open"></i> pkgtoken</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">3</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: the class constructor"><span class="description">the class constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_add" title="add :: Add the metabox"><span class="description">Add the metabox</span><pre>add()</pre></a></li>
+<li class="method public "><a href="#method_get_callback" title="get_callback :: get the metabox callback"><span class="description">get the metabox callback</span><pre>get_callback()</pre></a></li>
+<li class="method public "><a href="#method_get_callback_args" title="get_callback_args :: get the metabox callback_args"><span class="description">get the metabox callback_args</span><pre>get_callback_args()</pre></a></li>
+<li class="method public "><a href="#method_get_context" title="get_context :: get the metabox context"><span class="description">get the metabox context</span><pre>get_context()</pre></a></li>
+<li class="method public "><a href="#method_get_id" title="get_id :: get the metabox id"><span class="description">get the metabox id</span><pre>get_id()</pre></a></li>
+<li class="method public "><a href="#method_get_post_type" title="get_post_type :: get the metabox post_type"><span class="description">get the metabox post_type</span><pre>get_post_type()</pre></a></li>
+<li class="method public "><a href="#method_get_priority" title="get_priority :: get the metabox priority"><span class="description">get the metabox priority</span><pre>get_priority()</pre></a></li>
+<li class="method public "><a href="#method_get_title" title="get_title :: get the metabox title"><span class="description">get the metabox title</span><pre>get_title()</pre></a></li>
+<li class="method public "><a href="#method_remove" title="remove :: remove the metabox"><span class="description">remove the metabox</span><pre>remove()</pre></a></li>
+<li class="method public "><a href="#method_set_callback" title="set_callback :: set the callback function"><span class="description">set the callback function</span><pre>set_callback()</pre></a></li>
+<li class="method public "><a href="#method_set_callback_args" title="set_callback_args :: set the callback_args"><span class="description">set the callback_args</span><pre>set_callback_args()</pre></a></li>
+<li class="method public "><a href="#method_set_context" title="set_context :: set the context"><span class="description">set the context</span><pre>set_context()</pre></a></li>
+<li class="method public "><a href="#method_set_id" title="set_id :: set the id"><span class="description">set the id</span><pre>set_id()</pre></a></li>
+<li class="method public "><a href="#method_set_post_type" title="set_post_type :: set the title"><span class="description">set the title</span><pre>set_post_type()</pre></a></li>
+<li class="method public "><a href="#method_set_priority" title="set_priority :: set the priority"><span class="description">set the priority</span><pre>set_priority()</pre></a></li>
+<li class="method public "><a href="#method_set_title" title="set_title :: set the title"><span class="description">set the title</span><pre>set_title()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property_callback" title="$callback :: the metabox callback"><span class="description">the metabox callback</span><pre>$callback</pre></a></li>
+<li class="property private "><a href="#property_callback_args" title="$callback_args :: the metabox callback arguments"><span class="description">the metabox callback arguments</span><pre>$callback_args</pre></a></li>
+<li class="property private "><a href="#property_context" title="$context :: the metabox context"><span class="description">the metabox context</span><pre>$context</pre></a></li>
+<li class="property private "><a href="#property_id" title="$id :: The metabox id"><span class="description">The metabox id</span><pre>$id</pre></a></li>
+<li class="property private "><a href="#property_post_type" title="$post_type :: the post type to which this metabox applies"><span class="description">the post type to which this metabox applies</span><pre>$post_type</pre></a></li>
+<li class="property private "><a href="#property_priority" title="$priority :: the metabox priority"><span class="description">the metabox priority</span><pre>$priority</pre></a></li>
+<li class="property private "><a href="#property_title" title="$title :: The metabox title"><span class="description">The metabox title</span><pre>$title</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\Base_Model_Metabox"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Base_Model_Metabox.html">Base_Model_Metabox</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">The base metabox object model.</p>
+<div class="details">
+<div class="long_description"><p>Example:</p>
+
+<pre><code>$sample_metabox = new Base_Model_Metabox(
+    'sample_metabox',
+    __( 'Sample Metabox', 'mytextdomain' ),
+    'my_callback', //set this to null to use default plugin render_metabox callback
+    'post',
+    'normal',
+    'default'
+);
+$sample_metabox->add();
+</code></pre></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>version</th>
+<td>0.1</td>
+</tr>
+<tr>
+<th>since</th>
+<td>WP Base 0.1</td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>the class constructor</h2>
+<pre>__construct(string $id, string $title, string $callback, string $post_type, string $context, string $priority, array $callback_args) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$title</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$callback</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$post_type</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$context</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$priority</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$callback_args</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a id="method_add"></a><div class="element clickable method public method_add" data-toggle="collapse" data-target=".method_add .collapse">
+<h2>Add the metabox</h2>
+<pre>add() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_get_callback"></a><div class="element clickable method public method_get_callback" data-toggle="collapse" data-target=".method_get_callback .collapse">
+<h2>get the metabox callback</h2>
+<pre>get_callback() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>$callback</div>
+</div></div>
+</div>
+<a id="method_get_callback_args"></a><div class="element clickable method public method_get_callback_args" data-toggle="collapse" data-target=".method_get_callback_args .collapse">
+<h2>get the metabox callback_args</h2>
+<pre>get_callback_args() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>$callback_args</div>
+</div></div>
+</div>
+<a id="method_get_context"></a><div class="element clickable method public method_get_context" data-toggle="collapse" data-target=".method_get_context .collapse">
+<h2>get the metabox context</h2>
+<pre>get_context() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>$context</div>
+</div></div>
+</div>
+<a id="method_get_id"></a><div class="element clickable method public method_get_id" data-toggle="collapse" data-target=".method_get_id .collapse">
+<h2>get the metabox id</h2>
+<pre>get_id() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>$id</div>
+</div></div>
+</div>
+<a id="method_get_post_type"></a><div class="element clickable method public method_get_post_type" data-toggle="collapse" data-target=".method_get_post_type .collapse">
+<h2>get the metabox post_type</h2>
+<pre>get_post_type() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>$post_type</div>
+</div></div>
+</div>
+<a id="method_get_priority"></a><div class="element clickable method public method_get_priority" data-toggle="collapse" data-target=".method_get_priority .collapse">
+<h2>get the metabox priority</h2>
+<pre>get_priority() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>$priority</div>
+</div></div>
+</div>
+<a id="method_get_title"></a><div class="element clickable method public method_get_title" data-toggle="collapse" data-target=".method_get_title .collapse">
+<h2>get the metabox title</h2>
+<pre>get_title() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>$id</div>
+</div></div>
+</div>
+<a id="method_remove"></a><div class="element clickable method public method_remove" data-toggle="collapse" data-target=".method_remove .collapse">
+<h2>remove the metabox</h2>
+<pre>remove() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_set_callback"></a><div class="element clickable method public method_set_callback" data-toggle="collapse" data-target=".method_set_callback .collapse">
+<h2>set the callback function</h2>
+<pre>set_callback(string $callback) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$callback</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_set_callback_args"></a><div class="element clickable method public method_set_callback_args" data-toggle="collapse" data-target=".method_set_callback_args .collapse">
+<h2>set the callback_args</h2>
+<pre>set_callback_args(array $callback_args) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$callback_args</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a id="method_set_context"></a><div class="element clickable method public method_set_context" data-toggle="collapse" data-target=".method_set_context .collapse">
+<h2>set the context</h2>
+<pre>set_context(string $context) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$context</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_set_id"></a><div class="element clickable method public method_set_id" data-toggle="collapse" data-target=".method_set_id .collapse">
+<h2>set the id</h2>
+<pre>set_id(string $id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_set_post_type"></a><div class="element clickable method public method_set_post_type" data-toggle="collapse" data-target=".method_set_post_type .collapse">
+<h2>set the title</h2>
+<pre>set_post_type(string $post_type) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$post_type</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_set_priority"></a><div class="element clickable method public method_set_priority" data-toggle="collapse" data-target=".method_set_priority .collapse">
+<h2>set the priority</h2>
+<pre>set_priority(string $priority) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$priority</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_set_title"></a><div class="element clickable method public method_set_title" data-toggle="collapse" data-target=".method_set_title .collapse">
+<h2>set the title</h2>
+<pre>set_title(string $title) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$title</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_callback"> </a><div class="element clickable property private property_callback" data-toggle="collapse" data-target=".property_callback .collapse">
+<h2>the metabox callback</h2>
+<pre>$callback : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Function that prints out the HTML for the edit screen section. The function name as a string, or, within a class, an array to call one of the class's methods.
+The callback function will recieve up to two parameters, the post object and the Base_Model_Metabox->callback_args.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_callback_args"> </a><div class="element clickable property private property_callback_args" data-toggle="collapse" data-target=".property_callback_args .collapse">
+<h2>the metabox callback arguments</h2>
+<pre>$callback_args : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Arguments to pass into your callback function. The callback will receive the $post object and
+whatever parameters are passed through this variable.</p>
+
+<p>Example:</p>
+
+<p>Setting the callback args:</p>
+
+<pre><code>$sample_metabox->callback_args = array( 'foo' => 'this', "bar => 'that' );
+</code></pre>
+
+<p>The metabox callback:</p>
+
+<pre><code>// $post is an object containing the current post (as a $post object)
+// $metabox is an array with metabox id, title, callback, and args elements.
+// The args element is an array containing your passed $callback_args variables.
+
+function my_metabox_callback ( $post, $metabox ) {
+   echo 'Last Modified: '.$post->post_modified;        // outputs last time the post was modified
+   echo $metabox['args']['foo'];                         // outputs 'this'
+   echo $metabox['args']['bar'];                         // outputs 'that'
+   echo get_post_meta($post->ID,'my_custom_field',true); // outputs value of custom field
+}
+</code></pre></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_context"> </a><div class="element clickable property private property_context" data-toggle="collapse" data-target=".property_context .collapse">
+<h2>the metabox context</h2>
+<pre>$context : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The part of the page where the edit screen section should be shown.
+Valid values are 'normal', 'advanced', or 'side'.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_id"> </a><div class="element clickable property private property_id" data-toggle="collapse" data-target=".property_id .collapse">
+<h2>The metabox id</h2>
+<pre>$id : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>HTML 'id' attribute of the edit screen section</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0,1</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_post_type"> </a><div class="element clickable property private property_post_type" data-toggle="collapse" data-target=".property_post_type .collapse">
+<h2>the post type to which this metabox applies</h2>
+<pre>$post_type : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The type of Write screen on which to show the edit screen section ('post', 'page', 'link', 'attachment' or 'custom_post_type' where custom_post_type is the custom post type slug)</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_priority"> </a><div class="element clickable property private property_priority" data-toggle="collapse" data-target=".property_priority .collapse">
+<h2>the metabox priority</h2>
+<pre>$priority : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The priority within the context where the boxes should be shown.
+Valid values are 'high', 'core', 'default', or 'low'.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_title"> </a><div class="element clickable property private property_title" data-toggle="collapse" data-target=".property_title .collapse">
+<h2>The metabox title</h2>
+<pre>$title : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Title of the edit screen section, visible to user</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
+            generated on 2013-06-04T17:51:22-04:00.<br></footer></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,654 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \Base_Model_Settings</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/WP%20Base.html"><i class="icon-folder-open"></i> WP Base</a></li>
+<li><a href="../packages/pkgtoken.html"><i class="icon-folder-open"></i> pkgtoken</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">3</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: The class constructor."><span class="description">The class constructor.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_add_settings_field" title="add_settings_field :: Add a settings field."><span class="description">Add a settings field.</span><pre>add_settings_field()</pre></a></li>
+<li class="method public "><a href="#method_add_settings_section" title="add_settings_section :: Add a settings section."><span class="description">Add a settings section.</span><pre>add_settings_section()</pre></a></li>
+<li class="method public "><a href="#method_edit_page" title="edit_page :: Set a page's properties"><span class="description">Set a page's properties</span><pre>edit_page()</pre></a></li>
+<li class="method public "><a href="#method_edit_settings_section" title="edit_settings_section :: Set a section's properties"><span class="description">Set a section's properties</span><pre>edit_settings_section()</pre></a></li>
+<li class="method public "><a href="#method_get_options" title="get_options :: Get the options."><span class="description">Get the options.</span><pre>get_options()</pre></a></li>
+<li class="method public "><a href="#method_get_pages" title="get_pages :: Get the menu pages."><span class="description">Get the menu pages.</span><pre>get_pages()</pre></a></li>
+<li class="method public "><a href="#method_get_settings" title="get_settings :: Get the plugin settings."><span class="description">Get the plugin settings.</span><pre>get_settings()</pre></a></li>
+<li class="method public "><a href="#method_get_settings_fields" title="get_settings_fields :: Get the settings fields."><span class="description">Get the settings fields.</span><pre>get_settings_fields()</pre></a></li>
+<li class="method public "><a href="#method_get_settings_sections" title="get_settings_sections :: Get the settings sections."><span class="description">Get the settings sections.</span><pre>get_settings_sections()</pre></a></li>
+<li class="method public "><a href="#method_sanitize_input" title="sanitize_input :: A generic sanitization routine."><span class="description">A generic sanitization routine.</span><pre>sanitize_input()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_init" title="init :: Initialize all class properties."><span class="description">Initialize all class properties.</span><pre>init()</pre></a></li>
+<li class="method protected "><a href="#method_init_settings" title="init_settings :: Initialize the settings property."><span class="description">Initialize the settings property.</span><pre>init_settings()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_options" title="$options :: The plugin options."><span class="description">The plugin options.</span><pre>$options</pre></a></li>
+<li class="property protected "><a href="#property_pages" title="$pages :: The options pages."><span class="description">The options pages.</span><pre>$pages</pre></a></li>
+<li class="property protected "><a href="#property_settings" title="$settings :: The plugin settings."><span class="description">The plugin settings.</span><pre>$settings</pre></a></li>
+<li class="property protected "><a href="#property_settings_fields" title="$settings_fields :: The settings fields."><span class="description">The settings fields.</span><pre>$settings_fields</pre></a></li>
+<li class="property protected "><a href="#property_settings_sections" title="$settings_sections :: The settings sections."><span class="description">The settings sections.</span><pre>$settings_sections</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="property private "><a href="#property_version" title="$version :: The class version"><span class="description">The class version</span><pre>$version</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\Base_Model_Settings"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Base_Model_Settings.html">Base_Model_Settings</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">The base settings model.</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>version</th>
+<td>0.1</td>
+</tr>
+<tr>
+<th>since</th>
+<td>WP Base 0.1</td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>The class constructor.</h2>
+<pre>__construct(string $uri, string $path, string $txtdomain) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code><p>The plugin base uri.</p></div>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code><p>The plugin absoulte path.</p></div>
+<div class="subelement argument">
+<h4>$txtdomain</h4>
+<code>string</code><p>The plugin text domain. Used to localize section/field headings, titles, etc.</p>
+</div>
+</div></div>
+</div>
+<a id="method_add_settings_field"></a><div class="element clickable method public method_add_settings_field" data-toggle="collapse" data-target=".method_add_settings_field .collapse">
+<h2>Add a settings field.</h2>
+<pre>add_settings_field(array $settings) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$settings</h4>
+<code>array</code><p>The fields to be added.</p></div>
+</div></div>
+</div>
+<a id="method_add_settings_section"></a><div class="element clickable method public method_add_settings_section" data-toggle="collapse" data-target=".method_add_settings_section .collapse">
+<h2>Add a settings section.</h2>
+<pre>add_settings_section(array $section) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$section</h4>
+<code>array</code><p>The section to be added.</p></div>
+</div></div>
+</div>
+<a id="method_edit_page"></a><div class="element clickable method public method_edit_page" data-toggle="collapse" data-target=".method_edit_page .collapse">
+<h2>Set a page's properties</h2>
+<pre>edit_page(string $key, array $args) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code><p>The page key.</p></div>
+<div class="subelement argument">
+<h4>$args</h4>
+<code>array</code><p>The page elements.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>TRUE if page key exists, FALSE otherwise.</div>
+</div></div>
+</div>
+<a id="method_edit_settings_section"></a><div class="element clickable method public method_edit_settings_section" data-toggle="collapse" data-target=".method_edit_settings_section .collapse">
+<h2>Set a section's properties</h2>
+<pre>edit_settings_section(string $key, array $args) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code><p>The settings section key.</p></div>
+<div class="subelement argument">
+<h4>$args</h4>
+<code>array</code><p>The section elements.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>TRUE if section key exists, FALSE otherwise.</div>
+</div></div>
+</div>
+<a id="method_get_options"></a><div class="element clickable method public method_get_options" data-toggle="collapse" data-target=".method_get_options .collapse">
+<h2>Get the options.</h2>
+<pre>get_options() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>$options</div>
+</div></div>
+</div>
+<a id="method_get_pages"></a><div class="element clickable method public method_get_pages" data-toggle="collapse" data-target=".method_get_pages .collapse">
+<h2>Get the menu pages.</h2>
+<pre>get_pages() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>$menu_pages</div>
+</div></div>
+</div>
+<a id="method_get_settings"></a><div class="element clickable method public method_get_settings" data-toggle="collapse" data-target=".method_get_settings .collapse">
+<h2>Get the plugin settings.</h2>
+<pre>get_settings(string $option_name, string $option_element) : array | string | bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$option_name</h4>
+<code>string</code><p>The option name. Required if $option is specified. Default NULL.</p>
+</div>
+<div class="subelement argument">
+<h4>$option_element</h4>
+<code>string</code><p>The option element name. Default NULL.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code><code>string</code><code>bool</code>Array containing setting(s), the option value (or default) if an element is specified (but does not exist), FALSE on non-existence of setting default.</div>
+</div></div>
+</div>
+<a id="method_get_settings_fields"></a><div class="element clickable method public method_get_settings_fields" data-toggle="collapse" data-target=".method_get_settings_fields .collapse">
+<h2>Get the settings fields.</h2>
+<pre>get_settings_fields() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>$settings_fields</div>
+</div></div>
+</div>
+<a id="method_get_settings_sections"></a><div class="element clickable method public method_get_settings_sections" data-toggle="collapse" data-target=".method_get_settings_sections .collapse">
+<h2>Get the settings sections.</h2>
+<pre>get_settings_sections(string $key) : array | bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code><p>The setting section key. If specfied, the function will return that one section.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code><code>bool</code>The settings section(s) on success, FALSE on non-existence of the section.</div>
+</div></div>
+</div>
+<a id="method_sanitize_input"></a><div class="element clickable method public method_sanitize_input" data-toggle="collapse" data-target=".method_sanitize_input .collapse">
+<h2>A generic sanitization routine.</h2>
+<pre>sanitize_input(array $input) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Assumes all values are text strings. You can overwrite this function by including a function
+using the same name in the child class.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$input</h4>
+<code>array</code><p>The POSTed data.</p></div>
+</div></div>
+</div>
+<a id="method_init"></a><div class="element clickable method protected method_init" data-toggle="collapse" data-target=".method_init .collapse">
+<h2>Initialize all class properties.</h2>
+<pre>init(string $uri, string $path, string $txtdomain) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code><p>The plugin base uri.</p></div>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code><p>The plugin absoulte path.</p></div>
+<div class="subelement argument">
+<h4>$txtdomain</h4>
+<code>string</code><p>The plugin text domain. Used to localize section/field headings, titles, etc.</p>
+</div>
+</div></div>
+</div>
+<a id="method_init_settings"></a><div class="element clickable method protected method_init_settings" data-toggle="collapse" data-target=".method_init_settings .collapse">
+<h2>Initialize the settings property.</h2>
+<pre>init_settings() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This function loads all existing settings from the wp_options table for the options specified in the $options property.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_options"> </a><div class="element clickable property protected property_options" data-toggle="collapse" data-target=".property_options .collapse">
+<h2>The plugin options.</h2>
+<pre>$options : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Contains an array of option objects in key/value pairs. Example:</p>
+
+<pre><code>$this->option_groups = array(
+        'handle' => array(
+            'option_group' =>   'my_option_group_name',
+            'option_name' =>    'my_option_name',   //This will be used as the option key in the wp_options table
+            'callback' =>       'my_santization_function'
+        ), ...
+);
+</code></pre></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_pages"> </a><div class="element clickable property protected property_pages" data-toggle="collapse" data-target=".property_pages .collapse">
+<h2>The options pages.</h2>
+<pre>$pages : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Contains an array of page elements. These items are added to the WP Dashboard Sidebar. The key should match the menu_slug property.
+Example:</p>
+
+<p>&lt;</p>
+
+<p>pre><code>$this->pages = array(
+        'my-page-slug' => array(
+            'parent_slug'   => 'my-menu-page',  //See below
+            'page_title'    =>  __( 'My Page Title', 'mytextdomain' ),
+            'menu_title'    =>  __( 'My Submenu Title', 'mytextdomain' ),
+            'capability'    =>  'manage_posts',
+            'menu_slug'     => 'my-page-slug',
+            'callback'      => 'my_page_slug.php',  //The view file name. Can be anything. Will be prepended with the plugin view path.
+            'icon_url'      => 'my-icon.png',   //this property is ignored for submenu pages
+            'position'      => 100,         //this property is ignored for submenu pages
+            'js'            => array (</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="">\global\Base_Controller_Plugin::$scripts</a></td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://codex.wordpress.org/Function_Reference/add_menu_page">http://codex.wordpress.org/Function_Reference/add_menu_page</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://codex.wordpress.org/Function_Reference/add_submenu_page">http://codex.wordpress.org/Function_Reference/add_submenu_page</a></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_settings"> </a><div class="element clickable property protected property_settings" data-toggle="collapse" data-target=".property_settings .collapse">
+<h2>The plugin settings.</h2>
+<pre>$settings : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This property contains key/value pairs of the plugin options and their current values.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_settings_fields"> </a><div class="element clickable property protected property_settings_fields" data-toggle="collapse" data-target=".property_settings_fields .collapse">
+<h2>The settings fields.</h2>
+<pre>$settings_fields : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Contains an array of settings field objects. Example (storing individual fields in option group array):</p>
+
+<pre><code>$this->settings_fields => array(
+    'my-settings-field' => array(
+            'title' =>      __( 'Setting Title', 'mytextdomain' ),
+            'callback' =>   'my_callback', // See below.
+            'page' =>       'my-options-page',  //This MUST match the key of the corresponding $pages object.
+            'section' =>    'my-settings-section',  //This MUST match the key of the corresponding $settings_section object.
+            'args' =>       array(
+                'label_for' => __( 'My Custom Label', 'mytextdomain' ), //optional
+                'type'      => '$fieldtype', //Required if using the default render method. Can be checkbox, select, text, textarea
+                'id'        => 'my-settings-field', //Required if using the default render method.
+            'name'      => 'my_option_name[my_settings_field]' //This MUST match the option name specified in the corresponding $options object. Required if using the default render method.
+            'value'     => $this->get_settings( 'my_option_name', 'my_settings_field' ) //Required if using the default render method.
+            )
+        ), ...
+);
+</code></pre>
+
+<p>The key for each field will be used as the id for the WP add_settings_field function.</p>
+
+<p>The callback parameter can be one of two values: NULL to use the default controller method, or you can specify a custom class function.
+If set to NULL, the controller will use the built-in rendering functions based upon the field args.
+If set to any other value, the named function will be used. This method goes against strict MVC principles, as this forces the model
+to break encapsulation. This is necessary given the WP Settings API procedural nature.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://codex.wordpress.org/Function_Reference/add_settings_field">http://codex.wordpress.org/Function_Reference/add_settings_field</a></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_settings_sections"> </a><div class="element clickable property protected property_settings_sections" data-toggle="collapse" data-target=".property_settings_sections .collapse">
+<h2>The settings sections.</h2>
+<pre>$settings_sections : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Contains an array of settings section objects. Example:</p>
+
+<pre><code>$this->settings_sections = array(
+    'section-id' => array(
+            'title' =>      __( 'General Settings', 'mytextdomain' ),
+            'callback' =>   'my_settings_section',  //See below
+        'page' =>       'my-options-page',  //This MUST match the key of the corresponding $pages object.
+            'content' =>    __( 'This is my settings section', 'mytxtdomain' ) //This content will be displayed in the settings section
+        ), ...
+);
+</code></pre>
+
+<p>The key for each section element will be used as the HTML id for the section.</p>
+
+<p>The callback parameter can be one of two values: NULL to use the default controller method,
+or you can specify a custom class function.
+If set to NULL, the controller will include the view file in the app views directory with the
+name matching the key of the section object. If that file does not exist, it will use the
+default view included with this base package.
+If set to any other value, the named function will be used. This method goes against strict
+MVC principles, as this forces the model to break encapsulation.
+This is necessary given the WP Settings API procedural nature.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://codex.wordpress.org/Function_Reference/add_settings_section">http://codex.wordpress.org/Function_Reference/add_settings_section</a></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_version"> </a><div class="element clickable property private property_version" data-toggle="collapse" data-target=".property_version .collapse">
+<h2>The class version</h2>
+<pre>$version : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
+            generated on 2013-06-04T17:51:22-04:00.<br></footer></div>
+</div>
+</body>
+</html>
