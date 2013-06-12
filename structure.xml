@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project version="2.0.0a10" title="">
-  <file path="controllers/base_controller_plugin.php" hash="66bf1f547aba54cd0e6ad48373a0e7d6" package="WP Base\Controllers">
+  <file path="controllers/base_controller_plugin.php" hash="7a395b333c88e1c5cf7f5b0b74707525" package="WP Base\Controllers">
     <docblock line="2">
       <description><![CDATA[The base plugin controller.]]></description>
       <long-description><![CDATA[]]></long-description>
@@ -8,19 +8,19 @@
       <tag line="2" name="author" description="Daryl Lozupone &lt;daryl@actionhook.com&gt;"/>
       <tag line="2" name="since" description="WP Base 0.1"/>
     </docblock>
-    <include line="537" type="Require Once" package="Default">
+    <include line="542" type="Require Once" package="Default">
       <name/>
     </include>
-    <include line="1023" type="Require Once" package="Default">
+    <include line="1037" type="Require Once" package="Default">
       <name/>
     </include>
-    <include line="1045" type="Require Once" package="Default">
+    <include line="1060" type="Require Once" package="Default">
       <name/>
     </include>
-    <include line="1047" type="Require Once" package="Default">
+    <include line="1062" type="Require Once" package="Default">
       <name/>
     </include>
-    <include line="1110" type="Require Once" package="Default">
+    <include line="1123" type="Require Once" package="Default">
       <name/>
     </include>
     <class final="true" abstract="true" namespace="global" line="35" package="WP Base\Controllers">
@@ -248,7 +248,7 @@
         <default><![CDATA[]]></default>
         <docblock line="184">
           <description><![CDATA[The plugin css files]]></description>
-          <long-description><![CDATA[<p>An array containing css used by the controller</p>]]></long-description>
+          <long-description><![CDATA[<p>An array containing css used by the controller.</p>]]></long-description>
           <tag line="184" name="package" description="WP Base\Controllers"/>
           <tag line="184" name="var" description="" type="array">
             <type by_reference="false">array</type>
@@ -261,7 +261,7 @@
         <default><![CDATA[]]></default>
         <docblock line="195">
           <description><![CDATA[The plugin admin css files]]></description>
-          <long-description><![CDATA[<p>An array containing css used by the controller on admin pages</p>]]></long-description>
+          <long-description><![CDATA[<p>An array containing css used by the controller on admin pages.</p>]]></long-description>
           <tag line="195" name="package" description="WP Base\Controllers"/>
           <tag line="195" name="var" description="" type="array">
             <type by_reference="false">array</type>
@@ -274,7 +274,7 @@
         <default><![CDATA[]]></default>
         <docblock line="206">
           <description><![CDATA[The controller javascript files]]></description>
-          <long-description><![CDATA[<p>An array containing javascript used by the controller</p>]]></long-description>
+          <long-description><![CDATA[<p>An array containing javascripts used by the controller.</p>]]></long-description>
           <tag line="206" name="package" description="WP Base\Controllers"/>
           <tag line="206" name="var" description="" type="array">
             <type by_reference="false">array</type>
@@ -287,7 +287,7 @@
         <default><![CDATA[]]></default>
         <docblock line="217">
           <description><![CDATA[The controller admin javascript files]]></description>
-          <long-description><![CDATA[<p>An array containing css used by the controller</p>]]></long-description>
+          <long-description><![CDATA[<p>An array containing javascripts used by the controller on admin pages.</p>]]></long-description>
           <tag line="217" name="package" description="WP Base\Controllers"/>
           <tag line="217" name="var" description="" type="array">
             <type by_reference="false">array</type>
@@ -514,426 +514,425 @@
           <tag line="455" name="since" description="0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="489" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="493" package="WP Base\Controllers">
         <name>add_meta_boxes</name>
         <full_name>add_meta_boxes</full_name>
-        <docblock line="483">
+        <docblock line="487">
           <description><![CDATA[Add meta boxes required by this plugin for the currently active post type]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="483" name="package" description="WP Base\Controllers"/>
-          <tag line="483" name="since" description="0.1"/>
+          <tag line="487" name="package" description="WP Base\Controllers"/>
+          <tag line="487" name="since" description="0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="523" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="527" package="WP Base\Controllers">
         <name>render_metabox</name>
         <full_name>render_metabox</full_name>
-        <docblock line="512">
+        <docblock line="516">
           <description><![CDATA[Render a metabox.]]></description>
           <long-description><![CDATA[<p>This function serves as the callback for a metabox.</p>]]></long-description>
-          <tag line="512" name="package" description="WP Base\Controllers"/>
-          <tag line="512" name="param" description="The WP post object." type="object" variable="$post">
+          <tag line="516" name="package" description="WP Base\Controllers"/>
+          <tag line="516" name="param" description="The WP post object." type="object" variable="$post">
             <type by_reference="false">object</type>
           </tag>
-          <tag line="512" name="param" description="The WP_Metabox object to be rendered." type="object" variable="$metabox">
+          <tag line="516" name="param" description="The WP_Metabox object to be rendered." type="object" variable="$metabox">
             <type by_reference="false">object</type>
           </tag>
-          <tag line="512" name="todo" description="move the filter into the add function"/>
-          <tag line="512" name="since" description="0.1"/>
+          <tag line="516" name="todo" description="move the filter into the add function"/>
+          <tag line="516" name="since" description="0.1"/>
         </docblock>
-        <argument line="523">
+        <argument line="527">
           <name>$post</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="523">
+        <argument line="527">
           <name>$metabox</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="548" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="553" package="WP Base\Controllers">
         <name>post_updated_messages</name>
         <full_name>post_updated_messages</full_name>
-        <docblock line="540">
+        <docblock line="545">
           <description><![CDATA[Filter to ensure the CPT label is displayed when user updates the CPT]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="540" name="package" description="WP Base\Controllers"/>
-          <tag line="540" name="param" description="The existing messages array." type="array" variable="$messages">
+          <tag line="545" name="package" description="WP Base\Controllers"/>
+          <tag line="545" name="param" description="The existing messages array." type="array" variable="$messages">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="540" name="return" description="$messages The updated messages array." type="array">
+          <tag line="545" name="return" description="$messages The updated messages array." type="array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="540" name="since" description="0.1"/>
+          <tag line="545" name="since" description="0.1"/>
         </docblock>
-        <argument line="548">
+        <argument line="553">
           <name>$messages</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="572" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="578" package="WP Base\Controllers">
         <name>admin_enqueue_scripts</name>
         <full_name>admin_enqueue_scripts</full_name>
-        <docblock line="561">
+        <docblock line="566">
           <description><![CDATA[Enqueue scripts and styles for admin pages]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="561" name="package" description="WP Base\Controllers"/>
-          <tag line="561" name="param" description="The WP page hook." type="string" variable="$hook">
+          <tag line="566" name="package" description="WP Base\Controllers"/>
+          <tag line="566" name="param" description="The WP page hook." type="string" variable="$hook">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="561" name="uses" description="\global\globalHelper_Functions::enqueue_styles()" refers="\global\globalHelper_Functions::enqueue_styles()"/>
-          <tag line="561" name="uses" description="\global\Helper_Functions::enqueue_scripts()" refers="\global\Helper_Functions::enqueue_scripts()"/>
-          <tag line="561" name="uses" description="\global\Base_Model_CPT::get_admin_css()" refers="\global\Base_Model_CPT::get_admin_css()"/>
-          <tag line="561" name="uses" description="\global\Base_Model_CPT::get_admin_scripts()" refers="\global\Base_Model_CPT::get_admin_scripts()"/>
-          <tag line="561" name="since" description="0.1"/>
+          <tag line="566" name="uses" description="\global\globalHelper_Functions::enqueue_styles()" refers="\global\globalHelper_Functions::enqueue_styles()"/>
+          <tag line="566" name="uses" description="\global\Helper_Functions::enqueue_scripts()" refers="\global\Helper_Functions::enqueue_scripts()"/>
+          <tag line="566" name="uses" description="\global\Base_Model_CPT::get_admin_css()" refers="\global\Base_Model_CPT::get_admin_css()"/>
+          <tag line="566" name="uses" description="\global\Base_Model_CPT::get_admin_scripts()" refers="\global\Base_Model_CPT::get_admin_scripts()"/>
+          <tag line="566" name="since" description="0.1"/>
+          <tag line="566" name="todo" description="modify this function to enqueue scripts based on wp_screen object"/>
         </docblock>
-        <argument line="572">
+        <argument line="578">
           <name>$hook</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="620" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="626" package="WP Base\Controllers">
         <name>wp_enqueue_scripts</name>
         <full_name>wp_enqueue_scripts</full_name>
-        <docblock line="610">
+        <docblock line="616">
           <description><![CDATA[Enqueue scripts and styles for frontend pages]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="610" name="package" description="WP Base\Controllers"/>
-          <tag line="610" name="uses" description="\global\Helper_Functions::enqueue_styles()" refers="\global\Helper_Functions::enqueue_styles()"/>
-          <tag line="610" name="uses" description="\global\Helper_Functions::enqueue_scripts()" refers="\global\Helper_Functions::enqueue_scripts()"/>
-          <tag line="610" name="uses" description="\global\Base_Model_CPT::get_css()" refers="\global\Base_Model_CPT::get_css()"/>
-          <tag line="610" name="uses" description="\global\Base_Model_CPT::get_scripts()" refers="\global\Base_Model_CPT::get_scripts()"/>
-          <tag line="610" name="since" description="0.1"/>
+          <tag line="616" name="package" description="WP Base\Controllers"/>
+          <tag line="616" name="uses" description="\global\Helper_Functions::enqueue_styles()" refers="\global\Helper_Functions::enqueue_styles()"/>
+          <tag line="616" name="uses" description="\global\Helper_Functions::enqueue_scripts()" refers="\global\Helper_Functions::enqueue_scripts()"/>
+          <tag line="616" name="uses" description="\global\Base_Model_CPT::get_css()" refers="\global\Base_Model_CPT::get_css()"/>
+          <tag line="616" name="uses" description="\global\Base_Model_CPT::get_scripts()" refers="\global\Base_Model_CPT::get_scripts()"/>
+          <tag line="616" name="since" description="0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="660" package="WP Models">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="666" package="WP Models">
         <name>callback_the_post</name>
         <full_name>callback_the_post</full_name>
-        <docblock line="652">
+        <docblock line="658">
           <description><![CDATA[WP the_post action callback.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="652" name="package" description="WP Models"/>
-          <tag line="652" name="param" description="The WP post object." type="object" variable="$post">
+          <tag line="658" name="package" description="WP Models"/>
+          <tag line="658" name="param" description="The WP post object." type="object" variable="$post">
             <type by_reference="false">object</type>
           </tag>
-          <tag line="652" name="return" description="$post The modified post object." type="object">
+          <tag line="658" name="return" description="$post The modified post object." type="object">
             <type by_reference="false">object</type>
           </tag>
-          <tag line="652" name="since" description="0.1"/>
+          <tag line="658" name="since" description="0.1"/>
         </docblock>
-        <argument line="660">
+        <argument line="666">
           <name>$post</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="696" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="702" package="WP Base\Controllers">
         <name>callback_save_post</name>
         <full_name>callback_save_post</full_name>
-        <docblock line="689">
+        <docblock line="695">
           <description><![CDATA[WP save_post action hook callback]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="689" name="package" description="WP Base\Controllers"/>
-          <tag line="689" name="param" description="" type="string" variable="$post_id">
+          <tag line="695" name="package" description="WP Base\Controllers"/>
+          <tag line="695" name="param" description="" type="string" variable="$post_id">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="689" name="since" description="0.1"/>
+          <tag line="695" name="since" description="0.1"/>
         </docblock>
-        <argument line="696">
+        <argument line="702">
           <name>$post_id</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="754" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="760" package="WP Base\Controllers">
         <name>callback_delete_post</name>
         <full_name>callback_delete_post</full_name>
-        <docblock line="747">
+        <docblock line="753">
           <description><![CDATA[WP delete_post action hook callback]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="747" name="package" description="WP Base\Controllers"/>
-          <tag line="747" name="param" description="" type="string" variable="$post_id">
+          <tag line="753" name="package" description="WP Base\Controllers"/>
+          <tag line="753" name="param" description="" type="string" variable="$post_id">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="747" name="since" description="0.1"/>
+          <tag line="753" name="since" description="0.1"/>
         </docblock>
-        <argument line="754">
+        <argument line="760">
           <name>$post_id</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="800" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="806" package="WP Base\Controllers">
         <name>activate_plugin</name>
         <full_name>activate_plugin</full_name>
-        <docblock line="791">
+        <docblock line="797">
           <description><![CDATA[The plugin activation callback.]]></description>
           <long-description><![CDATA[<p>This function performs tasks at plugin activation such as table creation, settings initialization, permalinks updates, etc.
 It currently initiiates a permalinks update. If you have additional activities, add the function activate() to your child class.</p>]]></long-description>
-          <tag line="791" name="package" description="WP Base\Controllers"/>
-          <tag line="791" name="since" description="0.1"/>
+          <tag line="797" name="package" description="WP Base\Controllers"/>
+          <tag line="797" name="since" description="0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="832" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="838" package="WP Base\Controllers">
         <name>deactivate_plugin</name>
         <full_name>deactivate_plugin</full_name>
-        <docblock line="824">
+        <docblock line="830">
           <description><![CDATA[The plugin deactivation callback.]]></description>
           <long-description><![CDATA[<p>Use this function to perform tasks at plugin deactivation. If you have additional activities, add the function deactivate() to your child class.</p>]]></long-description>
-          <tag line="824" name="package" description="WP Base\Controllers"/>
-          <tag line="824" name="since" description="0.1"/>
+          <tag line="830" name="package" description="WP Base\Controllers"/>
+          <tag line="830" name="since" description="0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="860" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="866" package="WP Base\Controllers">
         <name>delete_plugin</name>
         <full_name>delete_plugin</full_name>
-        <docblock line="850">
+        <docblock line="856">
           <description><![CDATA[The plugin deletion callback.]]></description>
           <long-description><![CDATA[<p>Use this function to perform tasks at plugin deletion, such as drop tables, remove settings, etc.
 If you have additional activities, add the function delete() to your child class.</p>]]></long-description>
-          <tag line="850" name="package" description="WP Base\Controllers"/>
-          <tag line="850" name="since" description="0.1"/>
+          <tag line="856" name="package" description="WP Base\Controllers"/>
+          <tag line="856" name="since" description="0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="876" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="882" package="WP Base\Controllers">
         <name>add_shortcodes</name>
         <full_name>add_shortcodes</full_name>
-        <docblock line="869">
+        <docblock line="875">
           <description><![CDATA[Register shortcodes.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="869" name="package" description="WP Base\Controllers"/>
-          <tag line="869" name="param" description="" type="array" variable="$shortcodes">
+          <tag line="875" name="package" description="WP Base\Controllers"/>
+          <tag line="875" name="param" description="" type="array" variable="$shortcodes">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="869" name="since" description="0.1"/>
+          <tag line="875" name="since" description="0.1"/>
         </docblock>
-        <argument line="876">
+        <argument line="882">
           <name>$shortcodes</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="891" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="897" package="WP Base\Controllers">
         <name>register_options</name>
         <full_name>register_options</full_name>
-        <docblock line="885">
+        <docblock line="891">
           <description><![CDATA[Register options.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="885" name="package" description="WP Base\Controllers"/>
-          <tag line="885" name="since" description="0.1"/>
+          <tag line="891" name="package" description="WP Base\Controllers"/>
+          <tag line="891" name="since" description="0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="911" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="917" package="WP Base\Controllers">
         <name>add_settings_sections</name>
         <full_name>add_settings_sections</full_name>
-        <docblock line="905">
+        <docblock line="911">
           <description><![CDATA[Add the settings sections.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="905" name="package" description="WP Base\Controllers"/>
-          <tag line="905" name="since" description="0.1"/>
+          <tag line="911" name="package" description="WP Base\Controllers"/>
+          <tag line="911" name="since" description="0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="933" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="939" package="WP Base\Controllers">
         <name>add_settings_fields</name>
         <full_name>add_settings_fields</full_name>
-        <docblock line="927">
+        <docblock line="933">
           <description><![CDATA[Add the settings fields.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="927" name="package" description="WP Base\Controllers"/>
-          <tag line="927" name="since" description="0.1"/>
+          <tag line="933" name="package" description="WP Base\Controllers"/>
+          <tag line="933" name="since" description="0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="958" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="964" package="WP Base\Controllers">
         <name>add_menu_pages</name>
         <full_name>add_menu_pages</full_name>
-        <docblock line="950">
+        <docblock line="956">
           <description><![CDATA[Add the options pages.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="950" name="package" description="WP Base\Controllers"/>
-          <tag line="950" name="link" description="http://codex.wordpress.org/Function_Reference/add_menu_page" link="http://codex.wordpress.org/Function_Reference/add_menu_page"/>
-          <tag line="950" name="link" description="http://codex.wordpress.org/Function_Reference/add_submenu_page" link="http://codex.wordpress.org/Function_Reference/add_submenu_page"/>
-          <tag line="950" name="since" description="0.1"/>
+          <tag line="956" name="package" description="WP Base\Controllers"/>
+          <tag line="956" name="link" description="http://codex.wordpress.org/Function_Reference/add_menu_page" link="http://codex.wordpress.org/Function_Reference/add_menu_page"/>
+          <tag line="956" name="link" description="http://codex.wordpress.org/Function_Reference/add_submenu_page" link="http://codex.wordpress.org/Function_Reference/add_submenu_page"/>
+          <tag line="956" name="since" description="0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="1011" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="1022" package="WP Base\Controllers">
         <name>render_options_page</name>
         <full_name>render_options_page</full_name>
-        <docblock line="1001">
+        <docblock line="1009">
           <description><![CDATA[Render an options page.]]></description>
-          <long-description><![CDATA[<p>Thuis function can be used as a generic callback for the WP add_x_page() function.</p>]]></long-description>
-          <tag line="1001" name="package" description="WP Base\Controllers"/>
-          <tag line="1001" name="link" description="http://codex.wordpress.org/Function_Reference/add_menu_page" link="http://codex.wordpress.org/Function_Reference/add_menu_page"/>
-          <tag line="1001" name="link" description="http://codex.wordpress.org/Function_Reference/add_submenu_page" link="http://codex.wordpress.org/Function_Reference/add_submenu_page"/>
-          <tag line="1001" name="link" description="http://codex.wordpress.org/Function_Reference/add_options_page" link="http://codex.wordpress.org/Function_Reference/add_options_page"/>
-          <tag line="1001" name="since" description="0.1"/>
+          <long-description><![CDATA[<p>This function can be used as a generic callback for the WP add_x_page() function. It will render
+the options page template defined in the page object if it exists, otherwise it will use a generic
+template included in this package (views/base_options_page.php).</p>]]></long-description>
+          <tag line="1009" name="package" description="WP Base\Controllers"/>
+          <tag line="1009" name="link" description="http://codex.wordpress.org/Function_Reference/add_menu_page" link="http://codex.wordpress.org/Function_Reference/add_menu_page"/>
+          <tag line="1009" name="link" description="http://codex.wordpress.org/Function_Reference/add_submenu_page" link="http://codex.wordpress.org/Function_Reference/add_submenu_page"/>
+          <tag line="1009" name="link" description="http://codex.wordpress.org/Function_Reference/add_options_page" link="http://codex.wordpress.org/Function_Reference/add_options_page"/>
+          <tag line="1009" name="since" description="0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="1036" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="1051" package="WP Base\Controllers">
         <name>render_settings_section</name>
         <full_name>render_settings_section</full_name>
-        <docblock line="1026">
+        <docblock line="1040">
           <description><![CDATA[Render a settings section.]]></description>
           <long-description><![CDATA[<p>This function can be used as a generic callback for add_settings_sections().</p>]]></long-description>
-          <tag line="1026" name="package" description="WP Base\Controllers"/>
-          <tag line="1026" name="param" description="The section object." type="object" variable="$section">
+          <tag line="1040" name="package" description="WP Base\Controllers"/>
+          <tag line="1040" name="param" description="The section object." type="object" variable="$section">
             <type by_reference="false">object</type>
           </tag>
-          <tag line="1026" name="link" description="http://codex.wordpress.org/Function_Reference/add_settings_section" link="http://codex.wordpress.org/Function_Reference/add_settings_section"/>
-          <tag line="1026" name="since" description="0.1"/>
+          <tag line="1040" name="link" description="http://codex.wordpress.org/Function_Reference/add_settings_section" link="http://codex.wordpress.org/Function_Reference/add_settings_section"/>
+          <tag line="1040" name="since" description="0.1"/>
+          <tag line="1040" name="todo" description="modify to work like add_menu_pages with a view property"/>
         </docblock>
-        <argument line="1036">
+        <argument line="1051">
           <name>$section</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="1059" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="1074" package="WP Base\Controllers">
         <name>render_settings_field</name>
         <full_name>render_settings_field</full_name>
-        <docblock line="1052">
+        <docblock line="1067">
           <description><![CDATA[A generic add_settings_field() callback function.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="1052" name="package" description="WP Base\Controllers"/>
-          <tag line="1052" name="param" description="The settings field arguments." type="array" variable="$args">
+          <tag line="1067" name="package" description="WP Base\Controllers"/>
+          <tag line="1067" name="param" description="The settings field arguments." type="array" variable="$args">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="1052" name="since" description="0.1"/>
+          <tag line="1067" name="since" description="0.1"/>
         </docblock>
-        <argument line="1059">
+        <argument line="1074">
           <name>$args</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="1088" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="1101" package="WP Base\Controllers">
         <name>render_input_checkbox</name>
         <full_name>render_input_checkbox</full_name>
-        <docblock line="1081">
+        <docblock line="1093">
           <description><![CDATA[Render a checkbox input field.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="1081" name="package" description="WP Base\Controllers"/>
-          <tag line="1081" name="param" description="The field arguments." type="array" variable="$args">
+          <tag line="1093" name="package" description="WP Base\Controllers"/>
+          <tag line="1093" name="param" description="The field arguments." type="array" variable="$args">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="1081" name="since" description="0.1"/>
+          <tag line="1093" name="since" description="0.1"/>
+          <tag line="1093" name="todo" description="move into a helper library?"/>
         </docblock>
-        <argument line="1088">
+        <argument line="1101">
           <name>$args</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="1104" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="1117" package="WP Base\Controllers">
         <name>render_input_text</name>
         <full_name>render_input_text</full_name>
-        <docblock line="1097">
+        <docblock line="1110">
           <description><![CDATA[Render a text input field.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="1097" name="package" description="WP Base\Controllers"/>
-          <tag line="1097" name="param" description="The field arguments." type="array" variable="$args">
+          <tag line="1110" name="package" description="WP Base\Controllers"/>
+          <tag line="1110" name="param" description="The field arguments." type="array" variable="$args">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="1097" name="since" description="0.1"/>
+          <tag line="1110" name="since" description="0.1"/>
         </docblock>
-        <argument line="1104">
+        <argument line="1117">
           <name>$args</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="1130" package="WP Base\Controllers">
-        <name>render_input_hidden</name>
-        <full_name>render_input_hidden</full_name>
-        <docblock line="1123">
-          <description><![CDATA[Render a hidden input field.]]></description>
-          <long-description><![CDATA[]]></long-description>
-          <tag line="1123" name="package" description="WP Base\Controllers"/>
-          <tag line="1123" name="param" description="The field arguments." type="array" variable="$args">
-            <type by_reference="false">array</type>
-          </tag>
-          <tag line="1123" name="since" description="0.1"/>
-        </docblock>
-        <argument line="1130">
-          <name>$args</name>
-          <default><![CDATA[]]></default>
-          <type/>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="1146" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="1144" package="WP Base\Controllers">
         <name>render_input_select</name>
         <full_name>render_input_select</full_name>
-        <docblock line="1139">
+        <docblock line="1136">
           <description><![CDATA[Render a select input field.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="1139" name="package" description="WP Base\Controllers"/>
-          <tag line="1139" name="param" description="The field arguments." type="array" variable="$args">
+          <tag line="1136" name="package" description="WP Base\Controllers"/>
+          <tag line="1136" name="param" description="The field arguments." type="array" variable="$args">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="1139" name="since" description="0.1"/>
+          <tag line="1136" name="since" description="0.1"/>
+          <tag line="1136" name="todo" description="move into a helper library?"/>
         </docblock>
-        <argument line="1146">
+        <argument line="1144">
           <name>$args</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="1163" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="1162" package="WP Base\Controllers">
         <name>render_input_select_options</name>
         <full_name>render_input_select_options</full_name>
-        <docblock line="1155">
+        <docblock line="1153">
           <description><![CDATA[Render a select input field options block.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="1155" name="package" description="WP Base\Controllers"/>
-          <tag line="1155" name="param" description="A key/value pair of values and option display strings." type="array" variable="$options">
+          <tag line="1153" name="package" description="WP Base\Controllers"/>
+          <tag line="1153" name="param" description="A key/value pair of values and option display strings." type="array" variable="$options">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="1155" name="param" description="The current value for this option field." type="string" variable="$current_value">
+          <tag line="1153" name="param" description="The current value for this option field." type="string" variable="$current_value">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="1155" name="since" description="0.1"/>
+          <tag line="1153" name="since" description="0.1"/>
+          <tag line="1153" name="todo" description="move into a helper library?"/>
         </docblock>
-        <argument line="1163">
+        <argument line="1162">
           <name>$options</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="1163">
+        <argument line="1162">
           <name>$current_value</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="1188" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="1187" package="WP Base\Controllers">
         <name>main_plugin_file</name>
         <full_name>main_plugin_file</full_name>
-        <docblock line="1181">
+        <docblock line="1180">
           <description><![CDATA[Get the main plugin file.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="1181" name="package" description="WP Base\Controllers"/>
-          <tag line="1181" name="return" description="The absolute path to the main plugin file." type="string">
+          <tag line="1180" name="package" description="WP Base\Controllers"/>
+          <tag line="1180" name="return" description="The absolute path to the main plugin file." type="string">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="1181" name="since" description="0.1"/>
+          <tag line="1180" name="since" description="0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="1200" package="WP Base\Controllers">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="1199" package="WP Base\Controllers">
         <name>get_version</name>
         <full_name>get_version</full_name>
-        <docblock line="1193">
+        <docblock line="1192">
           <description><![CDATA[Get the plugin version.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="1193" name="package" description="WP Base\Controllers"/>
-          <tag line="1193" name="return" description="The plugin version." type="string">
+          <tag line="1192" name="package" description="WP Base\Controllers"/>
+          <tag line="1192" name="return" description="The plugin version." type="string">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="1193" name="since" description="0.1"/>
+          <tag line="1192" name="since" description="0.1"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="1210" package="WP Base\Controllers">
+        <name>get_slug</name>
+        <full_name>get_slug</full_name>
+        <docblock line="1204">
+          <description><![CDATA[Get the plugin slug]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="1204" name="package" description="WP Base\Controllers"/>
+          <tag line="1204" name="since" description="0.1"/>
         </docblock>
       </method>
     </class>
   </file>
-  <file path="helper.php" hash="2f2561ca187ccf5e25d31552e4dca923" package="WP Base\Helper Functions">
+  <file path="helper.php" hash="53630d3f50f8345281d217232537e460" package="WP Base\Helper Functions">
     <docblock line="2">
       <description><![CDATA[Helper functions]]></description>
       <long-description><![CDATA[]]></long-description>
@@ -943,468 +942,472 @@ If you have additional activities, add the function delete() to your child class
       <tag line="2" name="version" description="0.1"/>
       <tag line="2" name="since" description="0.1"/>
     </docblock>
-    <class final="false" abstract="false" namespace="global" line="21" package="WP Base\Helper Functions">
+    <class final="false" abstract="false" namespace="global" line="20" package="WP Base\Helper Functions">
       <extends/>
       <name>Helper_Functions</name>
       <full_name>\Helper_Functions</full_name>
       <docblock line="13">
         <description><![CDATA[Helper functions class]]></description>
         <long-description><![CDATA[]]></long-description>
-        <tag line="13" name="package" description="WP Base"/>
-        <tag line="13" name="subpackage" description="Helper Functions"/>
+        <tag line="13" name="package" description="WP Base\Helper Functions"/>
         <tag line="13" name="version" description="0.1"/>
         <tag line="13" name="since" description="WP Base 0.1"/>
       </docblock>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="36" package="WP Base\Helper Functions">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="35" package="WP Base\Helper Functions">
         <name>plupload</name>
         <full_name>plupload</full_name>
-        <docblock line="24">
+        <docblock line="23">
           <description><![CDATA[Process files uploaded via plupload]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="24" name="package" description="WP Base"/>
-          <tag line="24" name="subpackage" description="Helper Functions"/>
-          <tag line="24" name="param" description="The $_POST object." type="array" variable="$post">
+          <tag line="23" name="package" description="WP Base\Helper Functions"/>
+          <tag line="23" name="param" description="The $_POST object." type="array" variable="$post">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="24" name="param" description="The $_FILES object." type="array" variable="$files">
+          <tag line="23" name="param" description="The $_FILES object." type="array" variable="$files">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="24" name="param" description="The upload target absolute path." type="string" variable="$target">
+          <tag line="23" name="param" description="The upload target absolute path." type="string" variable="$target">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="24" name="param" description="Log the request. Default is false." type="bool" variable="$log">
+          <tag line="23" name="param" description="Log the request. Default is false." type="bool" variable="$log">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="24" name="since" description="0.1"/>
-          <tag line="24" name="todo" description="How does this handle mutliple files in the upload?"/>
+          <tag line="23" name="since" description="0.1"/>
+          <tag line="23" name="todo" description="How does this handle mutliple files in the upload?"/>
+          <tag line="23" name="todo" description="Move this into a separate plupload helper"/>
         </docblock>
-        <argument line="36">
+        <argument line="35">
           <name>$post</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="36">
+        <argument line="35">
           <name>$files</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="36">
+        <argument line="35">
           <name>$target</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="36">
+        <argument line="35">
           <name>$log</name>
           <default><![CDATA[false]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="87" package="WP Base\Helper Functions">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="85" package="WP Base\Helper Functions">
         <name>enqueue_styles</name>
         <full_name>enqueue_styles</full_name>
-        <docblock line="75">
+        <docblock line="74">
           <description><![CDATA[Enqueue styles.]]></description>
           <long-description><![CDATA[<p>This function enqueues styles using wp_enqueue_style.
 It exposes a filter ( ah_base_filter_styles-$style_handle ) that can be used to alter
 the style object properties.</p>]]></long-description>
-          <tag line="75" name="package" description="WP Base"/>
-          <tag line="75" name="subpackage" description="Helper Functions"/>
-          <tag line="75" name="param" description="The collection of style objects to be enqueued." type="array" variable="$styles">
+          <tag line="74" name="package" description="WP Base\Helper Functions"/>
+          <tag line="74" name="param" description="The collection of style objects to be enqueued." type="array" variable="$styles">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="75" name="since" description="0.1"/>
+          <tag line="74" name="since" description="0.1"/>
         </docblock>
-        <argument line="87">
+        <argument line="85">
           <name>$styles</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="116" package="WP Base\Helper Functions">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="113" package="WP Base\Helper Functions">
         <name>enqueue_scripts</name>
         <full_name>enqueue_scripts</full_name>
-        <docblock line="103">
+        <docblock line="101">
           <description><![CDATA[Enqueue scripts.]]></description>
           <long-description><![CDATA[<p>This function enqueues scripts using wp_enqueue_script.
 It exposes a filter ( ah_base_filter_scripts-$style_handle ) that can be used to alter
 the script object properties.</p>]]></long-description>
-          <tag line="103" name="package" description="WP Base"/>
-          <tag line="103" name="subpackage" description="Helper Functions"/>
-          <tag line="103" name="param" description="The collection of script objects to be enqueued." type="array" variable="$scripts">
+          <tag line="101" name="package" description="WP Base\Helper Functions"/>
+          <tag line="101" name="param" description="The collection of script objects to be enqueued." type="array" variable="$scripts">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="103" name="todo" description="Update filter to include all script elements."/>
-          <tag line="103" name="since" description="0.1"/>
+          <tag line="101" name="todo" description="Update filter to include all script elements."/>
+          <tag line="101" name="since" description="0.1"/>
         </docblock>
-        <argument line="116">
+        <argument line="113">
           <name>$scripts</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="136" package="WP Base\Helper Functions">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="132" package="WP Base\Helper Functions">
         <name>create_directory</name>
         <full_name>create_directory</full_name>
-        <docblock line="123">
+        <docblock line="120">
           <description><![CDATA[Create a directory and possibly add index.php]]></description>
           <long-description><![CDATA[<p>This function will create the directory specified in $target if it does not already exist.
 It will also add an index.php file if $index is set to TRUE.</p>]]></long-description>
-          <tag line="123" name="package" description="WP Base"/>
-          <tag line="123" name="subpackage" description="Helper Functions"/>
-          <tag line="123" name="param" description="The directory absolute path." type="string" variable="$target">
+          <tag line="120" name="package" description="WP Base\Helper Functions"/>
+          <tag line="120" name="param" description="The directory absolute path." type="string" variable="$target">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="123" name="param" description="Create an index.php in the directory (default true)." type="bool" variable="$index">
+          <tag line="120" name="param" description="Create an index.php in the directory (default true)." type="bool" variable="$index">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="123" name="param" description="The directory permissions (default 0755 )." type="\octal" variable="$permissions">
+          <tag line="120" name="param" description="The directory permissions (default 0755 )." type="\octal" variable="$permissions">
             <type by_reference="false">\octal</type>
           </tag>
-          <tag line="123" name="since" description="0.1"/>
+          <tag line="120" name="since" description="0.1"/>
         </docblock>
-        <argument line="136">
+        <argument line="132">
           <name>$target</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="136">
+        <argument line="132">
           <name>$index</name>
           <default><![CDATA[true]]></default>
           <type/>
         </argument>
-        <argument line="136">
+        <argument line="132">
           <name>$permissions</name>
           <default><![CDATA[493]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="149" package="WP Base\Helper Functions">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="153" package="WP Base">
         <name>get_local_directory_contents</name>
         <full_name>get_local_directory_contents</full_name>
-        <argument line="149">
+        <docblock line="145">
+          <description><![CDATA[Get the contents of a local filesystem directory.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="145" name="package" description="WP Base"/>
+          <tag line="145" name="param" description="The absolute path to the directory." type="string" variable="$directory">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="145" name="returns" description="array|bool array An array containg the directory contents on success, NULL on failure."/>
+          <tag line="145" name="since" description="0.1"/>
+        </docblock>
+        <argument line="153">
           <name>$directory</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="180" package="pkgtoken\subtoken">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="183" package="WP Base">
         <name>remove_local_directory</name>
         <full_name>remove_local_directory</full_name>
-        <docblock line="170">
+        <docblock line="174">
           <description><![CDATA[Remove a directory and all contents from the local filesystem]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="170" name="package" description="pkgtoken"/>
-          <tag line="170" name="subpackage" description="subtoken"/>
-          <tag line="170" name="param" description="The absokute path to the directory to be deleted." type="string" variable="$dirname">
+          <tag line="174" name="package" description="WP Base"/>
+          <tag line="174" name="param" description="The absokute path to the directory to be deleted." type="string" variable="$dirname">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="170" name="param" description="Delete all folder contents recursively (true). Default FALSE." type="bool" variable="$force">
+          <tag line="174" name="param" description="Delete all folder contents recursively (true). Default FALSE." type="bool" variable="$force">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="170" name="return" description="TRUE on success, FALSE on failure." type="bool">
+          <tag line="174" name="return" description="TRUE on success, FALSE on failure." type="bool">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="170" name="since" description="0.1"/>
+          <tag line="174" name="since" description="0.1"/>
         </docblock>
-        <argument line="180">
+        <argument line="183">
           <name>$dirname</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="180">
+        <argument line="183">
           <name>$force</name>
           <default><![CDATA[false]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="212" package="WP Base\Helper Functions">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="214" package="WP Base\Helper Functions">
         <name>delete_local_file</name>
         <full_name>delete_local_file</full_name>
-        <docblock line="203">
+        <docblock line="206">
           <description><![CDATA[Delete a file on the local filesystem.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="203" name="package" description="WP Base"/>
-          <tag line="203" name="subpackage" description="Helper Functions"/>
-          <tag line="203" name="param" description="The absolute path to the file." type="string" variable="$file">
+          <tag line="206" name="package" description="WP Base\Helper Functions"/>
+          <tag line="206" name="param" description="The absolute path to the file." type="string" variable="$file">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="203" name="return" description="on success, FALSE on failure." type="TRUE">
+          <tag line="206" name="return" description="on success, FALSE on failure." type="TRUE">
             <type by_reference="false">TRUE</type>
           </tag>
-          <tag line="203" name="since" description="0.1"/>
+          <tag line="206" name="since" description="0.1"/>
         </docblock>
-        <argument line="212">
+        <argument line="214">
           <name>$file</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="227" package="WP Base\Helper Functions">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="228" package="WP Base\Helper Functions">
         <name>sanitize_text_field_array</name>
         <full_name>sanitize_text_field_array</full_name>
-        <docblock line="218">
+        <docblock line="220">
           <description><![CDATA[Sanitize an array with sanitize_text_field]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="218" name="package" description="WP Base"/>
-          <tag line="218" name="subpackage" description="Helper Functions"/>
-          <tag line="218" name="param" description="Contains the elements to be sanitized" type="array" variable="$array">
+          <tag line="220" name="package" description="WP Base\Helper Functions"/>
+          <tag line="220" name="param" description="Contains the elements to be sanitized" type="array" variable="$array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="218" name="return" description="The sanitized array" type="array">
+          <tag line="220" name="return" description="The sanitized array" type="array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="218" name="since" description="0.1"/>
+          <tag line="220" name="since" description="0.1"/>
         </docblock>
-        <argument line="227">
+        <argument line="228">
           <name>$array</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
     </class>
-    <parse_markers>
-      <error line="149" code="50010">No DocBlock was found for method get_local_directory_contents()</error>
-    </parse_markers>
   </file>
-  <file path="models/base_model.php" hash="ec843736bca6daefeedd7797fd902d65" package="WP Base\Models">
+  <file path="models/base_model.php" hash="83b108defee89413016e9e5a31cfe3ef" package="WP Base\Models">
     <docblock line="2">
       <description><![CDATA[The base model.]]></description>
       <long-description><![CDATA[]]></long-description>
       <tag line="2" name="package" description="WP Base\Models"/>
-      <tag line="2" name="author" description="authtoken"/>
+      <tag line="2" name="author" description="Daryl Lozupone &lt;daryl@actionhook.com&gt;"/>
       <tag line="2" name="since" description="WP Base 0.1"/>
     </docblock>
-    <class final="true" abstract="true" namespace="global" line="33" package="WP Base\Models">
+    <class final="true" abstract="true" namespace="global" line="37" package="WP Base\Models">
       <extends/>
       <name>Base_Model</name>
       <full_name>\Base_Model</full_name>
       <docblock line="27">
         <description><![CDATA[The base model.]]></description>
-        <long-description><![CDATA[]]></long-description>
+        <long-description><![CDATA[<p>This class serves as the base for other models provided by the framework. It contains the properties and
+and methods required by other models.</p>]]></long-description>
         <tag line="27" name="package" description="WP Base\Models"/>
+        <tag line="27" name="internal" description=""/>
         <tag line="27" name="since" description="WP Base 0.1"/>
       </docblock>
-      <property final="false" static="false" visibility="private" line="42" namespace="global" package="WP Base\Models">
+      <property final="false" static="false" visibility="private" line="46" namespace="global" package="WP Base\Models">
         <name>$version</name>
         <default><![CDATA['0.1']]></default>
-        <docblock line="35">
+        <docblock line="39">
           <description><![CDATA[The class version]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="35" name="package" description="WP Base\Models"/>
-          <tag line="35" name="var" description="" type="string">
+          <tag line="39" name="package" description="WP Base\Models"/>
+          <tag line="39" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="35" name="since" description="0.1"/>
+          <tag line="39" name="since" description="0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="protected" line="53" namespace="global" package="WP Base\Models">
+      <property final="false" static="false" visibility="protected" line="57" namespace="global" package="WP Base\Models">
         <name>$css</name>
         <default><![CDATA[]]></default>
-        <docblock line="44">
+        <docblock line="48">
           <description><![CDATA[The plugin css files]]></description>
-          <long-description><![CDATA[<p>An array containing css used by the model</p>]]></long-description>
-          <tag line="44" name="package" description="WP Base\Models"/>
-          <tag line="44" name="var" description="" type="array">
+          <long-description><![CDATA[<p>An array containing css used by the model.</p>]]></long-description>
+          <tag line="48" name="package" description="WP Base\Models"/>
+          <tag line="48" name="var" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="44" name="since" description="0.1"/>
+          <tag line="48" name="since" description="0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="protected" line="64" namespace="global" package="WP Base\Models">
+      <property final="false" static="false" visibility="protected" line="68" namespace="global" package="WP Base\Models">
         <name>$admin_css</name>
         <default><![CDATA[]]></default>
-        <docblock line="55">
-          <description><![CDATA[The plugin admin css files]]></description>
+        <docblock line="59">
+          <description><![CDATA[The plugin admin css files.]]></description>
           <long-description><![CDATA[<p>An array containing css used by the model on admin pages</p>]]></long-description>
-          <tag line="55" name="package" description="WP Base\Models"/>
-          <tag line="55" name="var" description="" type="array">
+          <tag line="59" name="package" description="WP Base\Models"/>
+          <tag line="59" name="var" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="55" name="since" description="0.1"/>
+          <tag line="59" name="since" description="0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="protected" line="75" namespace="global" package="WP Base\Models">
+      <property final="false" static="false" visibility="protected" line="80" namespace="global" package="WP Base\Models">
         <name>$scripts</name>
         <default><![CDATA[]]></default>
-        <docblock line="66">
+        <docblock line="70">
           <description><![CDATA[The model javascript files]]></description>
-          <long-description><![CDATA[<p>An array containing javascript used by the model</p>]]></long-description>
-          <tag line="66" name="package" description="WP Base\Models"/>
-          <tag line="66" name="var" description="" type="array">
+          <long-description><![CDATA[<p>An array containing javascript used by the model on the frontend.</p>]]></long-description>
+          <tag line="70" name="package" description="WP Base\Models"/>
+          <tag line="70" name="see" description="\global\WP" refers="\global\WP"/>
+          <tag line="70" name="var" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="66" name="since" description="0.1"/>
+          <tag line="70" name="since" description="0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="protected" line="86" namespace="global" package="WP Base\Models">
+      <property final="false" static="false" visibility="protected" line="91" namespace="global" package="WP Base\Models">
         <name>$admin_scripts</name>
         <default><![CDATA[]]></default>
-        <docblock line="77">
+        <docblock line="82">
           <description><![CDATA[The model admin javascript files]]></description>
-          <long-description><![CDATA[<p>An array containing css used by the model</p>]]></long-description>
-          <tag line="77" name="package" description="WP Base\Models"/>
-          <tag line="77" name="var" description="" type="array">
+          <long-description><![CDATA[<p>An array containing javascript used by the model on admin pages.</p>]]></long-description>
+          <tag line="82" name="package" description="WP Base\Models"/>
+          <tag line="82" name="var" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="77" name="since" description="0.1"/>
+          <tag line="82" name="since" description="0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="protected" line="95" namespace="global" package="WP Base\Models">
+      <property final="false" static="false" visibility="protected" line="101" namespace="global" package="WP Base\Models">
         <name>$metaboxes</name>
         <default><![CDATA[]]></default>
-        <docblock line="88">
+        <docblock line="93">
           <description><![CDATA[Metaboxes required by this model.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="88" name="package" description="WP Base\Models"/>
-          <tag line="88" name="var" description="Contains an array of WP_Base_Metabox objects" type="array">
+          <tag line="93" name="package" description="WP Base\Models"/>
+          <tag line="93" name="var" description="Contains an array of WP_Base_Metabox objects" type="array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="88" name="since" description="0.1"/>
+          <tag line="93" name="see" description="\global\WP" refers="\global\WP"/>
+          <tag line="93" name="since" description="0.1"/>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="105" package="WP Base\Models">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="111" package="WP Base\Models">
         <name>get_css</name>
         <full_name>get_css</full_name>
-        <docblock line="97">
+        <docblock line="103">
           <description><![CDATA[Get the frontend CSS.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="97" name="package" description="WP Base\Models"/>
-          <tag line="97" name="param" description="The plugin js uri ( e.g. http://example.com/wp-content/plugins/myplugin/css )" type="string" variable="$uri">
+          <tag line="103" name="package" description="WP Base\Models"/>
+          <tag line="103" name="param" description="The plugin css uri ( e.g. http://example.com/wp-content/plugins/myplugin/css )" type="string" variable="$uri">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="97" name="return" description="$admin_css" type="array">
+          <tag line="103" name="return" description="$admin_css" type="array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="97" name="since" description="0.1"/>
+          <tag line="103" name="since" description="0.1"/>
         </docblock>
-        <argument line="105">
+        <argument line="111">
           <name>$uri</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="121" package="WP Base\Models">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="127" package="WP Base\Models">
         <name>get_admin_css</name>
         <full_name>get_admin_css</full_name>
-        <docblock line="113">
+        <docblock line="119">
           <description><![CDATA[Get the admin CSS.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="113" name="package" description="WP Base\Models"/>
-          <tag line="113" name="param" description="The plugin js uri ( e.g. http://example.com/wp-content/plugins/myplugin/css )" type="string" variable="$uri">
+          <tag line="119" name="package" description="WP Base\Models"/>
+          <tag line="119" name="param" description="The plugin css uri ( e.g. http://example.com/wp-content/plugins/myplugin/css )" type="string" variable="$uri">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="113" name="return" description="$admin_css Collection of admin css objects." type="array">
+          <tag line="119" name="return" description="$admin_css Collection of admin css objects." type="array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="113" name="since" description="0.1"/>
+          <tag line="119" name="since" description="0.1"/>
         </docblock>
-        <argument line="121">
+        <argument line="127">
           <name>$uri</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="146" package="WP Base\Models">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="152" package="WP Base\Models">
         <name>get_scripts</name>
         <full_name>get_scripts</full_name>
-        <docblock line="136">
+        <docblock line="142">
           <description><![CDATA[Get the front end javascripts.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="136" name="package" description="WP Base\Models"/>
-          <tag line="136" name="param" description="The WP Post object" type="object" variable="$post">
+          <tag line="142" name="package" description="WP Base\Models"/>
+          <tag line="142" name="param" description="The WP Post object" type="object" variable="$post">
             <type by_reference="false">object</type>
           </tag>
-          <tag line="136" name="param" description="The plugin text domain." type="string" variable="$txtdomain">
+          <tag line="142" name="param" description="The plugin text domain." type="string" variable="$txtdomain">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="136" name="param" description="The plugin js uri ( e.g. http://example.com/wp-content/plugins/myplugin/js )" type="string" variable="$uri">
+          <tag line="142" name="param" description="The plugin js uri ( e.g. http://example.com/wp-content/plugins/myplugin/js )" type="string" variable="$uri">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="136" name="return" description="$admin_scripts Collection of admin scripts." type="array">
+          <tag line="142" name="return" description="$admin_scripts Collection of admin scripts." type="array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="136" name="since" description="0.1"/>
+          <tag line="142" name="since" description="0.1"/>
         </docblock>
-        <argument line="146">
+        <argument line="152">
           <name>$post</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="146">
+        <argument line="152">
           <name>$txtdomain</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="146">
+        <argument line="152">
           <name>$uri</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="164" package="WP Base\Models">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="170" package="WP Base\Models">
         <name>get_admin_scripts</name>
         <full_name>get_admin_scripts</full_name>
-        <docblock line="154">
+        <docblock line="160">
           <description><![CDATA[Get the admin javascripts.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="154" name="package" description="WP Base\Models"/>
-          <tag line="154" name="param" description="The WP Post object" type="object" variable="$post">
+          <tag line="160" name="package" description="WP Base\Models"/>
+          <tag line="160" name="param" description="The WP Post object" type="object" variable="$post">
             <type by_reference="false">object</type>
           </tag>
-          <tag line="154" name="param" description="The plugin text domain." type="string" variable="$txtdomain">
+          <tag line="160" name="param" description="The plugin text domain." type="string" variable="$txtdomain">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="154" name="param" description="The plugin js uri ( e.g. http://example.com/wp-content/plugins/myplugin/js )" type="string" variable="$uri">
+          <tag line="160" name="param" description="The plugin js uri ( e.g. http://example.com/wp-content/plugins/myplugin/js )" type="string" variable="$uri">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="154" name="return" description="$admin_scripts" type="array">
+          <tag line="160" name="return" description="$admin_scripts" type="array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="154" name="since" description="0.1"/>
+          <tag line="160" name="since" description="0.1"/>
         </docblock>
-        <argument line="164">
+        <argument line="170">
           <name>$post</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="164">
+        <argument line="170">
           <name>$txtdomain</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="164">
+        <argument line="170">
           <name>$uri</name>
           <default><![CDATA['']]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="186" package="WP Base\Models">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="192" package="WP Base\Models">
         <name>get_metaboxes</name>
         <full_name>get_metaboxes</full_name>
-        <docblock line="172">
+        <docblock line="178">
           <description><![CDATA[Get the model's metaboxes]]></description>
           <long-description><![CDATA[<p>This function will return the metaboxes. The post_id parameter
 is used so that this function may return the values stored for
 the corresponding custom fields in the callback arguments.</p>]]></long-description>
-          <tag line="172" name="package" description="WP Base\Models"/>
-          <tag line="172" name="param" description="" type="string" variable="$post_id">
+          <tag line="178" name="package" description="WP Base\Models"/>
+          <tag line="178" name="param" description="" type="string" variable="$post_id">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="172" name="param" description="the text domain to use for translations" type="string" variable="$txtdomain">
+          <tag line="178" name="param" description="the text domain to use for translations" type="string" variable="$txtdomain">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="172" name="return" description="$metaboxes an array of WP_Metabox objects" type="array">
+          <tag line="178" name="return" description="$metaboxes an array of WP_Metabox objects" type="array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="172" name="see" description="\global\WP_Metabox" refers="\global\WP_Metabox"/>
-          <tag line="172" name="since" description="0.1"/>
+          <tag line="178" name="see" description="\global\WP_Metabox" refers="\global\WP_Metabox"/>
+          <tag line="178" name="since" description="0.1"/>
         </docblock>
-        <argument line="186">
+        <argument line="192">
           <name>$post_id</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="186">
+        <argument line="192">
           <name>$txtdomain</name>
           <default><![CDATA[]]></default>
           <type/>
@@ -1412,7 +1415,7 @@ the corresponding custom fields in the callback arguments.</p>]]></long-descript
       </method>
     </class>
   </file>
-  <file path="models/base_model_cpt.php" hash="d75e56c06978a9fffd023c00921d5046" package="WP Base\Models">
+  <file path="models/base_model_cpt.php" hash="55a54287d4369da346a28c7905096cdd" package="WP Base\Models">
     <docblock line="3">
       <description><![CDATA[the base CPT class model]]></description>
       <long-description><![CDATA[]]></long-description>
@@ -1491,7 +1494,7 @@ the corresponding custom fields in the callback arguments.</p>]]></long-descript
           <tag line="54" name="link" description="http://codex.wordpress.org/Function_Reference/register_post_type" link="http://codex.wordpress.org/Function_Reference/register_post_type"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="protected" line="78" namespace="global" package="WP Base\Models\subtoken">
+      <property final="false" static="false" visibility="protected" line="77" namespace="global" package="WP Base\Models">
         <name>$shortcodes</name>
         <default><![CDATA[]]></default>
         <docblock line="64">
@@ -1502,266 +1505,265 @@ Example:</p>
 <pre><code>$this->shortcodes = array( 'myshortcode' => 'myshortcode_callback_function );
 </code></pre>]]></long-description>
           <tag line="64" name="package" description="WP Base\Models"/>
-          <tag line="64" name="subpackage" description="subtoken"/>
           <tag line="64" name="var" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
           <tag line="64" name="since" description="0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="public" line="91" namespace="global" package="WP Base\Models">
+      <property final="false" static="false" visibility="public" line="90" namespace="global" package="WP Base\Models">
         <name>$help_screen</name>
         <default><![CDATA[]]></default>
-        <docblock line="80">
+        <docblock line="79">
           <description><![CDATA[The Help screen tabs for this CPT]]></description>
           <long-description><![CDATA[<p>This property is an array containing individual help screen definitions.
 Example:</p>
 
 <pre><code>$help_screen = array(  'title' => __( 'My Help Screen', 'my_text_domain' ), 'id' => 'demo-help', 'call' => 'my_callback_function' );
 </code></pre>]]></long-description>
-          <tag line="80" name="package" description="WP Base\Models"/>
-          <tag line="80" name="since" description="0.1"/>
+          <tag line="79" name="package" description="WP Base\Models"/>
+          <tag line="79" name="since" description="0.1"/>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="104" package="WP Base\Models">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="103" package="WP Base\Models">
         <name>__construct</name>
         <full_name>__construct</full_name>
-        <docblock line="93">
+        <docblock line="92">
           <description><![CDATA[The class constructor.]]></description>
           <long-description><![CDATA[<p>Use this function to initialize class variables, require necessary files, etc.</p>]]></long-description>
-          <tag line="93" name="package" description="WP Base\Models"/>
-          <tag line="93" name="param" description="The plugin uri." type="string" variable="$uri">
+          <tag line="92" name="package" description="WP Base\Models"/>
+          <tag line="92" name="param" description="The plugin uri." type="string" variable="$uri">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="93" name="param" description="The plugin text domain." type="string" variable="$txtdomain">
+          <tag line="92" name="param" description="The plugin text domain." type="string" variable="$txtdomain">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="93" name="abstract" description=""/>
-          <tag line="93" name="since" description="0.1"/>
+          <tag line="92" name="abstract" description=""/>
+          <tag line="92" name="since" description="0.1"/>
         </docblock>
-        <argument line="104">
+        <argument line="103">
           <name>$uri</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="104">
+        <argument line="103">
           <name>$txtdomain</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="129" package="WP Base\Models">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="128" package="WP Base\Models">
         <name>init_args</name>
         <full_name>init_args</full_name>
-        <docblock line="121">
+        <docblock line="120">
           <description><![CDATA[initialize the CPT arguments for register_post_type]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="121" name="package" description="WP Base\Models"/>
-          <tag line="121" name="param" description="" type="string" variable="$txtdomain">
+          <tag line="120" name="package" description="WP Base\Models"/>
+          <tag line="120" name="param" description="" type="string" variable="$txtdomain">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="121" name="see" description="\global\http://codex.wordpress.org/Function_Reference/register_post_type" refers="\global\http://codex.wordpress.org/Function_Reference/register_post_type"/>
-          <tag line="121" name="since" description="0.1"/>
+          <tag line="120" name="see" description="\global\http://codex.wordpress.org/Function_Reference/register_post_type" refers="\global\http://codex.wordpress.org/Function_Reference/register_post_type"/>
+          <tag line="120" name="since" description="0.1"/>
         </docblock>
-        <argument line="129">
+        <argument line="128">
           <name>$txtdomain</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="188" package="WP Base\Models">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="187" package="WP Base\Models">
         <name>init_metaboxes</name>
         <full_name>init_metaboxes</full_name>
-        <docblock line="178">
+        <docblock line="177">
           <description><![CDATA[initialize the CPT meta boxes]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="178" name="package" description="WP Base\Models"/>
-          <tag line="178" name="param" description="" type="string" variable="$post_id">
+          <tag line="177" name="package" description="WP Base\Models"/>
+          <tag line="177" name="param" description="" type="string" variable="$post_id">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="178" name="param" description="The text domain to use for the label translations." type="string" variable="$txtdomain">
+          <tag line="177" name="param" description="The text domain to use for the label translations." type="string" variable="$txtdomain">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="178" name="since" description="0.1"/>
-          <tag line="178" name="see" description="\global\http://codex.wordpress.org/Function_Reference/add_meta_boxes" refers="\global\http://codex.wordpress.org/Function_Reference/add_meta_boxes"/>
+          <tag line="177" name="since" description="0.1"/>
+          <tag line="177" name="see" description="\global\http://codex.wordpress.org/Function_Reference/add_meta_boxes" refers="\global\http://codex.wordpress.org/Function_Reference/add_meta_boxes"/>
         </docblock>
-        <argument line="188">
+        <argument line="187">
           <name>$post_id</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="188">
+        <argument line="187">
           <name>$txtdomain</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="211" package="WP Base\Models">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="210" package="WP Base\Models">
         <name>get_post_updated_messages</name>
         <full_name>get_post_updated_messages</full_name>
-        <docblock line="202">
+        <docblock line="201">
           <description><![CDATA[Get the CPT messages]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="202" name="package" description="WP Base\Models"/>
-          <tag line="202" name="param" description="The WP post object." type="object" variable="$post">
+          <tag line="201" name="package" description="WP Base\Models"/>
+          <tag line="201" name="param" description="The WP post object." type="object" variable="$post">
             <type by_reference="false">object</type>
           </tag>
-          <tag line="202" name="param" description="The text domain to use for localization." type="string" variable="$txtdomain">
+          <tag line="201" name="param" description="The text domain to use for localization." type="string" variable="$txtdomain">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="202" name="return" description="$messages The messages array." type="array">
+          <tag line="201" name="return" description="$messages The messages array." type="array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="202" name="since" description="0.1"/>
+          <tag line="201" name="since" description="0.1"/>
         </docblock>
-        <argument line="211">
+        <argument line="210">
           <name>$post</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="211">
+        <argument line="210">
           <name>$txtdomain</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="240" package="WP Base\Models">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="239" package="WP Base\Models">
         <name>get_slug</name>
         <full_name>get_slug</full_name>
-        <docblock line="233">
+        <docblock line="232">
           <description><![CDATA[get the cpt slug]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="233" name="package" description="WP Base\Models"/>
-          <tag line="233" name="return" description="$slug" type="string">
+          <tag line="232" name="package" description="WP Base\Models"/>
+          <tag line="232" name="return" description="$slug" type="string">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="233" name="since" description="0.1"/>
+          <tag line="232" name="since" description="0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="254" package="WP Base\Models">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="253" package="WP Base\Models">
         <name>get_args</name>
         <full_name>get_args</full_name>
-        <docblock line="245">
+        <docblock line="244">
           <description><![CDATA[Get the cpt arguments.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="245" name="package" description="WP Base\Models"/>
-          <tag line="245" name="param" description="The base plugin uri." type="string" variable="$uri">
+          <tag line="244" name="package" description="WP Base\Models"/>
+          <tag line="244" name="param" description="The base plugin uri." type="string" variable="$uri">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="245" name="param" description="The plugin text domain." type="string" variable="$txtdomain">
+          <tag line="244" name="param" description="The plugin text domain." type="string" variable="$txtdomain">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="245" name="return" description="$args" type="array">
+          <tag line="244" name="return" description="$args" type="array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="245" name="since" description="0.1"/>
+          <tag line="244" name="since" description="0.1"/>
         </docblock>
-        <argument line="254">
+        <argument line="253">
           <name>$uri</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="254">
+        <argument line="253">
           <name>$txtdomain</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="270" package="WP Base\Models">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="269" package="WP Base\Models">
         <name>get_shortcodes</name>
         <full_name>get_shortcodes</full_name>
-        <docblock line="262">
+        <docblock line="261">
           <description><![CDATA[Get the cpt shortcodes.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="262" name="package" description="WP Base\Models"/>
-          <tag line="262" name="return" description="$shortcodes" type="array">
+          <tag line="261" name="package" description="WP Base\Models"/>
+          <tag line="261" name="return" description="$shortcodes" type="array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="262" name="since" description="0.1"/>
+          <tag line="261" name="since" description="0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="287" package="WP Base\Models">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="286" package="WP Base\Models">
         <name>get_help_screen</name>
         <full_name>get_help_screen</full_name>
-        <docblock line="278">
+        <docblock line="277">
           <description><![CDATA[Get the cpt help screen tabs.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="278" name="package" description="WP Base\Models"/>
-          <tag line="278" name="param" description="The plugin app views path." type="string" variable="$path">
+          <tag line="277" name="package" description="WP Base\Models"/>
+          <tag line="277" name="param" description="The plugin app views path." type="string" variable="$path">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="278" name="param" description="The plugin text domain." type="string" variable="$txtdomain">
+          <tag line="277" name="param" description="The plugin text domain." type="string" variable="$txtdomain">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="278" name="return" description="$help_screen Contains the help screen tab objects." type="array">
+          <tag line="277" name="return" description="$help_screen Contains the help screen tab objects." type="array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="278" name="since" description="0.1"/>
+          <tag line="277" name="since" description="0.1"/>
         </docblock>
-        <argument line="287">
+        <argument line="286">
           <name>$path</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="287">
+        <argument line="286">
           <name>$txtdomain</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="303" package="WP Base\Models">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="302" package="WP Base\Models">
         <name>register</name>
         <full_name>register</full_name>
-        <docblock line="295">
+        <docblock line="294">
           <description><![CDATA[Register this post type.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="295" name="package" description="WP Base\Models"/>
-          <tag line="295" name="param" description="The plugin uri." type="string" variable="$uri">
+          <tag line="294" name="package" description="WP Base\Models"/>
+          <tag line="294" name="param" description="The plugin uri." type="string" variable="$uri">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="295" name="param" description="The plugin text domain." type="string" variable="$txtdomain">
+          <tag line="294" name="param" description="The plugin text domain." type="string" variable="$txtdomain">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="295" name="since" description="0.1"/>
+          <tag line="294" name="since" description="0.1"/>
         </docblock>
-        <argument line="303">
+        <argument line="302">
           <name>$uri</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="303">
+        <argument line="302">
           <name>$txtdomain</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="318" package="WP Base\Models">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="317" package="WP Base\Models">
         <name>get_metakey</name>
         <full_name>get_metakey</full_name>
-        <docblock line="311">
+        <docblock line="310">
           <description><![CDATA[Get the cpt meta key.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="311" name="package" description="WP Base\Models"/>
-          <tag line="311" name="return" description="$metakey" type="string">
+          <tag line="310" name="package" description="WP Base\Models"/>
+          <tag line="310" name="return" description="$metakey" type="string">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="311" name="since" description="0.1"/>
+          <tag line="310" name="since" description="0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="true" static="false" visibility="public" namespace="global" line="331" package="WP Base\Models">
+      <method final="false" abstract="true" static="false" visibility="public" namespace="global" line="330" package="WP Base\Models">
         <name>save</name>
         <full_name>save</full_name>
-        <docblock line="323">
+        <docblock line="322">
           <description><![CDATA[Save the cpt.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="323" name="package" description="WP Base\Models"/>
-          <tag line="323" name="param" description="the POSTed data" type="array" variable="$post_data">
+          <tag line="322" name="package" description="WP Base\Models"/>
+          <tag line="322" name="param" description="the POSTed data" type="array" variable="$post_data">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="323" name="abstract" description=""/>
-          <tag line="323" name="since" description="0.1"/>
+          <tag line="322" name="abstract" description=""/>
+          <tag line="322" name="since" description="0.1"/>
         </docblock>
-        <argument line="331">
+        <argument line="330">
           <name>$post_data</name>
           <default><![CDATA[]]></default>
           <type/>
@@ -1769,7 +1771,7 @@ Example:</p>
       </method>
     </class>
   </file>
-  <file path="models/base_model_help_tab.php" hash="fa7439af43b2c1217732f74fa646462b" package="WP Base\Models">
+  <file path="models/base_model_help_tab.php" hash="6c3d4bacff7ca1a021e21d489abddb4c" package="WP Base\Models">
     <docblock line="2">
       <description><![CDATA[The base help tab model]]></description>
       <long-description><![CDATA[]]></long-description>
@@ -1779,7 +1781,7 @@ Example:</p>
       <tag line="2" name="version" description="0.1"/>
       <tag line="2" name="since" description="WP Base 0.1"/>
     </docblock>
-    <include line="97" type="Require Once" package="Default">
+    <include line="99" type="Require Once" package="Default">
       <name/>
     </include>
     <class final="false" abstract="false" namespace="global" line="19" package="WP Base\Models">
@@ -1787,7 +1789,7 @@ Example:</p>
       <name>Base_Model_Help_Tab</name>
       <full_name>\Base_Model_Help_Tab</full_name>
       <docblock line="13">
-        <description><![CDATA[The base help tab model.]]></description>
+        <description><![CDATA[The help tab model.]]></description>
         <long-description><![CDATA[]]></long-description>
         <tag line="13" name="package" description="WP Base\Models"/>
         <tag line="13" name="since" description="0.1"/>
@@ -1846,11 +1848,11 @@ Example:</p>
           <tag line="49" name="since" description="0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="private" line="65" namespace="global" package="WP Base\Models">
+      <property final="false" static="false" visibility="private" line="67" namespace="global" package="WP Base\Models">
         <name>$_view</name>
         <default><![CDATA[]]></default>
         <docblock line="58">
-          <description><![CDATA[The help tab view.]]></description>
+          <description><![CDATA[The help tab view file.]]></description>
           <long-description><![CDATA[<p>This must be an absolute path to the view file.</p>]]></long-description>
           <tag line="58" name="package" description="WP Base\Models"/>
           <tag line="58" name="var" description="" type="string">
@@ -1859,99 +1861,119 @@ Example:</p>
           <tag line="58" name="since" description="0.1"/>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="78" package="WP Base\Models">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="80" package="WP Base\Models">
         <name>__construct</name>
         <full_name>__construct</full_name>
-        <docblock line="67">
+        <docblock line="69">
           <description><![CDATA[The class constructor.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="67" name="package" description="WP Base\Models"/>
-          <tag line="67" name="param" description="The help tab title." type="string" variable="$title">
+          <tag line="69" name="package" description="WP Base\Models"/>
+          <tag line="69" name="param" description="The help tab title." type="string" variable="$title">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="67" name="param" description="The help tab id." type="string" variable="$id">
+          <tag line="69" name="param" description="The help tab id." type="string" variable="$id">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="67" name="param" description="The help tab content. If null, the callback will be used to populate the content." type="string" variable="$content">
+          <tag line="69" name="param" description="The help tab content. If null, the callback will be used to populate the content." type="string" variable="$content">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="67" name="param" description="The help tab callback. If null, the view will be used to populate the content." type="string|array" variable="$callback">
+          <tag line="69" name="param" description="The help tab callback. If null, the view will be used to populate the content." type="string|array" variable="$callback">
             <type by_reference="false">string</type>
             <type by_reference="false">array</type>
           </tag>
-          <tag line="67" name="param" description="The absolute path to the view file used to render this help tab. Must be set if $content and $callback are null." type="string" variable="$view">
+          <tag line="69" name="param" description="The absolute path to the view file used to render this help tab. Must be set if $content and $callback are null." type="string" variable="$view">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="67" name="since" description="0.1"/>
+          <tag line="69" name="since" description="0.1"/>
         </docblock>
-        <argument line="78">
+        <argument line="80">
           <name>$title</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="78">
+        <argument line="80">
           <name>$id</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="78">
+        <argument line="80">
           <name>$content</name>
           <default><![CDATA[null]]></default>
           <type/>
         </argument>
-        <argument line="78">
+        <argument line="80">
           <name>$callback</name>
           <default><![CDATA[null]]></default>
           <type/>
         </argument>
-        <argument line="78">
+        <argument line="80">
           <name>$view</name>
           <default><![CDATA[null]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="93" package="WP Base\Models">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="95" package="WP Base\Models">
         <name>add</name>
         <full_name>add</full_name>
-        <docblock line="87">
-          <description><![CDATA[Add the help tab to the current screen.]]></description>
+        <docblock line="89">
+          <description><![CDATA[Add this help tab to the current screen.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="87" name="package" description="WP Base\Models"/>
-          <tag line="87" name="since" description="0.1"/>
+          <tag line="89" name="package" description="WP Base\Models"/>
+          <tag line="89" name="since" description="0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="110" package="WP Base\Models">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="111" package="pkgtoken">
+        <name>get_title</name>
+        <full_name>get_title</full_name>
+        <docblock line="105">
+          <description><![CDATA[Get the help tab title.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="105" name="package" description="pkgtoken"/>
+          <tag line="105" name="since" description="0.1"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="122" package="pkgtoken">
+        <name>get_id</name>
+        <full_name>get_id</full_name>
+        <docblock line="116">
+          <description><![CDATA[Get the help tab id.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="116" name="package" description="pkgtoken"/>
+          <tag line="116" name="since" description="0.1"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="134" package="WP Base\Models">
         <name>set_callback</name>
         <full_name>set_callback</full_name>
-        <docblock line="103">
+        <docblock line="127">
           <description><![CDATA[Set the help tab callback.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="103" name="package" description="WP Base\Models"/>
-          <tag line="103" name="param" description="The help tab callback." type="string|array" variable="$callback">
+          <tag line="127" name="package" description="WP Base\Models"/>
+          <tag line="127" name="param" description="The help tab callback." type="string|array" variable="$callback">
             <type by_reference="false">string</type>
             <type by_reference="false">array</type>
           </tag>
-          <tag line="103" name="since" description="0.1"/>
+          <tag line="127" name="since" description="0.1"/>
         </docblock>
-        <argument line="110">
+        <argument line="134">
           <name>$callback</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="122" package="WP Base\Models">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="146" package="WP Base\Models">
         <name>set_content</name>
         <full_name>set_content</full_name>
-        <docblock line="115">
+        <docblock line="139">
           <description><![CDATA[Set the help tab content.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="115" name="package" description="WP Base\Models"/>
-          <tag line="115" name="param" description="The help tab content." type="string" variable="$content">
+          <tag line="139" name="package" description="WP Base\Models"/>
+          <tag line="139" name="param" description="The help tab content." type="string" variable="$content">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="115" name="since" description="0.1"/>
+          <tag line="139" name="since" description="0.1"/>
         </docblock>
-        <argument line="122">
+        <argument line="146">
           <name>$content</name>
           <default><![CDATA[]]></default>
           <type/>
@@ -3150,16 +3172,12 @@ using the same name in the child class.</p>]]></long-description>
   <package name="WP Base" full_name="WP Base">
     <package name="Controllers" full_name="WP Base\Controllers"/>
     <package name="Helper Functions" full_name="WP Base\Helper Functions"/>
-    <package name="Models" full_name="WP Base\Models">
-      <package name="subtoken" full_name="WP Base\Models\subtoken"/>
-    </package>
+    <package name="Models" full_name="WP Base\Models"/>
   </package>
   <package name="WP Models" full_name="WP Models"/>
-  <package name="pkgtoken" full_name="pkgtoken">
-    <package name="subtoken" full_name="pkgtoken\subtoken"/>
-  </package>
+  <package name="pkgtoken" full_name="pkgtoken"/>
   <namespace name="global" full_name="global"/>
-  <marker count="3">todo</marker>
+  <marker count="9">todo</marker>
   <marker count="0">fixme</marker>
   <deprecated count="0"/>
 </project>

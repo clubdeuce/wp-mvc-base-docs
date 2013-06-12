@@ -21,7 +21,6 @@
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a>Packages</a></li>
 <li><a href="../packages/WP%20Base.html"><i class="icon-folder-open"></i> WP Base</a></li>
-<li><a href="../packages/pkgtoken.html"><i class="icon-folder-open"></i> pkgtoken</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -32,10 +31,10 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3</span></a></li>
+                <span class="label label-info">2</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
-                <span class="label label-info">3</span>
+                <span class="label label-info">9</span>
 </li></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
                 <span class="label label-info">0</span></a></li>
@@ -62,8 +61,7 @@
 <li class="method public "><a href="#method_delete_local_file" title="delete_local_file :: Delete a file on the local filesystem."><span class="description">Delete a file on the local filesystem.</span><pre>delete_local_file()</pre></a></li>
 <li class="method public "><a href="#method_enqueue_scripts" title="enqueue_scripts :: Enqueue scripts."><span class="description">Enqueue scripts.</span><pre>enqueue_scripts()</pre></a></li>
 <li class="method public "><a href="#method_enqueue_styles" title="enqueue_styles :: Enqueue styles."><span class="description">Enqueue styles.</span><pre>enqueue_styles()</pre></a></li>
-<li class="method public "><a href="#method_get_local_directory_contents" title="get_local_directory_contents :: "><span class="description">get_local_directory_contents()
-        </span><pre>get_local_directory_contents()</pre></a></li>
+<li class="method public "><a href="#method_get_local_directory_contents" title="get_local_directory_contents :: Get the contents of a local filesystem directory."><span class="description">Get the contents of a local filesystem directory.</span><pre>get_local_directory_contents()</pre></a></li>
 <li class="method public "><a href="#method_plupload" title="plupload :: Process files uploaded via plupload"><span class="description">Process files uploaded via plupload</span><pre>plupload()</pre></a></li>
 <li class="method public "><a href="#method_remove_local_directory" title="remove_local_directory :: Remove a directory and all contents from the local filesystem"><span class="description">Remove a directory and all contents from the local filesystem</span><pre>remove_local_directory()</pre></a></li>
 <li class="method public "><a href="#method_sanitize_text_field_array" title="sanitize_text_field_array :: Sanitize an array with sanitize_text_field"><span class="description">Sanitize an array with sanitize_text_field</span><pre>sanitize_text_field_array()</pre></a></li>
@@ -87,11 +85,7 @@
 <table class="table table-bordered">
 <tr>
 <th>package</th>
-<td><a href="../packages/WP%20Base.Helper%20Functions.html">WP Base</a></td>
-</tr>
-<tr>
-<th>subpackage</th>
-<td>Helper Functions</td>
+<td><a href="../packages/WP%20Base.Helper%20Functions.html">WP Base\Helper Functions</a></td>
 </tr>
 <tr>
 <th>version</th>
@@ -114,11 +108,7 @@ It will also add an index.php file if $index is set to TRUE.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
-<td><a href="../packages/WP%20Base.Helper%20Functions.html">WP Base</a></td>
-</tr>
-<tr>
-<th>subpackage</th>
-<td>Helper Functions</td>
+<td><a href="../packages/WP%20Base.Helper%20Functions.html">WP Base\Helper Functions</a></td>
 </tr>
 <tr>
 <th>since</th>
@@ -148,11 +138,7 @@ It will also add an index.php file if $index is set to TRUE.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
-<td><a href="../packages/WP%20Base.Helper%20Functions.html">WP Base</a></td>
-</tr>
-<tr>
-<th>subpackage</th>
-<td>Helper Functions</td>
+<td><a href="../packages/WP%20Base.Helper%20Functions.html">WP Base\Helper Functions</a></td>
 </tr>
 <tr>
 <th>since</th>
@@ -179,11 +165,7 @@ the script object properties.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
-<td><a href="../packages/WP%20Base.Helper%20Functions.html">WP Base</a></td>
-</tr>
-<tr>
-<th>subpackage</th>
-<td>Helper Functions</td>
+<td><a href="../packages/WP%20Base.Helper%20Functions.html">WP Base\Helper Functions</a></td>
 </tr>
 <tr>
 <th>todo</th>
@@ -211,11 +193,7 @@ the style object properties.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
-<td><a href="../packages/WP%20Base.Helper%20Functions.html">WP Base</a></td>
-</tr>
-<tr>
-<th>subpackage</th>
-<td>Helper Functions</td>
+<td><a href="../packages/WP%20Base.Helper%20Functions.html">WP Base\Helper Functions</a></td>
 </tr>
 <tr>
 <th>since</th>
@@ -229,14 +207,29 @@ the style object properties.</p></div>
 </div></div>
 </div>
 <a id="method_get_local_directory_contents"></a><div class="element clickable method public method_get_local_directory_contents" data-toggle="collapse" data-target=".method_get_local_directory_contents .collapse">
-<h2>get_local_directory_contents()
-        </h2>
-<pre>get_local_directory_contents($directory) </pre>
+<h2>Get the contents of a local filesystem directory.</h2>
+<pre>get_local_directory_contents(string $directory) </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.html">WP Base</a></td>
+</tr>
+<tr>
+<th>returns</th>
+<td>array|bool array An array containg the directory contents on success, NULL on failure.</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$directory</h4></div>
+<div class="subelement argument">
+<h4>$directory</h4>
+<code>string</code><p>The absolute path to the directory.</p></div>
 </div></div>
 </div>
 <a id="method_plupload"></a><div class="element clickable method public method_plupload" data-toggle="collapse" data-target=".method_plupload .collapse">
@@ -248,11 +241,7 @@ the style object properties.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
-<td><a href="../packages/WP%20Base.Helper%20Functions.html">WP Base</a></td>
-</tr>
-<tr>
-<th>subpackage</th>
-<td>Helper Functions</td>
+<td><a href="../packages/WP%20Base.Helper%20Functions.html">WP Base\Helper Functions</a></td>
 </tr>
 <tr>
 <th>since</th>
@@ -261,6 +250,10 @@ the style object properties.</p></div>
 <tr>
 <th>todo</th>
 <td>How does this handle mutliple files in the upload?</td>
+</tr>
+<tr>
+<th>todo</th>
+<td>Move this into a separate plupload helper</td>
 </tr>
 </table>
 <h3>Parameters</h3>
@@ -289,11 +282,7 @@ the style object properties.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
-<td><a href="../packages/pkgtoken.subtoken.html">pkgtoken</a></td>
-</tr>
-<tr>
-<th>subpackage</th>
-<td>subtoken</td>
+<td><a href="../packages/WP%20Base.html">WP Base</a></td>
 </tr>
 <tr>
 <th>since</th>
@@ -322,11 +311,7 @@ the style object properties.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
-<td><a href="../packages/WP%20Base.Helper%20Functions.html">WP Base</a></td>
-</tr>
-<tr>
-<th>subpackage</th>
-<td>Helper Functions</td>
+<td><a href="../packages/WP%20Base.Helper%20Functions.html">WP Base\Helper Functions</a></td>
 </tr>
 <tr>
 <th>since</th>
@@ -349,7 +334,7 @@ the style object properties.</p></div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2013-06-04T17:51:22-04:00.<br></footer></div>
+            generated on 2013-06-11T23:27:53-04:00.<br></footer></div>
 </div>
 </body>
 </html>

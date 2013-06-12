@@ -21,7 +21,6 @@
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a>Packages</a></li>
 <li><a href="../packages/WP%20Base.html"><i class="icon-folder-open"></i> WP Base</a></li>
-<li><a href="../packages/pkgtoken.html"><i class="icon-folder-open"></i> pkgtoken</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -32,10 +31,10 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3</span></a></li>
+                <span class="label label-info">2</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
-                <span class="label label-info">3</span>
+                <span class="label label-info">9</span>
 </li></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
                 <span class="label label-info">0</span></a></li>
@@ -71,6 +70,7 @@
 <li class="method public "><a href="#method_callback_the_post" title="callback_the_post :: WP the_post action callback."><span class="description">WP the_post action callback.</span><pre>callback_the_post()</pre></a></li>
 <li class="method public "><a href="#method_deactivate_plugin" title="deactivate_plugin :: The plugin deactivation callback."><span class="description">The plugin deactivation callback.</span><pre>deactivate_plugin()</pre></a></li>
 <li class="method public "><a href="#method_delete_plugin" title="delete_plugin :: The plugin deletion callback."><span class="description">The plugin deletion callback.</span><pre>delete_plugin()</pre></a></li>
+<li class="method public "><a href="#method_get_slug" title="get_slug :: Get the plugin slug"><span class="description">Get the plugin slug</span><pre>get_slug()</pre></a></li>
 <li class="method public "><a href="#method_get_version" title="get_version :: Get the plugin version."><span class="description">Get the plugin version.</span><pre>get_version()</pre></a></li>
 <li class="method public "><a href="#method_init" title="init :: Initialize the controller"><span class="description">Initialize the controller</span><pre>init()</pre></a></li>
 <li class="method public "><a href="#method_load_admin_page" title="load_admin_page :: The WP load-{$page} action callback"><span class="description">The WP load-{$page} action callback</span><pre>load_admin_page()</pre></a></li>
@@ -97,7 +97,6 @@
                     <ul>
 <li class="method private "><a href="#method_add_shortcodes" title="add_shortcodes :: Register shortcodes."><span class="description">Register shortcodes.</span><pre>add_shortcodes()</pre></a></li>
 <li class="method private "><a href="#method_render_input_checkbox" title="render_input_checkbox :: Render a checkbox input field."><span class="description">Render a checkbox input field.</span><pre>render_input_checkbox()</pre></a></li>
-<li class="method private "><a href="#method_render_input_hidden" title="render_input_hidden :: Render a hidden input field."><span class="description">Render a hidden input field.</span><pre>render_input_hidden()</pre></a></li>
 <li class="method private "><a href="#method_render_input_select" title="render_input_select :: Render a select input field."><span class="description">Render a select input field.</span><pre>render_input_select()</pre></a></li>
 <li class="method private "><a href="#method_render_input_select_options" title="render_input_select_options :: Render a select input field options block."><span class="description">Render a select input field options block.</span><pre>render_input_select_options()</pre></a></li>
 <li class="method private "><a href="#method_render_input_text" title="render_input_text :: Render a text input field."><span class="description">Render a text input field.</span><pre>render_input_text()</pre></a></li>
@@ -288,6 +287,10 @@ It currently initiiates a permalinks update. If you have additional activities, 
 <th>since</th>
 <td>0.1</td>
 </tr>
+<tr>
+<th>todo</th>
+<td>modify this function to enqueue scripts based on wp_screen object</td>
+</tr>
 </table>
 <h3>Parameters</h3>
 <div class="subelement argument">
@@ -446,6 +449,24 @@ It currently initiiates a permalinks update. If you have additional activities, 
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><p>Use this function to perform tasks at plugin deletion, such as drop tables, remove settings, etc.
 If you have additional activities, add the function delete() to your child class.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/WP%20Base.Controllers.html">WP Base\Controllers</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_get_slug"></a><div class="element clickable method public method_get_slug" data-toggle="collapse" data-target=".method_get_slug .collapse">
+<h2>Get the plugin slug</h2>
+<pre>get_slug() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
@@ -617,7 +638,9 @@ If you have additional activities, add the function delete() to your child class
 <pre>render_options_page() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Thuis function can be used as a generic callback for the WP add_x_page() function.</p></div>
+<div class="long_description"><p>This function can be used as a generic callback for the WP add_x_page() function. It will render
+the options page template defined in the page object if it exists, otherwise it will use a generic
+template included in this package (views/base_options_page.php).</p></div>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
@@ -682,6 +705,10 @@ If you have additional activities, add the function delete() to your child class
 <tr>
 <th>since</th>
 <td>0.1</td>
+</tr>
+<tr>
+<th>todo</th>
+<td>modify to work like add_menu_pages with a view property</td>
 </tr>
 </table>
 <h3>Parameters</h3>
@@ -864,27 +891,9 @@ If you have additional activities, add the function delete() to your child class
 <th>since</th>
 <td>0.1</td>
 </tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$args</h4>
-<code>array</code><p>The field arguments.</p></div>
-</div></div>
-</div>
-<a id="method_render_input_hidden"></a><div class="element clickable method private method_render_input_hidden" data-toggle="collapse" data-target=".method_render_input_hidden .collapse">
-<h2>Render a hidden input field.</h2>
-<pre>render_input_hidden(array $args) </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered">
 <tr>
-<th>package</th>
-<td><a href="../packages/WP%20Base.Controllers.html">WP Base\Controllers</a></td>
-</tr>
-<tr>
-<th>since</th>
-<td>0.1</td>
+<th>todo</th>
+<td>move into a helper library?</td>
 </tr>
 </table>
 <h3>Parameters</h3>
@@ -908,6 +917,10 @@ If you have additional activities, add the function delete() to your child class
 <th>since</th>
 <td>0.1</td>
 </tr>
+<tr>
+<th>todo</th>
+<td>move into a helper library?</td>
+</tr>
 </table>
 <h3>Parameters</h3>
 <div class="subelement argument">
@@ -929,6 +942,10 @@ If you have additional activities, add the function delete() to your child class
 <tr>
 <th>since</th>
 <td>0.1</td>
+</tr>
+<tr>
+<th>todo</th>
+<td>move into a helper library?</td>
 </tr>
 </table>
 <h3>Parameters</h3>
@@ -970,7 +987,7 @@ If you have additional activities, add the function delete() to your child class
 <pre>$admin_css : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>An array containing css used by the controller on admin pages</p></div>
+<div class="long_description"><p>An array containing css used by the controller on admin pages.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
@@ -988,7 +1005,7 @@ If you have additional activities, add the function delete() to your child class
 <pre>$admin_scripts : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>An array containing css used by the controller</p></div>
+<div class="long_description"><p>An array containing javascripts used by the controller on admin pages.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
@@ -1168,7 +1185,7 @@ If you have additional activities, add the function delete() to your child class
 <pre>$css : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>An array containing css used by the controller</p></div>
+<div class="long_description"><p>An array containing css used by the controller.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
@@ -1330,7 +1347,7 @@ If you have additional activities, add the function delete() to your child class
 <pre>$scripts : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>An array containing javascript used by the controller</p></div>
+<div class="long_description"><p>An array containing javascripts used by the controller.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
@@ -1440,7 +1457,7 @@ If you have additional activities, add the function delete() to your child class
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2013-06-04T17:51:22-04:00.<br></footer></div>
+            generated on 2013-06-11T23:27:53-04:00.<br></footer></div>
 </div>
 </body>
 </html>

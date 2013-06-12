@@ -21,7 +21,6 @@
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a>Packages</a></li>
 <li><a href="../packages/WP%20Base.html"><i class="icon-folder-open"></i> WP Base</a></li>
-<li><a href="../packages/pkgtoken.html"><i class="icon-folder-open"></i> pkgtoken</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -32,10 +31,10 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3</span></a></li>
+                <span class="label label-info">2</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
-                <span class="label label-info">3</span>
+                <span class="label label-info">9</span>
 </li></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
                 <span class="label label-info">0</span></a></li>
@@ -60,7 +59,9 @@
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method___construct" title="__construct :: The class constructor."><span class="description">The class constructor.</span><pre>__construct()</pre></a></li>
-<li class="method public "><a href="#method_add" title="add :: Add the help tab to the current screen."><span class="description">Add the help tab to the current screen.</span><pre>add()</pre></a></li>
+<li class="method public "><a href="#method_add" title="add :: Add this help tab to the current screen."><span class="description">Add this help tab to the current screen.</span><pre>add()</pre></a></li>
+<li class="method public "><a href="#method_get_id" title="get_id :: Get the help tab id."><span class="description">Get the help tab id.</span><pre>get_id()</pre></a></li>
+<li class="method public "><a href="#method_get_title" title="get_title :: Get the help tab title."><span class="description">Get the help tab title.</span><pre>get_title()</pre></a></li>
 <li class="method public "><a href="#method_set_callback" title="set_callback :: Set the help tab callback."><span class="description">Set the help tab callback.</span><pre>set_callback()</pre></a></li>
 <li class="method public "><a href="#method_set_content" title="set_content :: Set the help tab content."><span class="description">Set the help tab content.</span><pre>set_content()</pre></a></li>
 </ul>
@@ -75,7 +76,7 @@
 <li class="property private "><a href="#property__content" title="$_content :: The help tab content."><span class="description">The help tab content.</span><pre>$_content</pre></a></li>
 <li class="property private "><a href="#property__id" title="$_id :: The help tab id."><span class="description">The help tab id.</span><pre>$_id</pre></a></li>
 <li class="property private "><a href="#property__title" title="$_title :: The help tab title."><span class="description">The help tab title.</span><pre>$_title</pre></a></li>
-<li class="property private "><a href="#property__view" title="$_view :: The help tab view."><span class="description">The help tab view.</span><pre>$_view</pre></a></li>
+<li class="property private "><a href="#property__view" title="$_view :: The help tab view file."><span class="description">The help tab view file.</span><pre>$_view</pre></a></li>
 </ul>
 </li>
 </ul>
@@ -91,7 +92,7 @@
 </li>
 </ul>
 <div class="element class">
-<p class="short_description">The base help tab model.</p>
+<p class="short_description">The help tab model.</p>
 <div class="details">
 <div class="long_description"></div>
 <table class="table table-bordered">
@@ -142,7 +143,7 @@
 </div></div>
 </div>
 <a id="method_add"></a><div class="element clickable method public method_add" data-toggle="collapse" data-target=".method_add .collapse">
-<h2>Add the help tab to the current screen.</h2>
+<h2>Add this help tab to the current screen.</h2>
 <pre>add() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
@@ -151,6 +152,42 @@
 <tr>
 <th>package</th>
 <td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_get_id"></a><div class="element clickable method public method_get_id" data-toggle="collapse" data-target=".method_get_id .collapse">
+<h2>Get the help tab id.</h2>
+<pre>get_id() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/pkgtoken.html">pkgtoken</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.1</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_get_title"></a><div class="element clickable method public method_get_title" data-toggle="collapse" data-target=".method_get_title .collapse">
+<h2>Get the help tab title.</h2>
+<pre>get_title() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/pkgtoken.html">pkgtoken</a></td>
 </tr>
 <tr>
 <th>since</th>
@@ -282,7 +319,7 @@
 </div></div>
 </div>
 <a id="property__view"> </a><div class="element clickable property private property__view" data-toggle="collapse" data-target=".property__view .collapse">
-<h2>The help tab view.</h2>
+<h2>The help tab view file.</h2>
 <pre>$_view : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
@@ -306,7 +343,7 @@
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2013-06-04T17:51:22-04:00.<br></footer></div>
+            generated on 2013-06-11T23:27:53-04:00.<br></footer></div>
 </div>
 </body>
 </html>

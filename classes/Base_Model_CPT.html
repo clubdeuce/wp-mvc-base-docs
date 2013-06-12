@@ -21,7 +21,6 @@
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a>Packages</a></li>
 <li><a href="../packages/WP%20Base.html"><i class="icon-folder-open"></i> WP Base</a></li>
-<li><a href="../packages/pkgtoken.html"><i class="icon-folder-open"></i> pkgtoken</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -32,10 +31,10 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3</span></a></li>
+                <span class="label label-info">2</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
-                <span class="label label-info">3</span>
+                <span class="label label-info">9</span>
 </li></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
                 <span class="label label-info">0</span></a></li>
@@ -87,7 +86,7 @@
 </li>
 <li class="nav-header protected">» Protected
                     <ul>
-<li class="property protected inherited"><a href="#property_admin_css" title="$admin_css :: The plugin admin css files"><span class="description">The plugin admin css files</span><pre>$admin_css</pre></a></li>
+<li class="property protected inherited"><a href="#property_admin_css" title="$admin_css :: The plugin admin css files."><span class="description">The plugin admin css files.</span><pre>$admin_css</pre></a></li>
 <li class="property protected inherited"><a href="#property_admin_scripts" title="$admin_scripts :: The model admin javascript files"><span class="description">The model admin javascript files</span><pre>$admin_scripts</pre></a></li>
 <li class="property protected "><a href="#property_args" title="$args :: The arguments passed to register_post_type."><span class="description">The arguments passed to register_post_type.</span><pre>$args</pre></a></li>
 <li class="property protected inherited"><a href="#property_css" title="$css :: The plugin css files"><span class="description">The plugin css files</span><pre>$css</pre></a></li>
@@ -117,7 +116,8 @@
 <div class="element class">
 <p class="short_description">The base CPT object model.</p>
 <div class="details">
-<div class="long_description"></div>
+<div class="long_description"><p>This class serves as the base for other models provided by the framework. It contains the properties and
+and methods required by other models.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
@@ -190,7 +190,7 @@
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$uri</h4>
-<code>string</code><p>The plugin js uri ( e.g. http://example.com/wp-content/plugins/myplugin/css )</p>
+<code>string</code><p>The plugin css uri ( e.g. http://example.com/wp-content/plugins/myplugin/css )</p>
 </div>
 <h3>Returns</h3>
 <div class="subelement response">
@@ -284,7 +284,7 @@
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$uri</h4>
-<code>string</code><p>The plugin js uri ( e.g. http://example.com/wp-content/plugins/myplugin/css )</p>
+<code>string</code><p>The plugin css uri ( e.g. http://example.com/wp-content/plugins/myplugin/css )</p>
 </div>
 <h3>Returns</h3>
 <div class="subelement response">
@@ -618,7 +618,7 @@ Example:</p>
 </div></div>
 </div>
 <a id="property_admin_css"> </a><div class="element clickable property protected property_admin_css" data-toggle="collapse" data-target=".property_admin_css .collapse">
-<h2>The plugin admin css files</h2>
+<h2>The plugin admin css files.</h2>
 <pre>$admin_css : array</pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
@@ -644,7 +644,7 @@ Example:</p>
 <pre>$admin_scripts : array</pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>An array containing css used by the model</p></div>
+<div class="long_description"><p>An array containing javascript used by the model on admin pages.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
@@ -688,7 +688,7 @@ Example:</p>
 <pre>$css : array</pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>An array containing css used by the model</p></div>
+<div class="long_description"><p>An array containing css used by the model.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
@@ -739,6 +739,10 @@ Example:</p>
 <td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
 </tr>
 <tr>
+<th>see</th>
+<td><a href="">\global\WP</a></td>
+</tr>
+<tr>
 <th>since</th>
 <td>0.1</td>
 </tr>
@@ -776,11 +780,15 @@ Example:</p>
 <pre>$scripts : array</pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>An array containing javascript used by the model</p></div>
+<div class="long_description"><p>An array containing javascript used by the model on the frontend.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
 <td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="">\global\WP</a></td>
 </tr>
 <tr>
 <th>since</th>
@@ -806,11 +814,7 @@ Example:</p>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
-<td><a href="../packages/WP%20Base.Models.subtoken.html">WP Base\Models</a></td>
-</tr>
-<tr>
-<th>subpackage</th>
-<td>subtoken</td>
+<td><a href="../packages/WP%20Base.Models.html">WP Base\Models</a></td>
 </tr>
 <tr>
 <th>since</th>
@@ -870,7 +874,7 @@ Example:</p>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2013-06-04T17:51:22-04:00.<br></footer></div>
+            generated on 2013-06-11T23:27:53-04:00.<br></footer></div>
 </div>
 </body>
 </html>
