@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Base_Model_Metabox</title>
+
+	<script type="text/javascript" src="resources/combined.js?699355046"></script>
+	<script type="text/javascript" src="elementlist.js?4127015270"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-WPMVCBase.html">WPMVCBase<span></span></a>
+						<ul>
+				<li><a href="package-WPMVCBase.Controllers.html">Controllers</a>
+						</li>
+				<li><a href="package-WPMVCBase.Helper.html">Helper</a>
+						</li>
+				<li class="active"><a href="package-WPMVCBase.Models.html">Models</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Base_Model_CPT.html">Base_Model_CPT</a></li>
+				<li><a href="class-Base_Model_Help_Tab.html">Base_Model_Help_Tab</a></li>
+				<li><a href="class-Base_Model_JS_Object.html">Base_Model_JS_Object</a></li>
+				<li class="active"><a href="class-Base_Model_Metabox.html">Base_Model_Metabox</a></li>
+				<li><a href="class-Base_Model_Settings.html">Base_Model_Settings</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-WPMVCBase.Models.html" title="Summary of WPMVCBase\Models"><span>Package</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Base_Model_Metabox</h1>
+
+
+	<div class="description">
+	
+<p>The base metabox object model.</p>
+
+<p>Example:</p>
+
+<pre>
+<span class="php-var">$sample_metabox</span> = <span
+class="php-keyword1">new</span> Base_Model_Metabox(
+        <span
+class="php-quote">'sample_metabox'</span>,
+        __( <span
+class="php-quote">'Sample Metabox'</span>, <span
+class="php-quote">'mytextdomain'</span> ),
+        <span
+class="php-quote">'my_callback'</span>, <span
+class="php-comment">//set this to null to use default plugin render_metabox callback</span>
+        <span
+class="php-quote">'post'</span>,
+        <span
+class="php-quote">'normal'</span>,
+        <span
+class="php-quote">'default'</span>
+);
+<span
+class="php-var">$sample_metabox</span>-&gt;add();
+</pre>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-WPMVCBase.html">WPMVCBase</a>\<a href="package-WPMVCBase.Models.html">Models</a><br />
+
+				<b>Author:</b>
+				Daryl Lozupone &lt;<a
+href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<br />
+				<b>Version:</b>
+				0.1<br />
+				<b>Since:</b>
+				WPMVCBase 0.1<br />
+		<b>Located at</b> <a href="source-class-Base_Model_Metabox.html#11-345" title="Go to source code">models/base_model_metabox.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Base_Model_Metabox.html#130-152" title="Go to source code">__construct</a>( <span>string <var>$id</var></span>, <span>string <var>$title</var></span>, <span>string <var>$callback</var></span>, <span>string <var>$post_type</var></span>, <span>string <var>$context</var></span>, <span>string <var>$priority</var></span>, <span>array <var>$callback_args</var></span> )</code>
+
+		<div class="description short">
+			
+<p>the class constructor</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>the class constructor</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd><code>string</code><br>$id</dd>
+					<dt><var>$title</var></dt>
+					<dd><code>string</code><br>$title</dd>
+					<dt><var>$callback</var></dt>
+					<dd><code>string</code><br>$callback</dd>
+					<dt><var>$post_type</var></dt>
+					<dd><code>string</code><br>$post_type</dd>
+					<dt><var>$context</var></dt>
+					<dd><code>string</code><br>$context</dd>
+					<dt><var>$priority</var></dt>
+					<dd><code>string</code><br>$priority</dd>
+					<dt><var>$callback_args</var></dt>
+					<dd><code>array</code><br>$callback_args</dd>
+				</dl></div>
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="add" id="_add">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_add">#</a>
+		<code><a href="source-class-Base_Model_Metabox.html#154-171" title="Go to source code">add</a>( )</code>
+
+		<div class="description short">
+			
+<p>Add the metabox</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add the metabox</p>
+
+
+
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="remove" id="_remove">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_remove">#</a>
+		<code><a href="source-class-Base_Model_Metabox.html#173-182" title="Go to source code">remove</a>( )</code>
+
+		<div class="description short">
+			
+<p>remove the metabox</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>remove the metabox</p>
+
+
+
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set_id" id="_set_id">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set_id">#</a>
+		<code><a href="source-class-Base_Model_Metabox.html#184-194" title="Go to source code">set_id</a>( <span>string <var>$id</var></span> )</code>
+
+		<div class="description short">
+			
+<p>set the id</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>set the id</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd><code>string</code><br>$id</dd>
+				</dl></div>
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set_title" id="_set_title">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set_title">#</a>
+		<code><a href="source-class-Base_Model_Metabox.html#196-206" title="Go to source code">set_title</a>( <span>string <var>$title</var></span> )</code>
+
+		<div class="description short">
+			
+<p>set the title</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>set the title</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$title</var></dt>
+					<dd><code>string</code><br>$title</dd>
+				</dl></div>
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set_callback" id="_set_callback">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set_callback">#</a>
+		<code><a href="source-class-Base_Model_Metabox.html#208-218" title="Go to source code">set_callback</a>( <span>string <var>$callback</var></span> )</code>
+
+		<div class="description short">
+			
+<p>set the callback function</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>set the callback function</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$callback</var></dt>
+					<dd><code>string</code><br>$callback</dd>
+				</dl></div>
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set_post_type" id="_set_post_type">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set_post_type">#</a>
+		<code><a href="source-class-Base_Model_Metabox.html#220-230" title="Go to source code">set_post_type</a>( <span>string <var>$post_type</var></span> )</code>
+
+		<div class="description short">
+			
+<p>set the title</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>set the title</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$post_type</var></dt>
+					<dd><code>string</code><br>$post_type</dd>
+				</dl></div>
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set_context" id="_set_context">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set_context">#</a>
+		<code><a href="source-class-Base_Model_Metabox.html#232-242" title="Go to source code">set_context</a>( <span>string <var>$context</var></span> )</code>
+
+		<div class="description short">
+			
+<p>set the context</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>set the context</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$context</var></dt>
+					<dd><code>string</code><br>$context</dd>
+				</dl></div>
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set_priority" id="_set_priority">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set_priority">#</a>
+		<code><a href="source-class-Base_Model_Metabox.html#245-255" title="Go to source code">set_priority</a>( <span>string <var>$priority</var></span> )</code>
+
+		<div class="description short">
+			
+<p>set the priority</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>set the priority</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$priority</var></dt>
+					<dd><code>string</code><br>$priority</dd>
+				</dl></div>
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set_callback_args" id="_set_callback_args">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set_callback_args">#</a>
+		<code><a href="source-class-Base_Model_Metabox.html#257-267" title="Go to source code">set_callback_args</a>( <span>array <var>$callback_args</var></span> )</code>
+
+		<div class="description short">
+			
+<p>set the callback_args</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>set the callback_args</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$callback_args</var></dt>
+					<dd><code>array</code><br>$callback_args</dd>
+				</dl></div>
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_id" id="_get_id">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_id">#</a>
+		<code><a href="source-class-Base_Model_Metabox.html#269-278" title="Go to source code">get_id</a>( )</code>
+
+		<div class="description short">
+			
+<p>get the metabox id</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>get the metabox id</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$id<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_title" id="_get_title">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_title">#</a>
+		<code><a href="source-class-Base_Model_Metabox.html#280-289" title="Go to source code">get_title</a>( )</code>
+
+		<div class="description short">
+			
+<p>get the metabox title</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>get the metabox title</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$id<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_callback" id="_get_callback">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_callback">#</a>
+		<code><a href="source-class-Base_Model_Metabox.html#291-300" title="Go to source code">get_callback</a>( )</code>
+
+		<div class="description short">
+			
+<p>get the metabox callback</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>get the metabox callback</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$callback<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_post_type" id="_get_post_type">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_post_type">#</a>
+		<code><a href="source-class-Base_Model_Metabox.html#302-311" title="Go to source code">get_post_type</a>( )</code>
+
+		<div class="description short">
+			
+<p>get the metabox post_type</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>get the metabox post_type</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$post_type<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_context" id="_get_context">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_context">#</a>
+		<code><a href="source-class-Base_Model_Metabox.html#313-322" title="Go to source code">get_context</a>( )</code>
+
+		<div class="description short">
+			
+<p>get the metabox context</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>get the metabox context</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$context<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_priority" id="_get_priority">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_priority">#</a>
+		<code><a href="source-class-Base_Model_Metabox.html#324-333" title="Go to source code">get_priority</a>( )</code>
+
+		<div class="description short">
+			
+<p>get the metabox priority</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>get the metabox priority</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$priority<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_callback_args" id="_get_callback_args">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_callback_args">#</a>
+		<code><a href="source-class-Base_Model_Metabox.html#335-344" title="Go to source code">get_callback_args</a>( )</code>
+
+		<div class="description short">
+			
+<p>get the metabox callback_args</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>get the metabox callback_args</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>$callback_args<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

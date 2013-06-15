@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Base_Model_JS_Object</title>
+
+	<script type="text/javascript" src="resources/combined.js?699355046"></script>
+	<script type="text/javascript" src="elementlist.js?4127015270"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-WPMVCBase.html">WPMVCBase<span></span></a>
+						<ul>
+				<li><a href="package-WPMVCBase.Controllers.html">Controllers</a>
+						</li>
+				<li><a href="package-WPMVCBase.Helper.html">Helper</a>
+						</li>
+				<li class="active"><a href="package-WPMVCBase.Models.html">Models</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Base_Model_CPT.html">Base_Model_CPT</a></li>
+				<li><a href="class-Base_Model_Help_Tab.html">Base_Model_Help_Tab</a></li>
+				<li class="active"><a href="class-Base_Model_JS_Object.html">Base_Model_JS_Object</a></li>
+				<li><a href="class-Base_Model_Metabox.html">Base_Model_Metabox</a></li>
+				<li><a href="class-Base_Model_Settings.html">Base_Model_Settings</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-WPMVCBase.Models.html" title="Summary of WPMVCBase\Models"><span>Package</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Base_Model_JS_Object</h1>
+
+
+	<div class="description">
+	
+<p>The base javascript object model.</p>
+
+<p>Example:</p>
+
+<pre>
+<span class="php-var">$script</span> = <span
+class="php-keyword1">new</span> Base_Model_JS_Object(
+                <span
+class="php-quote">'my-script'</span>
+                <span
+class="php-quote">'http://example.com/wp-content/plugins/my-plugin/js/my-script.js'</span>,
+                <span
+class="php-keyword1">array</span>( <span
+class="php-quote">'jquery'</span>, <span
+class="php-quote">'jquery-ui'</span> ),
+                <span
+class="php-quote">'5.4.17'</span>
+                <span
+class="php-keyword1">false</span>,
+                <span
+class="php-quote">'myscriptl10n'</span>,
+        <span
+class="php-keyword1">array</span>( <span
+class="php-quote">'errorMessage'</span> =&gt; __( <span
+class="php-quote">'There was an error.'</span>, <span
+class="php-quote">'mytxtdomain'</span>)
+);
+</pre>
+
+<p>This class exposes two filters, ah_base_filter_script_src-$handle and
+ah_base_filter_script_localization_args-$handle. These are included to allow the
+plugin controller to modify these elements immediately prior to enqueuing of the
+script.</p>
+
+<p>Example:</p>
+
+<pre>
+<span class="php-keyword1">public</span> <span
+class="php-keyword1">function</span> filter_script_source( <span
+class="php-var">$source</span> )
+{
+                <span
+class="php-var">$source</span> = <span
+class="php-quote">'http://example.com/wp-content/plugins/my-plugin/js/my-script.min.js'</span>;
+                <span
+class="php-keyword1">return</span> <span
+class="php-var">$source</span>;
+}
+add_filter( <span
+class="php-quote">'ah_base_filter_script_src-my-script'</span>, <span
+class="php-quote">'filter_script_source'</span> );
+
+<span
+class="php-keyword1">public</span> <span
+class="php-keyword1">function</span> filter_script_localization( <span
+class="php-var">$args</span> )
+{
+                <span
+class="php-var">$args</span>[<span class="php-quote">'my_arg'</span>] = <span
+class="php-quote">'foo'</span>;
+                <span
+class="php-keyword1">return</span> <span
+class="php-var">$args</span>;
+}
+add_filter( <span
+class="php-quote">'ah_base_filter_script_localization_args-my-script'</span>, <span
+class="php-quote">'filter_script_localization'</span> );
+</pre>
+
+<p>If using a script already registered by WordPress, you need only specify the
+handle.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-WPMVCBase.html">WPMVCBase</a>\<a href="package-WPMVCBase.Models.html">Models</a><br />
+
+				<b>Author:</b>
+				Daryl Lozupone &lt;<a
+href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<br />
+				<b>Since:</b>
+				WPMVCBase 0.1<br />
+		<b>Located at</b> <a href="source-class-Base_Model_JS_Object.html#10-216" title="Go to source code">models/base_model_js_object.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Base_Model_JS_Object.html#135-156" title="Go to source code">__construct</a>( <span>string <var>$handle</var></span>, <span>string <var>$src</var> = <span class="php-keyword1">false</span></span>, <span>array <var>$deps</var> = <span class="php-keyword1">array</span>()</span>, <span>string|boolean <var>$version</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$in_footer</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$localization_var</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$localization_args</var> = <span class="php-keyword1">null</span> </span> )</code>
+
+		<div class="description short">
+			
+<p>The class constructor</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The class constructor</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$handle</var></dt>
+					<dd><code>string</code><br>$handle</dd>
+					<dt><var>$src</var></dt>
+					<dd><code>string</code><br>$src</dd>
+					<dt><var>$deps</var></dt>
+					<dd><code>array</code><br>$deps</dd>
+					<dt><var>$version</var></dt>
+					<dd><code>string|boolean</code><br>$version</dd>
+					<dt><var>$in_footer</var></dt>
+					<dd><code>boolean</code><br>$in_footer</dd>
+					<dt><var>$localization_var</var></dt>
+					<dd><code>string</code><br>$localization_var</dd>
+					<dt><var>$localization_args</var></dt>
+					<dd><code>array</code><br>$localization_args</dd>
+				</dl></div>
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="register" id="_register">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_register">#</a>
+		<code><a href="source-class-Base_Model_JS_Object.html#159-169" title="Go to source code">register</a>( )</code>
+
+		<div class="description short">
+			
+<p>Register the script.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Register the script.</p>
+
+
+
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://codex.wordpress.org/Function_Reference/wp_register_script">http://codex.wordpress.org/Function_Reference/wp_register_script</a><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="enqueue" id="_enqueue">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_enqueue">#</a>
+		<code><a href="source-class-Base_Model_JS_Object.html#171-187" title="Go to source code">enqueue</a>( )</code>
+
+		<div class="description short">
+			
+<p>Enqueue the script.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Enqueue the script.</p>
+
+
+
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://codex.wordpress.org/Function_Reference/wp_enqueue_script">http://codex.wordpress.org/Function_Reference/wp_enqueue_script</a><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="localize" id="_localize">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_localize">#</a>
+		<code><a href="source-class-Base_Model_JS_Object.html#189-203" title="Go to source code">localize</a>( )</code>
+
+		<div class="description short">
+			
+<p>Localize the script</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Localize the script</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>TRUE on success, FALSE on failure<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://codex.wordpress.org/Function_Reference/wp_localize_script">http://codex.wordpress.org/Function_Reference/wp_localize_script</a><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="dequeue" id="_dequeue">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_dequeue">#</a>
+		<code><a href="source-class-Base_Model_JS_Object.html#205-215" title="Go to source code">dequeue</a>( )</code>
+
+		<div class="description short">
+			
+<p>Dequeue the script.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Dequeue the script.</p>
+
+
+
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://codex.wordpress.org/Function_Reference/wp_dequeue_script">http://codex.wordpress.org/Function_Reference/wp_dequeue_script</a><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
