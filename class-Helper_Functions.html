@@ -7,7 +7,7 @@
 	<title>Class Helper_Functions</title>
 
 	<script type="text/javascript" src="resources/combined.js?699355046"></script>
-	<script type="text/javascript" src="elementlist.js?4127015270"></script>
+	<script type="text/javascript" src="elementlist.js?1623231360"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -21,6 +21,8 @@
 		<div id="groups">
 			<h3>Packages</h3>
 			<ul>
+				<li><a href="package-None.html">None</a>
+						</li>
 				<li class="active"><a href="package-WPMVCBase.html">WPMVCBase<span></span></a>
 						<ul>
 				<li><a href="package-WPMVCBase.Controllers.html">Controllers</a>
@@ -76,6 +78,9 @@
 			<li>
 				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
 			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
 		</ul>
 		<ul>
 		</ul>
@@ -106,66 +111,19 @@
 		<b>Package:</b> <a href="package-WPMVCBase.html">WPMVCBase</a>\<a href="package-WPMVCBase.Helper.html">Helper</a><br />
 
 				<b>Author:</b>
-				authtoken<br />
+				Daryl Lozupone &lt;<a
+href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<br />
 				<b>Version:</b>
-				0.1<br />
+				0.2<br />
 				<b>Since:</b>
 				WPMVCBase 0.1<br />
-		<b>Located at</b> <a href="source-class-Helper_Functions.html#12-237" title="Go to source code">helper.php</a><br />
+		<b>Located at</b> <a href="source-class-Helper_Functions.html#12-206" title="Go to source code">helpers/base_helpers.php</a><br />
 	</div>
 
 
 
 	<table class="summary" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="plupload" id="_plupload">
-
-		<td class="attributes"><code>
-			 public static
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_plupload">#</a>
-		<code><a href="source-class-Helper_Functions.html#22-71" title="Go to source code">plupload</a>( <span>array <var>$post</var></span>, <span>array <var>$files</var></span>, <span>string <var>$target</var></span>, <span>boolean <var>$log</var> = <span class="php-keyword1">false</span> </span> )</code>
-
-		<div class="description short">
-			
-<p>Process files uploaded via plupload</p>
-
-		</div>
-
-		<div class="description detailed hidden">
-			
-<p>Process files uploaded via plupload</p>
-
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$post</var></dt>
-					<dd><code>array</code><br>$post The $_POST object.</dd>
-					<dt><var>$files</var></dt>
-					<dd><code>array</code><br>$files The $_FILES object.</dd>
-					<dt><var>$target</var></dt>
-					<dd><code>string</code><br>$target The upload target absolute path.</dd>
-					<dt><var>$log</var></dt>
-					<dd><code>boolean</code><br>$log Log the request. Default is false.</dd>
-				</dl></div>
-
-
-
-				<h4>Since</h4>
-				<div class="list">
-						0.1<br />
-				</div>
-
-
-		</div>
-		</div></td>
-	</tr>
 	<tr data-order="enqueue_styles" id="_enqueue_styles">
 
 		<td class="attributes"><code>
@@ -177,7 +135,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_enqueue_styles">#</a>
-		<code><a href="source-class-Helper_Functions.html#73-98" title="Go to source code">enqueue_styles</a>( <span>array <var>$styles</var></span> )</code>
+		<code><a href="source-class-Helper_Functions.html#21-49" title="Go to source code">enqueue_styles</a>( <span>array <var>$styles</var></span> )</code>
 
 		<div class="description short">
 			
@@ -207,6 +165,10 @@ properties.</p>
 				<div class="list">
 						0.1<br />
 				</div>
+				<h4>Used by</h4>
+				<div class="list">
+						<code><code><a href="class-Base_Controller_Plugin.html#_wp_enqueue_scripts">Base_Controller_Plugin::wp_enqueue_scripts()</a></code></code> <br />
+				</div>
 
 
 		</div>
@@ -223,7 +185,7 @@ properties.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_enqueue_scripts">#</a>
-		<code><a href="source-class-Helper_Functions.html#100-117" title="Go to source code">enqueue_scripts</a>( <span>array <var>$scripts</var></span> )</code>
+		<code><a href="source-class-Helper_Functions.html#51-65" title="Go to source code">enqueue_scripts</a>( <span>array <var>$scripts</var></span> )</code>
 
 		<div class="description short">
 			
@@ -235,9 +197,7 @@ properties.</p>
 			
 <p>Enqueue scripts.</p>
 
-<p>This function enqueues scripts using wp_enqueue_script. It exposes a filter (
-ah_base_filter_scripts-$style_handle ) that can be used to alter the script
-object properties.</p>
+<p>This function enqueues scripts using wp_enqueue_script.</p>
 
 
 
@@ -252,6 +212,11 @@ object properties.</p>
 				<h4>Since</h4>
 				<div class="list">
 						0.1<br />
+				</div>
+				<h4>Used by</h4>
+				<div class="list">
+						<code><code><a href="class-Base_Controller_Plugin.html#_admin_enqueue_scripts">Base_Controller_Plugin::admin_enqueue_scripts()</a></code></code><br>to enqueue the scripts.<br />
+						<code><code><a href="class-Base_Controller_Plugin.html#_wp_enqueue_scripts">Base_Controller_Plugin::wp_enqueue_scripts()</a></code></code> <br />
 				</div>
 
 
@@ -269,7 +234,7 @@ object properties.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_create_directory">#</a>
-		<code><a href="source-class-Helper_Functions.html#119-142" title="Go to source code">create_directory</a>( <span>string <var>$target</var></span>, <span>boolean <var>$index</var> = <span class="php-keyword1">true</span></span>, <span>octal <var>$permissions</var> = <span class="php-num">0755</span> </span> )</code>
+		<code><a href="source-class-Helper_Functions.html#67-90" title="Go to source code">create_directory</a>( <span>string <var>$target</var></span>, <span>boolean <var>$index</var> = <span class="php-keyword1">true</span></span>, <span>octal <var>$permissions</var> = <span class="php-num">0755</span> </span> )</code>
 
 		<div class="description short">
 			
@@ -318,7 +283,7 @@ already exist. It will also add an index.php file if $index is set to TRUE.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_local_directory_contents">#</a>
-		<code><a href="source-class-Helper_Functions.html#144-171" title="Go to source code">get_local_directory_contents</a>( <span>string <var>$directory</var></span> )</code>
+		<code><a href="source-class-Helper_Functions.html#92-118" title="Go to source code">get_local_directory_contents</a>( <span>string <var>$directory</var></span> )</code>
 
 		<div class="description short">
 			
@@ -346,7 +311,7 @@ already exist. It will also add an index.php file if $index is set to TRUE.</p>
 				</div>
 				<h4>Returns</h4>
 				<div class="list">
-						array|bool array An array containg the directory contents on success, NULL on
+						array array An array containg the directory contents on success, NULL on
 failure.<br />
 				</div>
 
@@ -365,26 +330,26 @@ failure.<br />
 
 		<td class="name"><div>
 		<a class="anchor" href="#_remove_local_directory">#</a>
-		<code><a href="source-class-Helper_Functions.html#173-203" title="Go to source code">remove_local_directory</a>( <span>string <var>$dirname</var></span>, <span>boolean <var>$force</var> = <span class="php-keyword1">false</span> </span> )</code>
+		<code><a href="source-class-Helper_Functions.html#120-150" title="Go to source code">remove_local_directory</a>( <span>string <var>$dirname</var></span>, <span>boolean <var>$force</var> = <span class="php-keyword1">false</span> </span> )</code>
 
 		<div class="description short">
 			
-<p>Remove a directory and all contents from the local filesystem</p>
+<p>Remove a directory and all contents from the local filesystem.</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Remove a directory and all contents from the local filesystem</p>
+<p>Remove a directory and all contents from the local filesystem.</p>
 
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$dirname</var></dt>
-					<dd><code>string</code><br>$dirname The absokute path to the directory to be deleted.</dd>
+					<dd><code>string</code><br>$dirname The absolute path to the directory to be deleted.</dd>
 					<dt><var>$force</var></dt>
-					<dd><code>boolean</code><br>$force Delete all folder contents recursively (true). Default FALSE.</dd>
+					<dd><code>boolean</code><br>$force Delete all folder contents recursively (TRUE). Default FALSE.</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -413,7 +378,7 @@ failure.<br />
 
 		<td class="name"><div>
 		<a class="anchor" href="#_delete_local_file">#</a>
-		<code><a href="source-class-Helper_Functions.html#205-217" title="Go to source code">delete_local_file</a>( <span>string <var>$file</var></span> )</code>
+		<code><a href="source-class-Helper_Functions.html#152-168" title="Go to source code">delete_local_file</a>( <span>string <var>$file</var></span> )</code>
 
 		<div class="description short">
 			
@@ -435,7 +400,7 @@ failure.<br />
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>true</code><br>on success, FALSE on failure.<br />
+					<code>true</code><br>on success, FALSE on failure. deprecated<br />
 				</div>
 
 
@@ -459,7 +424,7 @@ failure.<br />
 
 		<td class="name"><div>
 		<a class="anchor" href="#_sanitize_text_field_array">#</a>
-		<code><a href="source-class-Helper_Functions.html#219-236" title="Go to source code">sanitize_text_field_array</a>( <span>array <var>$array</var></span> )</code>
+		<code><a href="source-class-Helper_Functions.html#170-187" title="Go to source code">sanitize_text_field_array</a>( <span>array <var>$array</var></span> )</code>
 
 		<div class="description short">
 			
@@ -488,6 +453,49 @@ failure.<br />
 				<h4>Since</h4>
 				<div class="list">
 						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="deprecated" id="_deprecated">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_deprecated">#</a>
+		<code><a href="source-class-Helper_Functions.html#189-205" title="Go to source code">deprecated</a>( <span>mixed <var>$deprecated</var></span>, <span>mixed <var>$replacement</var></span>, <span>mixed <var>$txtdomain</var> = <span class="php-quote">''</span> </span> )</code>
+
+		<div class="description short">
+			
+<p>Generate a deprecated warning message.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generate a deprecated warning message.</p>
+
+<p>This function is used to trigger a PHP warning message to notify user a
+deprecated function has been called.</p>
+
+
+
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.2<br />
+				</div>
+				<h4>Internal</h4>
+				<div class="list">
 				</div>
 
 
