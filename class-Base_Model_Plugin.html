@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Base_Model_Plugin</title>
+
+	<script type="text/javascript" src="resources/combined.js?699355046"></script>
+	<script type="text/javascript" src="elementlist.js?1623231360"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li><a href="package-None.html">None</a>
+						</li>
+				<li class="active"><a href="package-WPMVCBase.html">WPMVCBase<span></span></a>
+						<ul>
+				<li><a href="package-WPMVCBase.Controllers.html">Controllers</a>
+						</li>
+				<li><a href="package-WPMVCBase.Helper.html">Helper</a>
+						</li>
+				<li class="active"><a href="package-WPMVCBase.Models.html">Models</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Base_Model.html">Base_Model</a></li>
+				<li><a href="class-Base_Model_CPT.html">Base_Model_CPT</a></li>
+				<li><a href="class-Base_Model_Help_Tab.html">Base_Model_Help_Tab</a></li>
+				<li><a href="class-Base_Model_JS_Object.html">Base_Model_JS_Object</a></li>
+				<li><a href="class-Base_Model_Menu_Page.html">Base_Model_Menu_Page</a></li>
+				<li><a href="class-Base_Model_Metabox.html">Base_Model_Metabox</a></li>
+				<li class="active"><a href="class-Base_Model_Plugin.html">Base_Model_Plugin</a></li>
+				<li><a href="class-Base_Model_Settings.html">Base_Model_Settings</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-WPMVCBase.Models.html" title="Summary of WPMVCBase\Models"><span>Package</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Base_Model_Plugin</h1>
+
+
+	<div class="description">
+	
+<p>The base plugin model</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Base_Model.html"><span>Base_Model</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Base_Model_Plugin</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-WPMVCBase.html">WPMVCBase</a>\<a href="package-WPMVCBase.Models.html">Models</a><br />
+
+				<b>Version:</b>
+				0.1<br />
+				<b>Since:</b>
+				0.2<br />
+		<b>Located at</b> <a href="source-class-Base_Model_Plugin.html#7-398" title="Go to source code">models/base_model_plugin.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Base_Model_Plugin.html#266-313" title="Go to source code">__construct</a>( <span>string <var>$slug</var></span>, <span>string <var>$version</var></span>, <span>string <var>$file</var></span>, <span>string <var>$path</var></span>, <span>string <var>$uri</var></span>, <span>string <var>$txtdomain</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The class constructor</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The class constructor</p>
+
+<p>Example when called from the main plugin file:</p>
+
+<pre>
+<span class="php-var">$my_plugin_model</span> = <span
+class="php-keyword1">new</span> Base_Model_Plugin(
+        <span
+class="php-quote">'my_plugin_slug'</span>,
+        <span
+class="php-quote">'1.1.5'</span>,
+        plugin_dir_path( __FILE__ ),
+        __FILE__,
+        plugin_dir_uri( __FILE__ ),
+        <span
+class="php-quote">'my_text_domain'</span>
+}
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$slug</var></dt>
+					<dd><code>string</code><br>$slug The plugin slug.</dd>
+					<dt><var>$version</var></dt>
+					<dd><code>string</code><br>$version The plugin version.</dd>
+					<dt><var>$file</var></dt>
+					<dd><code>string</code><br>$path The plugin directory path.</dd>
+					<dt><var>$path</var></dt>
+					<dd><code>string</code><br>$file The main plugin file absolute path.</dd>
+					<dt><var>$uri</var></dt>
+					<dd><code>string</code><br>$uri The plugin directory uri.</dd>
+					<dt><var>$txtdomain</var></dt>
+					<dd><code>string</code><br>$txtdomain The plugin text domain.</dd>
+				</dl></div>
+
+
+
+				<h4>Category</h4>
+				<div class="list">
+						Models<br />
+				</div>
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_slug" id="_get_slug">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_slug">#</a>
+		<code><a href="source-class-Base_Model_Plugin.html#315-325" title="Go to source code">get_slug</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the plugin slug.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the plugin slug.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$slug<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_version" id="_get_version">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_version">#</a>
+		<code><a href="source-class-Base_Model_Plugin.html#327-337" title="Go to source code">get_version</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the plugin version.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the plugin version.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The plugin version.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_path" id="_get_path">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_path">#</a>
+		<code><a href="source-class-Base_Model_Plugin.html#339-348" title="Go to source code">get_path</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the plugin path.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the plugin path.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The plugin path.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_uri" id="_get_uri">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_uri">#</a>
+		<code><a href="source-class-Base_Model_Plugin.html#350-359" title="Go to source code">get_uri</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the plugin uri.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the plugin uri.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The plugin uri.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="main_plugin_file" id="_main_plugin_file">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_main_plugin_file">#</a>
+		<code><a href="source-class-Base_Model_Plugin.html#361-373" title="Go to source code">main_plugin_file</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the main plugin file.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the main plugin file.</p>
+
+
+				<h4>Deprecated</h4>
+				<div class="list">
+				</div>
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The absolute path to the main plugin file.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_main_plugin_file" id="_get_main_plugin_file">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_main_plugin_file">#</a>
+		<code><a href="source-class-Base_Model_Plugin.html#375-385" title="Go to source code">get_main_plugin_file</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the main plugin file.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the main plugin file.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The absolute path to the main plugin file.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_textdomain" id="_get_textdomain">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_textdomain">#</a>
+		<code><a href="source-class-Base_Model_Plugin.html#387-397" title="Go to source code">get_textdomain</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the plugin text domain</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the plugin text domain</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$txtdomain<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Base_Model.html#methods">Base_Model</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Base_Model.html#_add_help_tab">add_help_tab()</a>, 
+			<a href="class-Base_Model.html#_add_metabox">add_metabox()</a>, 
+			<a href="class-Base_Model.html#_add_shortcode">add_shortcode()</a>, 
+			<a href="class-Base_Model.html#_get_admin_css">get_admin_css()</a>, 
+			<a href="class-Base_Model.html#_get_admin_scripts">get_admin_scripts()</a>, 
+			<a href="class-Base_Model.html#_get_css">get_css()</a>, 
+			<a href="class-Base_Model.html#_get_help_screen"><span class="deprecated">get_help_screen()</span></a>, 
+			<a href="class-Base_Model.html#_get_help_tabs">get_help_tabs()</a>, 
+			<a href="class-Base_Model.html#_get_metaboxes">get_metaboxes()</a>, 
+			<a href="class-Base_Model.html#_get_scripts">get_scripts()</a>, 
+			<a href="class-Base_Model.html#_get_shortcodes">get_shortcodes()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="slug" id="$slug">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#16-23" title="Go to source code"><var>$slug</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$slug" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The plugin slug.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The plugin slug.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="version" id="$version">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#25-32" title="Go to source code"><var>$version</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$version" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The plugin version.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The plugin version.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="path" id="$path">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#34-43" title="Go to source code"><var>$path</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$path" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The plugin path.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The plugin path.</p>
+
+<p>This is the base directory for the plugin ( e.g.
+/home/user/public_html/wp-content/plugins/my-plugin ).</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="app_path" id="$app_path">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#45-52" title="Go to source code"><var>$app_path</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$app_path" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The plugin app path.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The plugin app path.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="app_controllers_path" id="$app_controllers_path">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#54-61" title="Go to source code"><var>$app_controllers_path</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$app_controllers_path" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The plugin controllers path.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The plugin controllers path.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="app_models_path" id="$app_models_path">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#63-70" title="Go to source code"><var>$app_models_path</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$app_models_path" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The plugin models path.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The plugin models path.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="app_views_path" id="$app_views_path">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#72-79" title="Go to source code"><var>$app_views_path</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$app_views_path" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The plugin views path</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The plugin views path</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="base_path" id="$base_path">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#81-88" title="Go to source code"><var>$base_path</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$base_path" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The base directory path.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The base directory path.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="base_controllers_path" id="$base_controllers_path">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#90-98" title="Go to source code"><var>$base_controllers_path</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$base_controllers_path" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The base controllers path.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The base controllers path.</p>
+
+<p>This is the absolute path to the base classes (e.g.
+/home/user/public_html/wp-content/plugins/my-plugin/base )</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="base_models_path" id="$base_models_path">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#100-107" title="Go to source code"><var>$base_models_path</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$base_models_path" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The base models path.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The base models path.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="base_views_path" id="$base_views_path">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#109-116" title="Go to source code"><var>$base_views_path</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$base_views_path" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The base views path.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The base views path.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="main_plugin_file" id="$main_plugin_file">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#118-125" title="Go to source code"><var>$main_plugin_file</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$main_plugin_file" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The absoulte path to the main plugin file.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The absoulte path to the main plugin file.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="uri" id="$uri">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#127-136" title="Go to source code"><var>$uri</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$uri" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The plugin uri.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The plugin uri.</p>
+
+
+					<h4>Category</h4>
+					<div class="list">
+							Controllers<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="js_uri" id="$js_uri">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#138-145" title="Go to source code"><var>$js_uri</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$js_uri" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The uri to the js assets.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The uri to the js assets.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="css_uri" id="$css_uri">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#147-154" title="Go to source code"><var>$css_uri</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$css_uri" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The uri to the css assets.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The uri to the css assets.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="txtdomain" id="$txtdomain">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#156-163" title="Go to source code"><var>$txtdomain</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$txtdomain" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The plugin text domain</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The plugin text domain</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="css" id="$css">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#165-174" title="Go to source code"><var>$css</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$css" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The plugin css files</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The plugin css files</p>
+
+<p>An array containing css used by the controller.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="admin_css" id="$admin_css">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#176-185" title="Go to source code"><var>$admin_css</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$admin_css" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The plugin admin css files</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The plugin admin css files</p>
+
+<p>An array containing css used by the controller on admin pages.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="scripts" id="$scripts">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#187-197" title="Go to source code"><var>$scripts</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$scripts" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The controller javascript files</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The controller javascript files</p>
+
+<p>An array containing javascripts used by the controller.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+					<h4>See</h4>
+					<div class="list">
+							<code><code><a href="class-Base_Model_JS_Object.html">Base_Model_JS_Object</a></code></code><br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="admin_scripts" id="$admin_scripts">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#199-209" title="Go to source code"><var>$admin_scripts</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$admin_scripts" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The controller admin javascript files</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The controller admin javascript files</p>
+
+<p>An array containing javascripts used by the controller on admin pages.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+					<h4>See</h4>
+					<div class="list">
+							<code><code><a href="class-Base_Model_JS_Object.html">Base_Model_JS_Object</a></code></code><br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="metaboxes" id="$metaboxes">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#211-219" title="Go to source code"><var>$metaboxes</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$metaboxes" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Metaboxes required by the controller.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Metaboxes required by the controller.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+					<h4>See</h4>
+					<div class="list">
+							<code><code><a href="class-Base_Model_Metabox.html">Base_Model_Metabox</a></code></code><br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="cpts" id="$cpts">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#221-228" title="Go to source code"><var>$cpts</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$cpts" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The plugin custom post types.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The plugin custom post types.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="settings_model" id="$settings_model">
+		<td class="attributes"><code>
+			protected  
+			object
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#230-237" title="Go to source code"><var>$settings_model</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$settings_model" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The plugin settings model.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The plugin settings model.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="help_tabs" id="$help_tabs">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#239-246" title="Go to source code"><var>$help_tabs</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$help_tabs" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The plugin help tabs.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The plugin help tabs.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="nonce_name" id="$nonce_name">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#248-255" title="Go to source code"><var>$nonce_name</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$nonce_name" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The nonce name to be used for plugin form submissions.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The nonce name to be used for plugin form submissions.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="nonce_action" id="$nonce_action">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Plugin.html#257-264" title="Go to source code"><var>$nonce_action</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$nonce_action" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The nonce action to be used for plugin form submissions.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The nonce action to be used for plugin form submissions.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Base_Model.html#properties">Base_Model</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Base_Model.html#$shortcodes"><var>$shortcodes</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
