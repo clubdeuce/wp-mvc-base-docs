@@ -6,8 +6,8 @@
 
 	<title>Class Base_Model</title>
 
-	<script type="text/javascript" src="resources/combined.js?699355046"></script>
-	<script type="text/javascript" src="elementlist.js?1623231360"></script>
+	<script type="text/javascript" src="resources/combined.js?4058929694"></script>
+	<script type="text/javascript" src="elementlist.js?2335409893"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -42,6 +42,7 @@
 			<h3>Classes</h3>
 			<ul>
 				<li class="active"><a href="class-Base_Model.html">Base_Model</a></li>
+				<li><a href="class-Base_Model_Admin_Notice.html">Base_Model_Admin_Notice</a></li>
 				<li><a href="class-Base_Model_CPT.html">Base_Model_CPT</a></li>
 				<li><a href="class-Base_Model_Help_Tab.html">Base_Model_Help_Tab</a></li>
 				<li><a href="class-Base_Model_JS_Object.html">Base_Model_JS_Object</a></li>
@@ -85,9 +86,6 @@
 			<li>
 				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
 			</li>
-			<li>
-				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
-			</li>
 		</ul>
 		<ul>
 		</ul>
@@ -125,32 +123,612 @@ contains the properties and and methods required by other models.</p>
 		
 		<b>Package:</b> <a href="package-WPMVCBase.html">WPMVCBase</a>\<a href="package-WPMVCBase.Models.html">Models</a><br />
 
-				<b>Author:</b>
-				Daryl Lozupone &lt;<a
-href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<br />
 				<b>Since:</b>
 				WPMVCBase 0.1<br />
 				<b>Internal</b>
 				<br />
-		<b>Located at</b> <a href="source-class-Base_Model.html#27-306" title="Go to source code">models/base_model.php</a><br />
+		<b>Located at</b> <a href="source-class-Base_Model.html#19-683" title="Go to source code">models/class-base-model.php</a><br />
 	</div>
 
 
 
 	<table class="summary" id="methods">
 	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Base_Model.html#202-223" title="Go to source code">__construct</a>( <span>string <var>$main_plugin_file</var></span>, <span>string <var>$plugin_path</var></span>, <span>string <var>$app_path</var></span>, <span>string <var>$base_path</var></span>, <span>string <var>$uri</var></span>, <span>mixed <var>$txtdomain</var> = <span class="php-keyword1">null</span> </span> )</code>
+
+		<div class="description short">
+			
+<p>The class constructor.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The class constructor.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$main_plugin_file</var></dt>
+					<dd><code>string</code><br>$main_plugin_file</dd>
+					<dt><var>$plugin_path</var></dt>
+					<dd><code>string</code><br>$app_path</dd>
+					<dt><var>$app_path</var></dt>
+					<dd><code>string</code><br>$base_path</dd>
+					<dt><var>$base_path</var></dt>
+					<dd><code>string</code><br>$uri</dd>
+					<dt><var>$uri</var></dt>
+					<dd><code>string</code><br>$txtdomain</dd>
+					<dt><var>$txtdomain</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="init" id="_init">
+
+		<td class="attributes"><code>
+			abstract protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_init">#</a>
+		<code><a href="source-class-Base_Model.html#225-235" title="Go to source code">init</a>( )</code>
+
+		<div class="description short">
+			
+<p>Initialize the child class.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Initialize the child class.</p>
+
+<p>Use this function to set properties for your child class.</p>
+
+
+
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.2<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_main_plugin_file" id="_get_main_plugin_file">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_main_plugin_file">#</a>
+		<code><a href="source-class-Base_Model.html#253-263" title="Go to source code">get_main_plugin_file</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the main plugin file.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the main plugin file.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The absolute path to the main plugin file.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_path" id="_get_path">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_path">#</a>
+		<code><a href="source-class-Base_Model.html#265-275" title="Go to source code">get_path</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the plugin path.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the plugin path.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The plugin path.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_app_path" id="_get_app_path">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_app_path">#</a>
+		<code><a href="source-class-Base_Model.html#277-287" title="Go to source code">get_app_path</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the plugin app path.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the plugin app path.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$app_path<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_app_controllers_path" id="_get_app_controllers_path">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_app_controllers_path">#</a>
+		<code><a href="source-class-Base_Model.html#289-299" title="Go to source code">get_app_controllers_path</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the plugin app controllers path.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the plugin app controllers path.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$app_controllers_path<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_app_models_path" id="_get_app_models_path">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_app_models_path">#</a>
+		<code><a href="source-class-Base_Model.html#301-311" title="Go to source code">get_app_models_path</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the plugin app models path.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the plugin app models path.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$app_models_path<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_app_views_path" id="_get_app_views_path">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_app_views_path">#</a>
+		<code><a href="source-class-Base_Model.html#313-323" title="Go to source code">get_app_views_path</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the plugin app views path.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the plugin app views path.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$app_views_path<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_base_path" id="_get_base_path">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_base_path">#</a>
+		<code><a href="source-class-Base_Model.html#325-335" title="Go to source code">get_base_path</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the plugin base path.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the plugin base path.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$base_path<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_base_controllers_path" id="_get_base_controllers_path">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_base_controllers_path">#</a>
+		<code><a href="source-class-Base_Model.html#337-347" title="Go to source code">get_base_controllers_path</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the plugin base controllers path.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the plugin base controllers path.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$base_controllers_path<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_base_models_path" id="_get_base_models_path">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_base_models_path">#</a>
+		<code><a href="source-class-Base_Model.html#349-359" title="Go to source code">get_base_models_path</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the plugin base models path.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the plugin base models path.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$base_models_path<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_base_views_path" id="_get_base_views_path">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_base_views_path">#</a>
+		<code><a href="source-class-Base_Model.html#361-371" title="Go to source code">get_base_views_path</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the plugin base views path.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the plugin base views path.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$base_views_path<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_uri" id="_get_uri">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_uri">#</a>
+		<code><a href="source-class-Base_Model.html#373-383" title="Go to source code">get_uri</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the plugin uri.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the plugin uri.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The plugin uri.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_textdomain" id="_get_textdomain">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_textdomain">#</a>
+		<code><a href="source-class-Base_Model.html#385-395" title="Go to source code">get_textdomain</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the plugin text domain</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the plugin text domain</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$txtdomain<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="get_css" id="_get_css">
 
 		<td class="attributes"><code>
 			 public 
-			array
+			array\bool
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_css">#</a>
-		<code><a href="source-class-Base_Model.html#122-136" title="Go to source code">get_css</a>( <span>string <var>$uri</var></span> )</code>
+		<code><a href="source-class-Base_Model.html#397-411" title="Go to source code">get_css</a>( )</code>
 
 		<div class="description short">
 			
@@ -164,23 +742,16 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$uri</var></dt>
-					<dd><code>string</code><br>$uri The plugin css uri ( e.g. <a
-href="http://example.com/wp-content/plugins/myplugin/css">http://example.com/wp-content/plugins/myplugin/css</a>
-)</dd>
-				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>array</code><br>$admin_css<br />
+					<code>array\bool</code><br>$css if set, FALSE if not.<br />
 				</div>
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -191,14 +762,14 @@ href="http://example.com/wp-content/plugins/myplugin/css">http://example.com/wp-
 
 		<td class="attributes"><code>
 			 public 
-			array
+			array|boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_admin_css">#</a>
-		<code><a href="source-class-Base_Model.html#138-159" title="Go to source code">get_admin_css</a>( <span>string <var>$uri</var></span> )</code>
+		<code><a href="source-class-Base_Model.html#413-427" title="Go to source code">get_admin_css</a>( )</code>
 
 		<div class="description short">
 			
@@ -212,23 +783,16 @@ href="http://example.com/wp-content/plugins/myplugin/css">http://example.com/wp-
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$uri</var></dt>
-					<dd><code>string</code><br>$uri The plugin css uri ( e.g. <a
-href="http://example.com/wp-content/plugins/myplugin/css">http://example.com/wp-content/plugins/myplugin/css</a>
-)</dd>
-				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>array</code><br>$admin_css Collection of admin css objects.<br />
+					<code>array|boolean</code><br>$admin_css if set, FALSE if not.<br />
 				</div>
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -246,7 +810,7 @@ href="http://example.com/wp-content/plugins/myplugin/css">http://example.com/wp-
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_scripts">#</a>
-		<code><a href="source-class-Base_Model.html#161-177" title="Go to source code">get_scripts</a>( <span>object <var>$post</var></span>, <span>string <var>$txtdomain</var></span>, <span>string <var>$uri</var></span> )</code>
+		<code><a href="source-class-Base_Model.html#429-443" title="Go to source code">get_scripts</a>( )</code>
 
 		<div class="description short">
 			
@@ -260,27 +824,16 @@ href="http://example.com/wp-content/plugins/myplugin/css">http://example.com/wp-
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$post</var></dt>
-					<dd><code>object</code><br>$post The WP Post object</dd>
-					<dt><var>$txtdomain</var></dt>
-					<dd><code>string</code><br>$txtdomain The plugin text domain.</dd>
-					<dt><var>$uri</var></dt>
-					<dd><code>string</code><br>$uri The plugin js uri ( e.g. <a
-href="http://example.com/wp-content/plugins/myplugin/js">http://example.com/wp-content/plugins/myplugin/js</a>
-)</dd>
-				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>array</code><br>$admin_scripts Collection of admin scripts.<br />
+					<code>array</code><br>$scripts if set, FALSE if not.<br />
 				</div>
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -291,14 +844,14 @@ href="http://example.com/wp-content/plugins/myplugin/js">http://example.com/wp-c
 
 		<td class="attributes"><code>
 			 public 
-			array
+			array|boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_admin_scripts">#</a>
-		<code><a href="source-class-Base_Model.html#179-195" title="Go to source code">get_admin_scripts</a>( <span>object <var>$post</var></span>, <span>string <var>$txtdomain</var></span>, <span>string <var>$uri</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-Base_Model.html#445-459" title="Go to source code">get_admin_scripts</a>( )</code>
 
 		<div class="description short">
 			
@@ -312,27 +865,16 @@ href="http://example.com/wp-content/plugins/myplugin/js">http://example.com/wp-c
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$post</var></dt>
-					<dd><code>object</code><br>$post The WP Post object</dd>
-					<dt><var>$txtdomain</var></dt>
-					<dd><code>string</code><br>$txtdomain The plugin text domain.</dd>
-					<dt><var>$uri</var></dt>
-					<dd><code>string</code><br>$uri The plugin js uri ( e.g. <a
-href="http://example.com/wp-content/plugins/myplugin/js">http://example.com/wp-content/plugins/myplugin/js</a>
-)</dd>
-				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>array</code><br>$admin_scripts<br />
+					<code>array|boolean</code><br>$admin_scripts if set, FALSE if not.<br />
 				</div>
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -343,48 +885,37 @@ href="http://example.com/wp-content/plugins/myplugin/js">http://example.com/wp-c
 
 		<td class="attributes"><code>
 			 public 
-			array
+			array|boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_metaboxes">#</a>
-		<code><a href="source-class-Base_Model.html#197-217" title="Go to source code">get_metaboxes</a>( <span>string <var>$post_id</var></span>, <span>string <var>$txtdomain</var></span> )</code>
+		<code><a href="source-class-Base_Model.html#461-480" title="Go to source code">get_metaboxes</a>( )</code>
 
 		<div class="description short">
 			
-<p>Get the model's metaboxes</p>
+<p>Get the model's metaboxes.</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Get the model's metaboxes</p>
-
-<p>This function will return the metaboxes. The post_id parameter is used so
-that this function may return the values stored for the corresponding custom
-fields in the callback arguments.</p>
+<p>Get the model's metaboxes.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$post_id</var></dt>
-					<dd><code>string</code><br>$post_id</dd>
-					<dt><var>$txtdomain</var></dt>
-					<dd><code>string</code><br>$txtdomain the text domain to use for translations</dd>
-				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>array</code><br>$metaboxes an array of WP_Metabox objects<br />
+					<code>array|boolean</code><br>$metaboxes if set, FALSE if not.<br />
 				</div>
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 				<h4>See</h4>
 				<div class="list">
@@ -399,14 +930,14 @@ fields in the callback arguments.</p>
 
 		<td class="attributes"><code>
 			 public 
-			array
+			array|boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_help_tabs">#</a>
-		<code><a href="source-class-Base_Model.html#219-231" title="Go to source code">get_help_tabs</a>( )</code>
+		<code><a href="source-class-Base_Model.html#482-500" title="Go to source code">get_help_tabs</a>( )</code>
 
 		<div class="description short">
 			
@@ -423,57 +954,13 @@ fields in the callback arguments.</p>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>array</code><br>$_help_tabs Contains the help screen tab objects.<br />
+					<code>array|boolean</code><br>$help_tabs if set, FALSE if not.<br />
 				</div>
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
-				</div>
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="get_help_screen" id="_get_help_screen">
-
-		<td class="attributes"><code>
-			 public 
-			array|
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_get_help_screen">#</a>
-		<code><a href="source-class-Base_Model.html#233-248" title="Go to source code">get_help_screen</a>( )</code>
-
-		<div class="description short">
-			
-<p>Get the cpt help screen tabs.</p>
-
-		</div>
-
-		<div class="description detailed hidden">
-			
-<p>Get the cpt help screen tabs.</p>
-
-
-				<h4>Deprecated</h4>
-				<div class="list">
-				</div>
-
-
-				<h4>Returns</h4>
-				<div class="list">
-					<code>array|</code><br>$_help_tabs Contains the help screen tab objects. VOID on empty.<br />
-				</div>
-
-
-				<h4>Since</h4>
-				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -484,26 +971,38 @@ fields in the callback arguments.</p>
 
 		<td class="attributes"><code>
 			 public 
-			
+			array|boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_shortcodes">#</a>
-		<code><a href="source-class-Base_Model.html#250-255" title="Go to source code">get_shortcodes</a>( )</code>
+		<code><a href="source-class-Base_Model.html#519-533" title="Go to source code">get_shortcodes</a>( )</code>
 
 		<div class="description short">
 			
+<p>Get the model's shortcodes.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Get the model's shortcodes.</p>
 
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array|boolean</code><br>$shortcodes if set, FALSE if not.<br />
+				</div>
 
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
 
 
 		</div>
@@ -513,26 +1012,49 @@ fields in the callback arguments.</p>
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean|object
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add_metabox">#</a>
-		<code><a href="source-class-Base_Model.html#257-271" title="Go to source code">add_metabox</a>( <span>mixed <var>$handle</var></span>, <span>mixed <var>$metabox</var></span> )</code>
+		<code><a href="source-class-Base_Model.html#535-565" title="Go to source code">add_metabox</a>( <span>string <var>$handle</var></span>, <span>object <var>$metabox</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Add a metabox.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Add a metabox.</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$handle</var></dt>
+					<dd><code>string</code><br>$handle The metabox handle.</dd>
+					<dt><var>$metabox</var></dt>
+					<dd><code>object</code><br>$metabox A metabox object.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean|object</code><br>TRUE on success, WP_Error on failure.<br />
+				</div>
 
 
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
+				<h4>See</h4>
+				<div class="list">
+						<code><code><a href="class-Base_Model_Metabox.html">Base_Model_Metabox</a></code></code><br />
+				</div>
 
 
 		</div>
@@ -542,14 +1064,14 @@ fields in the callback arguments.</p>
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean|object
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add_help_tab">#</a>
-		<code><a href="source-class-Base_Model.html#273-296" title="Go to source code">add_help_tab</a>( <span>string <var>$handle</var></span>, <span>object <var>$help_tab</var></span> )</code>
+		<code><a href="source-class-Base_Model.html#567-594" title="Go to source code">add_help_tab</a>( <span>string <var>$handle</var></span>, <span>object <var>$help_tab</var></span> )</code>
 
 		<div class="description short">
 			
@@ -571,11 +1093,15 @@ fields in the callback arguments.</p>
 					<dd><code>object</code><br>$help_tab The Base_Model_Help_Tab object.</dd>
 				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean|object</code><br>TRUE on success, WP_Error on failure.<br />
+				</div>
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.2<br />
+						WPMVCBase 0.2<br />
 				</div>
 				<h4>See</h4>
 				<div class="list">
@@ -597,19 +1123,131 @@ fields in the callback arguments.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add_shortcode">#</a>
-		<code><a href="source-class-Base_Model.html#298-305" title="Go to source code">add_shortcode</a>( <span>mixed <var>$shortcode</var></span>, <span>mixed <var>$callback</var></span> )</code>
+		<code><a href="source-class-Base_Model.html#596-621" title="Go to source code">add_shortcode</a>( <span>string <var>$shortcode</var></span>, <span>string <var>$callback</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Add a shortcode object.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Add a shortcode object.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$shortcode</var></dt>
+					<dd><code>string</code><br>$shortcode The shortcode name.</dd>
+					<dt><var>$callback</var></dt>
+					<dd><code>string</code><br>$callback The shortcode callback handler.</dd>
+				</dl></div>
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="authenticate_post" id="_authenticate_post">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_authenticate_post">#</a>
+		<code><a href="source-class-Base_Model.html#623-665" title="Go to source code">authenticate_post</a>( <span>string <var>$post_id</var></span>, <span>string <var>$post_type</var></span>, <span>object <var>$post_data</var></span>, <span>string <var>$nonce_name</var></span>, <span>string <var>$nonce_action</var></span> )</code>
+
+		<div class="description short">
+			
+<p>WP save_post action authenticator.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>WP save_post action authenticator.</p>
+
+<p>This method verifies an autosave is not in progress, the current user can
+edit the post being submitted, and that a valid nonce is present.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$post_id</var></dt>
+					<dd><code>string</code><br>$post_id The WP post id.</dd>
+					<dt><var>$post_type</var></dt>
+					<dd><code>string</code><br>$post_type The post type.</dd>
+					<dt><var>$post_data</var></dt>
+					<dd><code>object</code><br>$post_data The POSTed data.</dd>
+					<dt><var>$nonce_name</var></dt>
+					<dd><code>string</code><br>$nonce_name The name of the nonce.</dd>
+					<dt><var>$nonce_action</var></dt>
+					<dd><code>string</code><br>$nonce_action The nonce action.</dd>
+				</dl></div>
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
+				<h4>Internal</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_admin_notices" id="_get_admin_notices">
+
+		<td class="attributes"><code>
+			 public 
+			array|boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_admin_notices">#</a>
+		<code><a href="source-class-Base_Model.html#667-681" title="Go to source code">get_admin_notices</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the admin notices attached to this model.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the admin notices attached to this model.</p>
 
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array|boolean</code><br />
+				</div>
 
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.2<br />
+				</div>
 
 
 		</div>
@@ -630,6 +1268,288 @@ fields in the callback arguments.</p>
 
 	<table class="summary" id="properties">
 	<caption>Properties summary</caption>
+	<tr data-order="version" id="$version">
+		<td class="attributes"><code>
+			private  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model.html#31-38" title="Go to source code"><var>$version</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'0.2'</span></code></td>
+		<td class="description"><div>
+			<a href="#$version" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The class version</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The class version</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.2<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="path" id="$path">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model.html#40-49" title="Go to source code"><var>$path</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$path" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The plugin path.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The plugin path.</p>
+
+<p>This is the base directory for the plugin ( e.g.
+/home/user/public_html/wp-content/plugins/my-plugin ).</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="app_path" id="$app_path">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model.html#51-58" title="Go to source code"><var>$app_path</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$app_path" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The plugin app path.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The plugin app path.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="base_path" id="$base_path">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model.html#60-67" title="Go to source code"><var>$base_path</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$base_path" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The base directory path.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The base directory path.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="main_plugin_file" id="$main_plugin_file">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model.html#69-76" title="Go to source code"><var>$main_plugin_file</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$main_plugin_file" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The absoulte path to the main plugin file.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The absoulte path to the main plugin file.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="uri" id="$uri">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model.html#78-85" title="Go to source code"><var>$uri</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$uri" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The plugin uri.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The plugin uri.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="js_uri" id="$js_uri">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model.html#87-94" title="Go to source code"><var>$js_uri</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$js_uri" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The uri to the js assets.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The uri to the js assets.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="css_uri" id="$css_uri">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model.html#96-103" title="Go to source code"><var>$css_uri</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$css_uri" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The uri to the css assets.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The uri to the css assets.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="txtdomain" id="$txtdomain">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model.html#105-112" title="Go to source code"><var>$txtdomain</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$txtdomain" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The plugin text domain</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The plugin text domain</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
 	<tr data-order="css" id="$css">
 		<td class="attributes"><code>
 			protected  
@@ -637,7 +1557,7 @@ fields in the callback arguments.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Base_Model.html#48-57" title="Go to source code"><var>$css</var></a>
+				<a href="source-class-Base_Model.html#114-123" title="Go to source code"><var>$css</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -658,7 +1578,7 @@ fields in the callback arguments.</p>
 
 					<h4>Since</h4>
 					<div class="list">
-							0.1<br />
+							WPMVCBase 0.1<br />
 					</div>
 			</div>
 		</div></td>
@@ -670,7 +1590,7 @@ fields in the callback arguments.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Base_Model.html#59-68" title="Go to source code"><var>$admin_css</var></a>
+				<a href="source-class-Base_Model.html#125-134" title="Go to source code"><var>$admin_css</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -691,7 +1611,7 @@ fields in the callback arguments.</p>
 
 					<h4>Since</h4>
 					<div class="list">
-							0.1<br />
+							WPMVCBase 0.1<br />
 					</div>
 			</div>
 		</div></td>
@@ -703,7 +1623,7 @@ fields in the callback arguments.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Base_Model.html#70-80" title="Go to source code"><var>$scripts</var></a>
+				<a href="source-class-Base_Model.html#136-146" title="Go to source code"><var>$scripts</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -725,7 +1645,7 @@ the frontend.</p>
 
 					<h4>Since</h4>
 					<div class="list">
-							0.1<br />
+							WPMVCBase 0.1<br />
 					</div>
 					<h4>See</h4>
 					<div class="list">
@@ -741,7 +1661,7 @@ the frontend.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Base_Model.html#82-91" title="Go to source code"><var>$admin_scripts</var></a>
+				<a href="source-class-Base_Model.html#148-157" title="Go to source code"><var>$admin_scripts</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -763,7 +1683,7 @@ admin pages.</p>
 
 					<h4>Since</h4>
 					<div class="list">
-							0.1<br />
+							WPMVCBase 0.1<br />
 					</div>
 			</div>
 		</div></td>
@@ -775,7 +1695,7 @@ admin pages.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Base_Model.html#93-101" title="Go to source code"><var>$metaboxes</var></a>
+				<a href="source-class-Base_Model.html#159-167" title="Go to source code"><var>$metaboxes</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -794,7 +1714,7 @@ admin pages.</p>
 
 					<h4>Since</h4>
 					<div class="list">
-							0.1<br />
+							WPMVCBase 0.1<br />
 					</div>
 					<h4>See</h4>
 					<div class="list">
@@ -810,7 +1730,7 @@ admin pages.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Base_Model.html#103-112" title="Go to source code"><var>$help_tabs</var></a>
+				<a href="source-class-Base_Model.html#169-179" title="Go to source code"><var>$help_tabs</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -831,7 +1751,7 @@ admin pages.</p>
 
 					<h4>Since</h4>
 					<div class="list">
-							0.2<br />
+							WPMVCBase 0.2<br />
 					</div>
 					<h4>See</h4>
 					<div class="list">
@@ -847,7 +1767,7 @@ admin pages.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Base_Model.html#114-120" title="Go to source code"><var>$shortcodes</var></a>
+				<a href="source-class-Base_Model.html#181-188" title="Go to source code"><var>$shortcodes</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -866,7 +1786,44 @@ admin pages.</p>
 
 					<h4>Since</h4>
 					<div class="list">
-							0.2<br />
+							WPMVCBase 0.2<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="admin_notices" id="$admin_notices">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model.html#190-200" title="Go to source code"><var>$admin_notices</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$admin_notices" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The model's admin notices.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The model's admin notices.</p>
+
+<p>This is a collection of Base_Model_Admin_Notice objects.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.2<br />
+					</div>
+					<h4>See</h4>
+					<div class="list">
+							<code><code><a href="class-Base_Model_Admin_Notice.html">Base_Model_Admin_Notice</a></code></code><br />
 					</div>
 			</div>
 		</div></td>

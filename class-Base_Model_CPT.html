@@ -6,8 +6,8 @@
 
 	<title>Class Base_Model_CPT</title>
 
-	<script type="text/javascript" src="resources/combined.js?699355046"></script>
-	<script type="text/javascript" src="elementlist.js?1623231360"></script>
+	<script type="text/javascript" src="resources/combined.js?4058929694"></script>
+	<script type="text/javascript" src="elementlist.js?2335409893"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -42,6 +42,7 @@
 			<h3>Classes</h3>
 			<ul>
 				<li><a href="class-Base_Model.html">Base_Model</a></li>
+				<li><a href="class-Base_Model_Admin_Notice.html">Base_Model_Admin_Notice</a></li>
 				<li class="active"><a href="class-Base_Model_CPT.html">Base_Model_CPT</a></li>
 				<li><a href="class-Base_Model_Help_Tab.html">Base_Model_Help_Tab</a></li>
 				<li><a href="class-Base_Model_JS_Object.html">Base_Model_JS_Object</a></li>
@@ -85,9 +86,6 @@
 			<li>
 				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
 			</li>
-			<li>
-				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
-			</li>
 		</ul>
 		<ul>
 		</ul>
@@ -126,19 +124,16 @@
 
 
 	<div class="info">
-		
+		<b>Abstract</b><br />
 		
 		
 		<b>Package:</b> <a href="package-WPMVCBase.html">WPMVCBase</a>\<a href="package-WPMVCBase.Models.html">Models</a><br />
 
-				<b>Author:</b>
-				Daryl Lozupone &lt;<a
-href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<br />
 				<b>Version:</b>
 				0.2<br />
 				<b>Since:</b>
 				WPMVCBase 0.1<br />
-		<b>Located at</b> <a href="source-class-Base_Model_CPT.html#12-217" title="Go to source code">models/base_model_cpt.php</a><br />
+		<b>Located at</b> <a href="source-class-Base_Model_CPT.html#21-232" title="Go to source code">models/class-base-model-cpt.php</a><br />
 	</div>
 
 
@@ -156,7 +151,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Base_Model_CPT.html#59-82" title="Go to source code">__construct</a>( <span>string <var>$slug</var></span>, <span>string <var>$singular</var></span>, <span>string <var>$plural</var></span>, <span>string <var>$uri</var> = <span class="php-quote">''</span></span>, <span>string <var>$txtdomain</var> = <span class="php-quote">''</span> </span> )</code>
+		<code><a href="source-class-Base_Model_CPT.html#87-114" title="Go to source code">__construct</a>( <span>string <var>$slug</var></span>, <span>string <var>$singular</var></span>, <span>string <var>$plural</var></span>, <span>string <var>$main_plugin_file</var></span>, <span>string <var>$plugin_path</var></span>, <span>string <var>$app_path</var></span>, <span>string <var>$base_path</var></span>, <span>string <var>$uri</var></span>, <span>string <var>$txtdomain</var> = <span class="php-quote">'wpmvcb'</span> </span> )</code>
 
 		<div class="description short">
 			
@@ -181,24 +176,34 @@ etc.</p>
 					<dd><code>string</code><br>$singular The singular post type name in lower case (e.g. Book).</dd>
 					<dt><var>$plural</var></dt>
 					<dd><code>string</code><br>$plural The plural post type name in lower case (e.g. Books).</dd>
+					<dt><var>$main_plugin_file</var></dt>
+					<dd><code>string</code><br>$main_plugin_file The absolute path to the main plugin file.</dd>
+					<dt><var>$plugin_path</var></dt>
+					<dd><code>string</code><br>$plugin_path The absolute path to the plugin directory</dd>
+					<dt><var>$app_path</var></dt>
+					<dd><code>string</code><br>$app_path The absolute path to the plugin app directory.</dd>
+					<dt><var>$base_path</var></dt>
+					<dd><code>string</code><br>$base_path The absolute path to the plugin base directory.</dd>
 					<dt><var>$uri</var></dt>
-					<dd><code>string</code><br>$uri The plugin uri.</dd>
+					<dd><code>string</code><br>$uri The uri to the plugin app directory.</dd>
 					<dt><var>$txtdomain</var></dt>
-					<dd><code>string</code><br>$txtdomain The plugin text domain.</dd>
+					<dd><code>string</code><br>$txtdomain The plugint text domain.</dd>
 				</dl></div>
 
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Base_Model.html#___construct">Base_Model::__construct()</a></code></div>
 
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="_init_labels" id="__init_labels">
+	<tr data-order="init_labels" id="_init_labels">
 
 		<td class="attributes"><code>
 			 protected 
@@ -208,65 +213,109 @@ etc.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#__init_labels">#</a>
-		<code><a href="source-class-Base_Model_CPT.html#83-102" title="Go to source code">_init_labels</a>( )</code>
+		<a class="anchor" href="#_init_labels">#</a>
+		<code><a href="source-class-Base_Model_CPT.html#116-139" title="Go to source code">init_labels</a>( <span>mixed <var>$txtdomain</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Initialize the CPT labels property.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Initialize the CPT labels property.</p>
 
 
 
 
 
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
 
 
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="get_post_updated_messages" id="_get_post_updated_messages">
+	<tr data-order="get_singular" id="_get_singular">
 
 		<td class="attributes"><code>
 			 public 
-			array
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_get_post_updated_messages">#</a>
-		<code><a href="source-class-Base_Model_CPT.html#104-154" title="Go to source code">get_post_updated_messages</a>( <span>string <var>$post</var></span> )</code>
+		<a class="anchor" href="#_get_singular">#</a>
+		<code><a href="source-class-Base_Model_CPT.html#141-151" title="Go to source code">get_singular</a>( )</code>
 
 		<div class="description short">
 			
-<p>Get the CPT messages</p>
+<p>Get the singular label</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Get the CPT messages</p>
+<p>Get the singular label</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$post</var></dt>
-					<dd><code>string</code><br>$this-&gt;_singular The singular CPT post name (e.g. Book).</dd>
-				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>array</code><br>$_messages The messages array.<br />
+					<code>string</code><br>$singular<br />
 				</div>
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.2<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_plural" id="_get_plural">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_plural">#</a>
+		<code><a href="source-class-Base_Model_CPT.html#153-163" title="Go to source code">get_plural</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the plural label.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the plural label.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$plural<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.2<br />
 				</div>
 
 
@@ -284,7 +333,7 @@ etc.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_slug">#</a>
-		<code><a href="source-class-Base_Model_CPT.html#156-166" title="Go to source code">get_slug</a>( )</code>
+		<code><a href="source-class-Base_Model_CPT.html#165-175" title="Go to source code">get_slug</a>( )</code>
 
 		<div class="description short">
 			
@@ -301,13 +350,13 @@ etc.</p>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br>$_slug<br />
+					<code>string</code><br>$slug<br />
 				</div>
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -325,7 +374,7 @@ etc.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_args">#</a>
-		<code><a href="source-class-Base_Model_CPT.html#168-183" title="Go to source code">get_args</a>( )</code>
+		<code><a href="source-class-Base_Model_CPT.html#177-209" title="Go to source code">get_args</a>( )</code>
 
 		<div class="description short">
 			
@@ -337,90 +386,22 @@ etc.</p>
 			
 <p>Get the cpt arguments.</p>
 
-
-
-
-				<h4>Returns</h4>
-				<div class="list">
-					<code>array</code><br>$_args<br />
-				</div>
-
-
-				<h4>Since</h4>
-				<div class="list">
-						0.1<br />
-				</div>
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="get_metakey" id="_get_metakey">
-
-		<td class="attributes"><code>
-			 public 
-			string
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_get_metakey">#</a>
-		<code><a href="source-class-Base_Model_CPT.html#185-202" title="Go to source code">get_metakey</a>( )</code>
-
-		<div class="description short">
-			
-<p>Get the cpt metakey.</p>
-
-		</div>
-
-		<div class="description detailed hidden">
-			
-<p>Get the cpt metakey.</p>
+<p>If this property is not explicitly set in the child class, some default
+values will be returned.</p>
 
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br>$_metakey<br />
-					<code></code><br />
+					<code>array</code><br>$args<br />
 				</div>
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="set_metakey" id="_set_metakey">
-
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_set_metakey">#</a>
-		<code><a href="source-class-Base_Model_CPT.html#204-207" title="Go to source code">set_metakey</a>( <span>mixed <var>$metakey</var></span> )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
 
 
 		</div>
@@ -430,26 +411,43 @@ etc.</p>
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean|object
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_args">#</a>
-		<code><a href="source-class-Base_Model_CPT.html#209-216" title="Go to source code">set_args</a>( <span>mixed <var>$args</var></span> )</code>
+		<code><a href="source-class-Base_Model_CPT.html#211-231" title="Go to source code">set_args</a>( <span>array <var>$args</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Set the $args property</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Set the $args property</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br>$args</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean|object</code><br>TRUE on success, WP_Error object on failure.<br />
+				</div>
 
 
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
 
 
 		</div>
@@ -464,14 +462,28 @@ etc.</p>
 			<a href="class-Base_Model.html#_add_help_tab">add_help_tab()</a>, 
 			<a href="class-Base_Model.html#_add_metabox">add_metabox()</a>, 
 			<a href="class-Base_Model.html#_add_shortcode">add_shortcode()</a>, 
+			<a href="class-Base_Model.html#_authenticate_post">authenticate_post()</a>, 
 			<a href="class-Base_Model.html#_get_admin_css">get_admin_css()</a>, 
+			<a href="class-Base_Model.html#_get_admin_notices">get_admin_notices()</a>, 
 			<a href="class-Base_Model.html#_get_admin_scripts">get_admin_scripts()</a>, 
+			<a href="class-Base_Model.html#_get_app_controllers_path">get_app_controllers_path()</a>, 
+			<a href="class-Base_Model.html#_get_app_models_path">get_app_models_path()</a>, 
+			<a href="class-Base_Model.html#_get_app_path">get_app_path()</a>, 
+			<a href="class-Base_Model.html#_get_app_views_path">get_app_views_path()</a>, 
+			<a href="class-Base_Model.html#_get_base_controllers_path">get_base_controllers_path()</a>, 
+			<a href="class-Base_Model.html#_get_base_models_path">get_base_models_path()</a>, 
+			<a href="class-Base_Model.html#_get_base_path">get_base_path()</a>, 
+			<a href="class-Base_Model.html#_get_base_views_path">get_base_views_path()</a>, 
 			<a href="class-Base_Model.html#_get_css">get_css()</a>, 
-			<a href="class-Base_Model.html#_get_help_screen"><span class="deprecated">get_help_screen()</span></a>, 
 			<a href="class-Base_Model.html#_get_help_tabs">get_help_tabs()</a>, 
+			<a href="class-Base_Model.html#_get_main_plugin_file">get_main_plugin_file()</a>, 
 			<a href="class-Base_Model.html#_get_metaboxes">get_metaboxes()</a>, 
+			<a href="class-Base_Model.html#_get_path">get_path()</a>, 
 			<a href="class-Base_Model.html#_get_scripts">get_scripts()</a>, 
-			<a href="class-Base_Model.html#_get_shortcodes">get_shortcodes()</a>
+			<a href="class-Base_Model.html#_get_shortcodes">get_shortcodes()</a>, 
+			<a href="class-Base_Model.html#_get_textdomain">get_textdomain()</a>, 
+			<a href="class-Base_Model.html#_get_uri">get_uri()</a>, 
+			<a href="class-Base_Model.html#_init">init()</a>
 		</code></td>
 	</tr>
 	</table>
@@ -488,18 +500,18 @@ etc.</p>
 
 	<table class="summary" id="properties">
 	<caption>Properties summary</caption>
-	<tr data-order="_slug" id="$_slug">
+	<tr data-order="slug" id="$slug">
 		<td class="attributes"><code>
 			protected  
 			string
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Base_Model_CPT.html#21-28" title="Go to source code"><var>$_slug</var></a>
+				<a href="source-class-Base_Model_CPT.html#30-37" title="Go to source code"><var>$slug</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
-			<a href="#$_slug" class="anchor">#</a>
+			<a href="#$slug" class="anchor">#</a>
 
 			<div class="description short">
 				
@@ -514,54 +526,116 @@ etc.</p>
 
 					<h4>Since</h4>
 					<div class="list">
-							0.1<br />
+							WPMVCBase 0.1<br />
 					</div>
 			</div>
 		</div></td>
 	</tr>
-	<tr data-order="_metakey" id="$_metakey">
+	<tr data-order="singular" id="$singular">
 		<td class="attributes"><code>
 			protected  
-			array
+			string
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Base_Model_CPT.html#30-37" title="Go to source code"><var>$_metakey</var></a>
+				<a href="source-class-Base_Model_CPT.html#39-46" title="Go to source code"><var>$singular</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
-			<a href="#$_metakey" class="anchor">#</a>
+			<a href="#$singular" class="anchor">#</a>
 
 			<div class="description short">
 				
-<p>The cpt metakey.</p>
+<p>The cpt singular name, e.g. Book.</p>
 
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>The cpt metakey.</p>
+<p>The cpt singular name, e.g. Book.</p>
 
 
 					<h4>Since</h4>
 					<div class="list">
-							0.1<br />
+							WPMVCBase 0.2<br />
 					</div>
 			</div>
 		</div></td>
 	</tr>
-	<tr data-order="_args" id="$_args">
+	<tr data-order="plural" id="$plural">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_CPT.html#48-56" title="Go to source code"><var>$plural</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$plural" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The cpt plural name, e.g. Books.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The cpt plural name, e.g. Books.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.2<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="labels" id="$labels">
 		<td class="attributes"><code>
 			protected  
 			array
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Base_Model_CPT.html#39-47" title="Go to source code"><var>$_args</var></a>
+				<a href="source-class-Base_Model_CPT.html#58-65" title="Go to source code"><var>$labels</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
-			<a href="#$_args" class="anchor">#</a>
+			<a href="#$labels" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The CPT labels.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The CPT labels.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="args" id="$args">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_CPT.html#67-75" title="Go to source code"><var>$args</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$args" class="anchor">#</a>
 
 			<div class="description short">
 				
@@ -576,7 +650,7 @@ etc.</p>
 
 					<h4>Since</h4>
 					<div class="list">
-							0.1<br />
+							WPMVCBase 0.1<br />
 					</div>
 					<h4>Link</h4>
 					<div class="list">
@@ -585,18 +659,18 @@ etc.</p>
 			</div>
 		</div></td>
 	</tr>
-	<tr data-order="_messages" id="$_messages">
+	<tr data-order="messages" id="$messages">
 		<td class="attributes"><code>
 			protected  
 			array
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Base_Model_CPT.html#49-57" title="Go to source code"><var>$_messages</var></a>
+				<a href="source-class-Base_Model_CPT.html#77-85" title="Go to source code"><var>$messages</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
-			<a href="#$_messages" class="anchor">#</a>
+			<a href="#$messages" class="anchor">#</a>
 
 			<div class="description short">
 				
@@ -611,7 +685,7 @@ etc.</p>
 
 					<h4>Since</h4>
 					<div class="list">
-							0.1<br />
+							WPMVCBase 0.1<br />
 					</div>
 					<h4>Link</h4>
 					<div class="list">
@@ -627,12 +701,21 @@ etc.</p>
 	<tr>
 		<td><code>
 			<a href="class-Base_Model.html#$admin_css"><var>$admin_css</var></a>, 
+			<a href="class-Base_Model.html#$admin_notices"><var>$admin_notices</var></a>, 
 			<a href="class-Base_Model.html#$admin_scripts"><var>$admin_scripts</var></a>, 
+			<a href="class-Base_Model.html#$app_path"><var>$app_path</var></a>, 
+			<a href="class-Base_Model.html#$base_path"><var>$base_path</var></a>, 
 			<a href="class-Base_Model.html#$css"><var>$css</var></a>, 
+			<a href="class-Base_Model.html#$css_uri"><var>$css_uri</var></a>, 
 			<a href="class-Base_Model.html#$help_tabs"><var>$help_tabs</var></a>, 
+			<a href="class-Base_Model.html#$js_uri"><var>$js_uri</var></a>, 
+			<a href="class-Base_Model.html#$main_plugin_file"><var>$main_plugin_file</var></a>, 
 			<a href="class-Base_Model.html#$metaboxes"><var>$metaboxes</var></a>, 
+			<a href="class-Base_Model.html#$path"><var>$path</var></a>, 
 			<a href="class-Base_Model.html#$scripts"><var>$scripts</var></a>, 
-			<a href="class-Base_Model.html#$shortcodes"><var>$shortcodes</var></a>
+			<a href="class-Base_Model.html#$shortcodes"><var>$shortcodes</var></a>, 
+			<a href="class-Base_Model.html#$txtdomain"><var>$txtdomain</var></a>, 
+			<a href="class-Base_Model.html#$uri"><var>$uri</var></a>
 		</code></td>
 	</tr>
 	</table>

@@ -5,10 +5,10 @@
 	<meta name="generator" content="ApiGen 2.8.0" />
 	<meta name="robots" content="noindex" />
 
-	<title>File models/base_model_help_tab.php</title>
+	<title>File models/class-base-model-help-tab.php</title>
 
-	<script type="text/javascript" src="resources/combined.js?699355046"></script>
-	<script type="text/javascript" src="elementlist.js?1623231360"></script>
+	<script type="text/javascript" src="resources/combined.js?4058929694"></script>
+	<script type="text/javascript" src="elementlist.js?2335409893"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -43,6 +43,7 @@
 			<h3>Classes</h3>
 			<ul>
 				<li><a href="class-Base_Model.html">Base_Model</a></li>
+				<li><a href="class-Base_Model_Admin_Notice.html">Base_Model_Admin_Notice</a></li>
 				<li><a href="class-Base_Model_CPT.html">Base_Model_CPT</a></li>
 				<li class="active"><a href="class-Base_Model_Help_Tab.html">Base_Model_Help_Tab</a></li>
 				<li><a href="class-Base_Model_JS_Object.html">Base_Model_JS_Object</a></li>
@@ -87,170 +88,179 @@
 			<li>
 				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
 			</li>
-			<li>
-				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
-			</li>
 		</ul>
 		<ul>
 		</ul>
 	</div>
 
 <pre><code><span id="1" class="l"><a class="l" href="#1">  1: </a><span class="xlang">&lt;?php</span>
-</span><span id="2" class="l"><a class="l" href="#2">  2: </a><span class="php-comment">/**
-</span></span><span id="3" class="l"><a class="l" href="#3">  3: </a><span class="php-comment"> * The base help tab model
-</span></span><span id="4" class="l"><a class="l" href="#4">  4: </a><span class="php-comment"> *
-</span></span><span id="5" class="l"><a class="l" href="#5">  5: </a><span class="php-comment"> * @author Daryl Lozupone &lt;daryl@actionhook.com&gt;
-</span></span><span id="6" class="l"><a class="l" href="#6">  6: </a><span class="php-comment"> * @copyright 2013
-</span></span><span id="7" class="l"><a class="l" href="#7">  7: </a><span class="php-comment"> * @version 0.1
-</span></span><span id="8" class="l"><a class="l" href="#8">  8: </a><span class="php-comment"> * @since WPMVCBase 0.1
-</span></span><span id="9" class="l"><a class="l" href="#9">  9: </a><span class="php-comment"> */</span>
-</span><span id="10" class="l"><a class="l" href="#10"> 10: </a>
-</span><span id="11" class="l"><a class="l" href="#11"> 11: </a><span class="php-keyword1">if</span> ( ! <span class="php-keyword2">class_exists</span>( <span class="php-quote">'Base_Model_Help_Tab'</span> ) ):
-</span><span id="12" class="l"><a class="l" href="#12"> 12: </a>    <span class="php-comment">/**
-</span></span><span id="13" class="l"><a class="l" href="#13"> 13: </a><span class="php-comment">     * The help tab model.
-</span></span><span id="14" class="l"><a class="l" href="#14"> 14: </a><span class="php-comment">     *
-</span></span><span id="15" class="l"><a class="l" href="#15"> 15: </a><span class="php-comment">     * @package WPMVCBase\Models
-</span></span><span id="16" class="l"><a class="l" href="#16"> 16: </a><span class="php-comment">     * @since 0.1
-</span></span><span id="17" class="l"><a class="l" href="#17"> 17: </a><span class="php-comment">     */</span>
-</span><span id="18" class="l"><a class="l" href="#18"> 18: </a>    <span class="php-keyword1">class</span> <a id="Base_Model_Help_Tab" href="#Base_Model_Help_Tab">Base_Model_Help_Tab</a>
-</span><span id="19" class="l"><a class="l" href="#19"> 19: </a>    {
-</span><span id="20" class="l"><a class="l" href="#20"> 20: </a>        <span class="php-comment">/**
-</span></span><span id="21" class="l"><a class="l" href="#21"> 21: </a><span class="php-comment">         * The help tab id.
-</span></span><span id="22" class="l"><a class="l" href="#22"> 22: </a><span class="php-comment">         *
-</span></span><span id="23" class="l"><a class="l" href="#23"> 23: </a><span class="php-comment">         * @var string
-</span></span><span id="24" class="l"><a class="l" href="#24"> 24: </a><span class="php-comment">         * @see http://codex.wordpress.org/Function_Reference/add_help_tab
-</span></span><span id="25" class="l"><a class="l" href="#25"> 25: </a><span class="php-comment">         * @since 0.1
-</span></span><span id="26" class="l"><a class="l" href="#26"> 26: </a><span class="php-comment">         */</span>
-</span><span id="27" class="l"><a class="l" href="#27"> 27: </a>        <span class="php-keyword1">private</span> <span class="php-var"><a id="$_id" href="#$_id">$_id</a></span>;
-</span><span id="28" class="l"><a class="l" href="#28"> 28: </a>        
-</span><span id="29" class="l"><a class="l" href="#29"> 29: </a>        <span class="php-comment">/**
-</span></span><span id="30" class="l"><a class="l" href="#30"> 30: </a><span class="php-comment">         * The help tab title.
-</span></span><span id="31" class="l"><a class="l" href="#31"> 31: </a><span class="php-comment">         *
-</span></span><span id="32" class="l"><a class="l" href="#32"> 32: </a><span class="php-comment">         * @var string
-</span></span><span id="33" class="l"><a class="l" href="#33"> 33: </a><span class="php-comment">         * @since 0.1
+</span><span id="2" class="l"><a class="l" href="#2">  2: </a> <span class="php-comment">/*
+</span></span><span id="3" class="l"><a class="l" href="#3">  3: </a><span class="php-comment">This program is free software; you can redistribute it and/or
+</span></span><span id="4" class="l"><a class="l" href="#4">  4: </a><span class="php-comment">modify it under the terms of the GNU General Public License
+</span></span><span id="5" class="l"><a class="l" href="#5">  5: </a><span class="php-comment">as published by the Free Software Foundation; either version 2
+</span></span><span id="6" class="l"><a class="l" href="#6">  6: </a><span class="php-comment">of the License, or (at your option) any later version.
+</span></span><span id="7" class="l"><a class="l" href="#7">  7: </a><span class="php-comment">
+</span></span><span id="8" class="l"><a class="l" href="#8">  8: </a><span class="php-comment">This program is distributed in the hope that it will be useful,
+</span></span><span id="9" class="l"><a class="l" href="#9">  9: </a><span class="php-comment">but WITHOUT ANY WARRANTY; without even the implied warranty of
+</span></span><span id="10" class="l"><a class="l" href="#10"> 10: </a><span class="php-comment">MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+</span></span><span id="11" class="l"><a class="l" href="#11"> 11: </a><span class="php-comment">GNU General Public License for more details.
+</span></span><span id="12" class="l"><a class="l" href="#12"> 12: </a><span class="php-comment">
+</span></span><span id="13" class="l"><a class="l" href="#13"> 13: </a><span class="php-comment">You should have received a copy of the GNU General Public License
+</span></span><span id="14" class="l"><a class="l" href="#14"> 14: </a><span class="php-comment">along with this program; if not, write to the Free Software
+</span></span><span id="15" class="l"><a class="l" href="#15"> 15: </a><span class="php-comment">Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+</span></span><span id="16" class="l"><a class="l" href="#16"> 16: </a><span class="php-comment">*/</span>
+</span><span id="17" class="l"><a class="l" href="#17"> 17: </a>
+</span><span id="18" class="l"><a class="l" href="#18"> 18: </a><span class="php-keyword1">if</span> ( ! <span class="php-keyword2">class_exists</span>( <span class="php-quote">'Base_Model_Help_Tab'</span> ) ):
+</span><span id="19" class="l"><a class="l" href="#19"> 19: </a>    <span class="php-comment">/**
+</span></span><span id="20" class="l"><a class="l" href="#20"> 20: </a><span class="php-comment">     * The help tab model.
+</span></span><span id="21" class="l"><a class="l" href="#21"> 21: </a><span class="php-comment">     *
+</span></span><span id="22" class="l"><a class="l" href="#22"> 22: </a><span class="php-comment">     * @package WPMVCBase\Models
+</span></span><span id="23" class="l"><a class="l" href="#23"> 23: </a><span class="php-comment">     * @since   WPMVCBase 0.1
+</span></span><span id="24" class="l"><a class="l" href="#24"> 24: </a><span class="php-comment">     */</span>
+</span><span id="25" class="l"><a class="l" href="#25"> 25: </a>    <span class="php-keyword1">class</span> <a id="Base_Model_Help_Tab" href="#Base_Model_Help_Tab">Base_Model_Help_Tab</a>
+</span><span id="26" class="l"><a class="l" href="#26"> 26: </a>    {
+</span><span id="27" class="l"><a class="l" href="#27"> 27: </a>        <span class="php-comment">/**
+</span></span><span id="28" class="l"><a class="l" href="#28"> 28: </a><span class="php-comment">         * The help tab id.
+</span></span><span id="29" class="l"><a class="l" href="#29"> 29: </a><span class="php-comment">         *
+</span></span><span id="30" class="l"><a class="l" href="#30"> 30: </a><span class="php-comment">         * @var    string
+</span></span><span id="31" class="l"><a class="l" href="#31"> 31: </a><span class="php-comment">         * @since  WPMVCBase 0.1
+</span></span><span id="32" class="l"><a class="l" href="#32"> 32: </a><span class="php-comment">         * @access private
+</span></span><span id="33" class="l"><a class="l" href="#33"> 33: </a><span class="php-comment">         * @link   http://codex.wordpress.org/Function_Reference/add_help_tab
 </span></span><span id="34" class="l"><a class="l" href="#34"> 34: </a><span class="php-comment">         */</span>
-</span><span id="35" class="l"><a class="l" href="#35"> 35: </a>        <span class="php-keyword1">private</span> <span class="php-var"><a id="$_title" href="#$_title">$_title</a></span>;
-</span><span id="36" class="l"><a class="l" href="#36"> 36: </a>        
+</span><span id="35" class="l"><a class="l" href="#35"> 35: </a>        <span class="php-keyword1">private</span> <span class="php-var"><a id="$id" href="#$id">$id</a></span>;
+</span><span id="36" class="l"><a class="l" href="#36"> 36: </a>
 </span><span id="37" class="l"><a class="l" href="#37"> 37: </a>        <span class="php-comment">/**
-</span></span><span id="38" class="l"><a class="l" href="#38"> 38: </a><span class="php-comment">         * The help tab content.
+</span></span><span id="38" class="l"><a class="l" href="#38"> 38: </a><span class="php-comment">         * The help tab title.
 </span></span><span id="39" class="l"><a class="l" href="#39"> 39: </a><span class="php-comment">         *
-</span></span><span id="40" class="l"><a class="l" href="#40"> 40: </a><span class="php-comment">         * @var string
-</span></span><span id="41" class="l"><a class="l" href="#41"> 41: </a><span class="php-comment">         * @since 0.1
-</span></span><span id="42" class="l"><a class="l" href="#42"> 42: </a><span class="php-comment">         */</span>
-</span><span id="43" class="l"><a class="l" href="#43"> 43: </a>        <span class="php-keyword1">private</span> <span class="php-var"><a id="$_content" href="#$_content">$_content</a></span>;
-</span><span id="44" class="l"><a class="l" href="#44"> 44: </a>        
-</span><span id="45" class="l"><a class="l" href="#45"> 45: </a>        <span class="php-comment">/**
-</span></span><span id="46" class="l"><a class="l" href="#46"> 46: </a><span class="php-comment">         * The help tab callback function.
-</span></span><span id="47" class="l"><a class="l" href="#47"> 47: </a><span class="php-comment">         *
-</span></span><span id="48" class="l"><a class="l" href="#48"> 48: </a><span class="php-comment">         * @var string|array
-</span></span><span id="49" class="l"><a class="l" href="#49"> 49: </a><span class="php-comment">         * @since 0.1
-</span></span><span id="50" class="l"><a class="l" href="#50"> 50: </a><span class="php-comment">         */</span>
-</span><span id="51" class="l"><a class="l" href="#51"> 51: </a>        <span class="php-keyword1">private</span> <span class="php-var"><a id="$_callback" href="#$_callback">$_callback</a></span>;
-</span><span id="52" class="l"><a class="l" href="#52"> 52: </a>        
-</span><span id="53" class="l"><a class="l" href="#53"> 53: </a>        <span class="php-comment">/**
-</span></span><span id="54" class="l"><a class="l" href="#54"> 54: </a><span class="php-comment">         * The help tab view file. 
-</span></span><span id="55" class="l"><a class="l" href="#55"> 55: </a><span class="php-comment">         *
-</span></span><span id="56" class="l"><a class="l" href="#56"> 56: </a><span class="php-comment">         * This must be an absolute path to the view file.
+</span></span><span id="40" class="l"><a class="l" href="#40"> 40: </a><span class="php-comment">         * @var    string
+</span></span><span id="41" class="l"><a class="l" href="#41"> 41: </a><span class="php-comment">         * @access private
+</span></span><span id="42" class="l"><a class="l" href="#42"> 42: </a><span class="php-comment">         * @since  WPMVCBase 0.1
+</span></span><span id="43" class="l"><a class="l" href="#43"> 43: </a><span class="php-comment">         */</span>
+</span><span id="44" class="l"><a class="l" href="#44"> 44: </a>        <span class="php-keyword1">private</span> <span class="php-var"><a id="$title" href="#$title">$title</a></span>;
+</span><span id="45" class="l"><a class="l" href="#45"> 45: </a>        
+</span><span id="46" class="l"><a class="l" href="#46"> 46: </a>        <span class="php-comment">/**
+</span></span><span id="47" class="l"><a class="l" href="#47"> 47: </a><span class="php-comment">         * The admin screens on which to display this help tab.
+</span></span><span id="48" class="l"><a class="l" href="#48"> 48: </a><span class="php-comment">         * 
+</span></span><span id="49" class="l"><a class="l" href="#49"> 49: </a><span class="php-comment">         * This array contains the WP screen id's for the screens on which to load this help tab 
+</span></span><span id="50" class="l"><a class="l" href="#50"> 50: </a><span class="php-comment">         * ( e.g. 'Add New Post', 'Reading Settings', etc ). There is a highly incomplete listing of screen ids
+</span></span><span id="51" class="l"><a class="l" href="#51"> 51: </a><span class="php-comment">         * @link http://codex.wordpress.org/Plugin_API/Admin_Screen_Reference
+</span></span><span id="52" class="l"><a class="l" href="#52"> 52: </a><span class="php-comment">         *
+</span></span><span id="53" class="l"><a class="l" href="#53"> 53: </a><span class="php-comment">         * Primarily, the most used are:
+</span></span><span id="54" class="l"><a class="l" href="#54"> 54: </a><span class="php-comment">         * load-post.php      The 'All Posts' page. This also applies to pages and custom post types.
+</span></span><span id="55" class="l"><a class="l" href="#55"> 55: </a><span class="php-comment">         * load-post-edit.php The page loaded to edit an existing post/page/cpt.
+</span></span><span id="56" class="l"><a class="l" href="#56"> 56: </a><span class="php-comment">         * load-post-new.php  The page loaded when creating a new post/page/cpt.
 </span></span><span id="57" class="l"><a class="l" href="#57"> 57: </a><span class="php-comment">         *
-</span></span><span id="58" class="l"><a class="l" href="#58"> 58: </a><span class="php-comment">         * @var string
-</span></span><span id="59" class="l"><a class="l" href="#59"> 59: </a><span class="php-comment">         * @since 0.1
-</span></span><span id="60" class="l"><a class="l" href="#60"> 60: </a><span class="php-comment">         */</span>
-</span><span id="61" class="l"><a class="l" href="#61"> 61: </a>        <span class="php-keyword1">private</span> <span class="php-var"><a id="$_view" href="#$_view">$_view</a></span>;
-</span><span id="62" class="l"><a class="l" href="#62"> 62: </a>        
-</span><span id="63" class="l"><a class="l" href="#63"> 63: </a>        <span class="php-comment">/**
-</span></span><span id="64" class="l"><a class="l" href="#64"> 64: </a><span class="php-comment">         * The class constructor.
-</span></span><span id="65" class="l"><a class="l" href="#65"> 65: </a><span class="php-comment">         *
-</span></span><span id="66" class="l"><a class="l" href="#66"> 66: </a><span class="php-comment">         * @param string $title The help tab title.
-</span></span><span id="67" class="l"><a class="l" href="#67"> 67: </a><span class="php-comment">         * @param string $id The help tab id.
-</span></span><span id="68" class="l"><a class="l" href="#68"> 68: </a><span class="php-comment">         * @param string $content The help tab content. If null, the callback will be used to populate the content.
-</span></span><span id="69" class="l"><a class="l" href="#69"> 69: </a><span class="php-comment">         * @param string|array $callback The help tab callback. If null, the view will be used to populate the content.
-</span></span><span id="70" class="l"><a class="l" href="#70"> 70: </a><span class="php-comment">         * @param string $view The absolute path to the view file used to render this help tab. Must be set if $content and $callback are null.
-</span></span><span id="71" class="l"><a class="l" href="#71"> 71: </a><span class="php-comment">         * @since 0.1
-</span></span><span id="72" class="l"><a class="l" href="#72"> 72: </a><span class="php-comment">         */</span>
-</span><span id="73" class="l"><a class="l" href="#73"> 73: </a>        <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="___construct" href="#___construct">__construct</a>( <span class="php-var">$title</span>, <span class="php-var">$id</span>, <span class="php-var">$content</span> = <span class="php-keyword1">null</span>, <span class="php-var">$callback</span> = <span class="php-keyword1">null</span>, <span class="php-var">$view</span> = <span class="php-keyword1">null</span> )
-</span><span id="74" class="l"><a class="l" href="#74"> 74: </a>        {
-</span><span id="75" class="l"><a class="l" href="#75"> 75: </a>            <span class="php-keyword1">if</span> ( !<span class="php-keyword1">isset</span>( <span class="php-var">$content</span> ) &amp;&amp; ! <span class="php-keyword1">isset</span>( <span class="php-var">$callback</span> ) &amp;&amp; ! <span class="php-keyword1">isset</span>( <span class="php-var">$view</span> ) )
-</span><span id="76" class="l"><a class="l" href="#76"> 76: </a>                <span class="php-keyword2">trigger_error</span>(
-</span><span id="77" class="l"><a class="l" href="#77"> 77: </a>                    <span class="php-quote">'You must specify either the help tab content, a callback function, or a view to use for the help tab'</span>,
-</span><span id="78" class="l"><a class="l" href="#78"> 78: </a>                    E_USER_WARNING
-</span><span id="79" class="l"><a class="l" href="#79"> 79: </a>                );
-</span><span id="80" class="l"><a class="l" href="#80"> 80: </a>                
-</span><span id="81" class="l"><a class="l" href="#81"> 81: </a>            <span class="php-var">$this</span>-&gt;_id = <span class="php-var">$id</span>;
-</span><span id="82" class="l"><a class="l" href="#82"> 82: </a>            <span class="php-var">$this</span>-&gt;_title = <span class="php-var">$title</span>;
-</span><span id="83" class="l"><a class="l" href="#83"> 83: </a>            <span class="php-var">$this</span>-&gt;_content = <span class="php-var">$content</span>;
-</span><span id="84" class="l"><a class="l" href="#84"> 84: </a>            <span class="php-var">$this</span>-&gt;_callback = <span class="php-var">$callback</span>;
-</span><span id="85" class="l"><a class="l" href="#85"> 85: </a>            <span class="php-var">$this</span>-&gt;_view = <span class="php-var">$view</span>;
-</span><span id="86" class="l"><a class="l" href="#86"> 86: </a>        }
-</span><span id="87" class="l"><a class="l" href="#87"> 87: </a>        
+</span></span><span id="58" class="l"><a class="l" href="#58"> 58: </a><span class="php-comment">         * @var    array
+</span></span><span id="59" class="l"><a class="l" href="#59"> 59: </a><span class="php-comment">         * @access private
+</span></span><span id="60" class="l"><a class="l" href="#60"> 60: </a><span class="php-comment">         * @since  WPMVCBase 0.2
+</span></span><span id="61" class="l"><a class="l" href="#61"> 61: </a><span class="php-comment">         */</span>
+</span><span id="62" class="l"><a class="l" href="#62"> 62: </a>        <span class="php-keyword1">private</span> <span class="php-var"><a id="$screens" href="#$screens">$screens</a></span>;
+</span><span id="63" class="l"><a class="l" href="#63"> 63: </a>        
+</span><span id="64" class="l"><a class="l" href="#64"> 64: </a>        <span class="php-comment">/**
+</span></span><span id="65" class="l"><a class="l" href="#65"> 65: </a><span class="php-comment">         * The post types on which to display this help tab.
+</span></span><span id="66" class="l"><a class="l" href="#66"> 66: </a><span class="php-comment">         * 
+</span></span><span id="67" class="l"><a class="l" href="#67"> 67: </a><span class="php-comment">         * This property is used in conjunction with the $screens property to determine upon which admin pages
+</span></span><span id="68" class="l"><a class="l" href="#68"> 68: </a><span class="php-comment">         * to display this help tab.
+</span></span><span id="69" class="l"><a class="l" href="#69"> 69: </a><span class="php-comment">         *
+</span></span><span id="70" class="l"><a class="l" href="#70"> 70: </a><span class="php-comment">         * For example, if the post_types property is set to 'post' and the $screens property is set to 'load-post-new.php',
+</span></span><span id="71" class="l"><a class="l" href="#71"> 71: </a><span class="php-comment">         * this tab will appear on only the Create New Post page for posts ( not pages ).
+</span></span><span id="72" class="l"><a class="l" href="#72"> 72: </a><span class="php-comment">         *
+</span></span><span id="73" class="l"><a class="l" href="#73"> 73: </a><span class="php-comment">         * @var    array
+</span></span><span id="74" class="l"><a class="l" href="#74"> 74: </a><span class="php-comment">         * @access private
+</span></span><span id="75" class="l"><a class="l" href="#75"> 75: </a><span class="php-comment">         * @since  WPMVCBase 0.2
+</span></span><span id="76" class="l"><a class="l" href="#76"> 76: </a><span class="php-comment">         */</span>
+</span><span id="77" class="l"><a class="l" href="#77"> 77: </a>        <span class="php-keyword1">private</span> <span class="php-var"><a id="$post_types" href="#$post_types">$post_types</a></span>;
+</span><span id="78" class="l"><a class="l" href="#78"> 78: </a>        
+</span><span id="79" class="l"><a class="l" href="#79"> 79: </a>        <span class="php-comment">/**
+</span></span><span id="80" class="l"><a class="l" href="#80"> 80: </a><span class="php-comment">         * The help tab content.
+</span></span><span id="81" class="l"><a class="l" href="#81"> 81: </a><span class="php-comment">         *
+</span></span><span id="82" class="l"><a class="l" href="#82"> 82: </a><span class="php-comment">         * @var    string
+</span></span><span id="83" class="l"><a class="l" href="#83"> 83: </a><span class="php-comment">         * @access private
+</span></span><span id="84" class="l"><a class="l" href="#84"> 84: </a><span class="php-comment">         * @since  WPMVCBase 0.1
+</span></span><span id="85" class="l"><a class="l" href="#85"> 85: </a><span class="php-comment">         */</span>
+</span><span id="86" class="l"><a class="l" href="#86"> 86: </a>        <span class="php-keyword1">private</span> <span class="php-var"><a id="$content" href="#$content">$content</a></span>;
+</span><span id="87" class="l"><a class="l" href="#87"> 87: </a>
 </span><span id="88" class="l"><a class="l" href="#88"> 88: </a>        <span class="php-comment">/**
-</span></span><span id="89" class="l"><a class="l" href="#89"> 89: </a><span class="php-comment">         * Add this help tab to the current screen.
+</span></span><span id="89" class="l"><a class="l" href="#89"> 89: </a><span class="php-comment">         * The class constructor.
 </span></span><span id="90" class="l"><a class="l" href="#90"> 90: </a><span class="php-comment">         *
-</span></span><span id="91" class="l"><a class="l" href="#91"> 91: </a><span class="php-comment">         * @link http://codex.wordpress.org/Function_Reference/add_help_tab
-</span></span><span id="92" class="l"><a class="l" href="#92"> 92: </a><span class="php-comment">         * @since 0.1
-</span></span><span id="93" class="l"><a class="l" href="#93"> 93: </a><span class="php-comment">         */</span>
-</span><span id="94" class="l"><a class="l" href="#94"> 94: </a>        <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_add" href="#_add">add</a>()
-</span><span id="95" class="l"><a class="l" href="#95"> 95: </a>        {
-</span><span id="96" class="l"><a class="l" href="#96"> 96: </a>            <span class="php-keyword1">if</span>( <span class="php-keyword2">is_null</span>( <span class="php-var">$this</span>-&gt;_callback ) &amp;&amp; <span class="php-keyword2">file_exists</span>( <span class="php-var">$this</span>-&gt;_view ) ):
-</span><span id="97" class="l"><a class="l" href="#97"> 97: </a>                <span class="php-keyword2">ob_start</span>();
-</span><span id="98" class="l"><a class="l" href="#98"> 98: </a>                <span class="php-keyword1">require_once</span>( <span class="php-var">$this</span>-&gt;_view );
-</span><span id="99" class="l"><a class="l" href="#99"> 99: </a>                <span class="php-var">$this</span>-&gt;_content = <span class="php-keyword2">ob_get_clean</span>();
-</span><span id="100" class="l"><a class="l" href="#100">100: </a>            <span class="php-keyword1">endif</span>;
-</span><span id="101" class="l"><a class="l" href="#101">101: </a>            get_current_screen()-&gt;add_help_tab( <span class="php-keyword1">array</span>(<span class="php-quote">'id'</span> =&gt; <span class="php-var">$this</span>-&gt;_id, <span class="php-quote">'title'</span> =&gt; <span class="php-var">$this</span>-&gt;_title, <span class="php-quote">'content'</span> =&gt; <span class="php-var">$this</span>-&gt;_content ) );
-</span><span id="102" class="l"><a class="l" href="#102">102: </a>        }
-</span><span id="103" class="l"><a class="l" href="#103">103: </a>        
-</span><span id="104" class="l"><a class="l" href="#104">104: </a>        <span class="php-comment">/**
-</span></span><span id="105" class="l"><a class="l" href="#105">105: </a><span class="php-comment">         * Get the help tab title.
-</span></span><span id="106" class="l"><a class="l" href="#106">106: </a><span class="php-comment">         *
-</span></span><span id="107" class="l"><a class="l" href="#107">107: </a><span class="php-comment">         * @since 0.1
-</span></span><span id="108" class="l"><a class="l" href="#108">108: </a><span class="php-comment">         */</span>
-</span><span id="109" class="l"><a class="l" href="#109">109: </a>        <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_get_title" href="#_get_title">get_title</a>()
-</span><span id="110" class="l"><a class="l" href="#110">110: </a>        {
-</span><span id="111" class="l"><a class="l" href="#111">111: </a>            <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;_title;
-</span><span id="112" class="l"><a class="l" href="#112">112: </a>        }
-</span><span id="113" class="l"><a class="l" href="#113">113: </a>        
-</span><span id="114" class="l"><a class="l" href="#114">114: </a>        <span class="php-comment">/**
-</span></span><span id="115" class="l"><a class="l" href="#115">115: </a><span class="php-comment">         * Get the help tab id.
-</span></span><span id="116" class="l"><a class="l" href="#116">116: </a><span class="php-comment">         *
-</span></span><span id="117" class="l"><a class="l" href="#117">117: </a><span class="php-comment">         * @since 0.1
-</span></span><span id="118" class="l"><a class="l" href="#118">118: </a><span class="php-comment">         */</span>
-</span><span id="119" class="l"><a class="l" href="#119">119: </a>        <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_get_id" href="#_get_id">get_id</a>()
-</span><span id="120" class="l"><a class="l" href="#120">120: </a>        {
-</span><span id="121" class="l"><a class="l" href="#121">121: </a>            <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;_id;
-</span><span id="122" class="l"><a class="l" href="#122">122: </a>        }
-</span><span id="123" class="l"><a class="l" href="#123">123: </a>        
-</span><span id="124" class="l"><a class="l" href="#124">124: </a>        <span class="php-comment">/**
-</span></span><span id="125" class="l"><a class="l" href="#125">125: </a><span class="php-comment">         * Set the help tab callback.
-</span></span><span id="126" class="l"><a class="l" href="#126">126: </a><span class="php-comment">         *
-</span></span><span id="127" class="l"><a class="l" href="#127">127: </a><span class="php-comment">         * @param string|array $callback The help tab callback.
-</span></span><span id="128" class="l"><a class="l" href="#128">128: </a><span class="php-comment">         * @since 0.1
-</span></span><span id="129" class="l"><a class="l" href="#129">129: </a><span class="php-comment">         */</span>
-</span><span id="130" class="l"><a class="l" href="#130">130: </a>        <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_set_callback" href="#_set_callback">set_callback</a>( <span class="php-var">$callback</span> )
-</span><span id="131" class="l"><a class="l" href="#131">131: </a>        {
-</span><span id="132" class="l"><a class="l" href="#132">132: </a>            <span class="php-keyword1">if</span> ( ! <span class="php-keyword2">is_callable</span>( <span class="php-var">$callback</span> ) ):
-</span><span id="133" class="l"><a class="l" href="#133">133: </a>                <span class="php-keyword2">trigger_error</span>(
-</span><span id="134" class="l"><a class="l" href="#134">134: </a>                    __( <span class="php-quote">'A valid callback function must be specified'</span>, <span class="php-quote">'wp-mvc-base'</span> ),
-</span><span id="135" class="l"><a class="l" href="#135">135: </a>                    E_USER_WARNING
-</span><span id="136" class="l"><a class="l" href="#136">136: </a>                );
-</span><span id="137" class="l"><a class="l" href="#137">137: </a>                <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
-</span><span id="138" class="l"><a class="l" href="#138">138: </a>            <span class="php-keyword1">endif</span>;
-</span><span id="139" class="l"><a class="l" href="#139">139: </a>            
-</span><span id="140" class="l"><a class="l" href="#140">140: </a>            <span class="php-var">$this</span>-&gt;_callback = <span class="php-var">$callback</span>;
-</span><span id="141" class="l"><a class="l" href="#141">141: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">true</span>;
-</span><span id="142" class="l"><a class="l" href="#142">142: </a>        }
-</span><span id="143" class="l"><a class="l" href="#143">143: </a>        
-</span><span id="144" class="l"><a class="l" href="#144">144: </a>        <span class="php-comment">/**
-</span></span><span id="145" class="l"><a class="l" href="#145">145: </a><span class="php-comment">         * Set the help tab content.
-</span></span><span id="146" class="l"><a class="l" href="#146">146: </a><span class="php-comment">         *
-</span></span><span id="147" class="l"><a class="l" href="#147">147: </a><span class="php-comment">         * @param string $content The help tab content.
-</span></span><span id="148" class="l"><a class="l" href="#148">148: </a><span class="php-comment">         * @since 0.1
-</span></span><span id="149" class="l"><a class="l" href="#149">149: </a><span class="php-comment">         */</span>
-</span><span id="150" class="l"><a class="l" href="#150">150: </a>        <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <span class="php-keyword2">set_content</span>( <span class="php-var">$content</span> )
-</span><span id="151" class="l"><a class="l" href="#151">151: </a>        {
-</span><span id="152" class="l"><a class="l" href="#152">152: </a>            <span class="php-var">$this</span>-&gt;_content = <span class="php-var">$content</span>;
-</span><span id="153" class="l"><a class="l" href="#153">153: </a>        }
-</span><span id="154" class="l"><a class="l" href="#154">154: </a>    }
-</span><span id="155" class="l"><a class="l" href="#155">155: </a><span class="php-keyword1">endif</span>;
-</span><span id="156" class="l"><a class="l" href="#156">156: </a></span><span class="xlang">?&gt;</span></code></pre>
+</span></span><span id="91" class="l"><a class="l" href="#91"> 91: </a><span class="php-comment">         * @param  string       $title      The help tab title.
+</span></span><span id="92" class="l"><a class="l" href="#92"> 92: </a><span class="php-comment">         * @param  string       $id         The help tab id.
+</span></span><span id="93" class="l"><a class="l" href="#93"> 93: </a><span class="php-comment">         * @param  array        $screens    The screens on which to add the help screen tab.
+</span></span><span id="94" class="l"><a class="l" href="#94"> 94: </a><span class="php-comment">         * @param  array        $post_types The post types on which to display this help tab
+</span></span><span id="95" class="l"><a class="l" href="#95"> 95: </a><span class="php-comment">         * @param  string       $content    The help tab content. If null, the callback will be used to populate the content.
+</span></span><span id="96" class="l"><a class="l" href="#96"> 96: </a><span class="php-comment">         * @access public
+</span></span><span id="97" class="l"><a class="l" href="#97"> 97: </a><span class="php-comment">         * @since  WPMVCBase 0.1
+</span></span><span id="98" class="l"><a class="l" href="#98"> 98: </a><span class="php-comment">         */</span>
+</span><span id="99" class="l"><a class="l" href="#99"> 99: </a>        <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="___construct" href="#___construct">__construct</a>( <span class="php-var">$id</span>, <span class="php-var">$title</span>, <span class="php-keyword1">array</span> <span class="php-var">$screens</span>, <span class="php-keyword1">array</span> <span class="php-var">$post_types</span>, <span class="php-var">$content</span> )
+</span><span id="100" class="l"><a class="l" href="#100">100: </a>        {
+</span><span id="101" class="l"><a class="l" href="#101">101: </a>            <span class="php-var">$this</span>-&gt;id         = <span class="php-var">$id</span>;
+</span><span id="102" class="l"><a class="l" href="#102">102: </a>            <span class="php-var">$this</span>-&gt;title      = <span class="php-var">$title</span>;
+</span><span id="103" class="l"><a class="l" href="#103">103: </a>            <span class="php-var">$this</span>-&gt;screens    = <span class="php-var">$screens</span>;
+</span><span id="104" class="l"><a class="l" href="#104">104: </a>            <span class="php-var">$this</span>-&gt;post_types = <span class="php-var">$post_types</span>;
+</span><span id="105" class="l"><a class="l" href="#105">105: </a>            <span class="php-var">$this</span>-&gt;content    = <span class="php-var">$content</span>;
+</span><span id="106" class="l"><a class="l" href="#106">106: </a>        }
+</span><span id="107" class="l"><a class="l" href="#107">107: </a>
+</span><span id="108" class="l"><a class="l" href="#108">108: </a>        <span class="php-comment">/**
+</span></span><span id="109" class="l"><a class="l" href="#109">109: </a><span class="php-comment">         * Get the help tab title.
+</span></span><span id="110" class="l"><a class="l" href="#110">110: </a><span class="php-comment">         *
+</span></span><span id="111" class="l"><a class="l" href="#111">111: </a><span class="php-comment">         * @access public
+</span></span><span id="112" class="l"><a class="l" href="#112">112: </a><span class="php-comment">         * @since  WPMVCBase 0.1
+</span></span><span id="113" class="l"><a class="l" href="#113">113: </a><span class="php-comment">         */</span>
+</span><span id="114" class="l"><a class="l" href="#114">114: </a>        <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_get_title" href="#_get_title">get_title</a>()
+</span><span id="115" class="l"><a class="l" href="#115">115: </a>        {
+</span><span id="116" class="l"><a class="l" href="#116">116: </a>            <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;title;
+</span><span id="117" class="l"><a class="l" href="#117">117: </a>        }
+</span><span id="118" class="l"><a class="l" href="#118">118: </a>
+</span><span id="119" class="l"><a class="l" href="#119">119: </a>        <span class="php-comment">/**
+</span></span><span id="120" class="l"><a class="l" href="#120">120: </a><span class="php-comment">         * Get the help tab id.
+</span></span><span id="121" class="l"><a class="l" href="#121">121: </a><span class="php-comment">         *
+</span></span><span id="122" class="l"><a class="l" href="#122">122: </a><span class="php-comment">         * @access public
+</span></span><span id="123" class="l"><a class="l" href="#123">123: </a><span class="php-comment">         * @since  WPMVCBase 0.1
+</span></span><span id="124" class="l"><a class="l" href="#124">124: </a><span class="php-comment">         */</span>
+</span><span id="125" class="l"><a class="l" href="#125">125: </a>        <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_get_id" href="#_get_id">get_id</a>()
+</span><span id="126" class="l"><a class="l" href="#126">126: </a>        {
+</span><span id="127" class="l"><a class="l" href="#127">127: </a>            <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;id;
+</span><span id="128" class="l"><a class="l" href="#128">128: </a>        }
+</span><span id="129" class="l"><a class="l" href="#129">129: </a>        
+</span><span id="130" class="l"><a class="l" href="#130">130: </a>        <span class="php-comment">/**
+</span></span><span id="131" class="l"><a class="l" href="#131">131: </a><span class="php-comment">         * Get the help tab screens.
+</span></span><span id="132" class="l"><a class="l" href="#132">132: </a><span class="php-comment">         *
+</span></span><span id="133" class="l"><a class="l" href="#133">133: </a><span class="php-comment">         * @return array $screens
+</span></span><span id="134" class="l"><a class="l" href="#134">134: </a><span class="php-comment">         * @access public
+</span></span><span id="135" class="l"><a class="l" href="#135">135: </a><span class="php-comment">         * @since  WPMVCBase 0.2
+</span></span><span id="136" class="l"><a class="l" href="#136">136: </a><span class="php-comment">         */</span>
+</span><span id="137" class="l"><a class="l" href="#137">137: </a>        <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_get_screens" href="#_get_screens">get_screens</a>()
+</span><span id="138" class="l"><a class="l" href="#138">138: </a>        {
+</span><span id="139" class="l"><a class="l" href="#139">139: </a>            <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;screens;
+</span><span id="140" class="l"><a class="l" href="#140">140: </a>        }
+</span><span id="141" class="l"><a class="l" href="#141">141: </a>
+</span><span id="142" class="l"><a class="l" href="#142">142: </a>        <span class="php-comment">/**
+</span></span><span id="143" class="l"><a class="l" href="#143">143: </a><span class="php-comment">         * Get the post types associated with this help tab.
+</span></span><span id="144" class="l"><a class="l" href="#144">144: </a><span class="php-comment">         *
+</span></span><span id="145" class="l"><a class="l" href="#145">145: </a><span class="php-comment">         * @return array $post_types
+</span></span><span id="146" class="l"><a class="l" href="#146">146: </a><span class="php-comment">         * @access public
+</span></span><span id="147" class="l"><a class="l" href="#147">147: </a><span class="php-comment">         * @since  WPMVCBase 0.2
+</span></span><span id="148" class="l"><a class="l" href="#148">148: </a><span class="php-comment">         */</span>
+</span><span id="149" class="l"><a class="l" href="#149">149: </a>        <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_get_post_types" href="#_get_post_types">get_post_types</a>()
+</span><span id="150" class="l"><a class="l" href="#150">150: </a>        {
+</span><span id="151" class="l"><a class="l" href="#151">151: </a>            <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;post_types;
+</span><span id="152" class="l"><a class="l" href="#152">152: </a>        }
+</span><span id="153" class="l"><a class="l" href="#153">153: </a>        
+</span><span id="154" class="l"><a class="l" href="#154">154: </a>        <span class="php-comment">/**
+</span></span><span id="155" class="l"><a class="l" href="#155">155: </a><span class="php-comment">         * Set the help tab content.
+</span></span><span id="156" class="l"><a class="l" href="#156">156: </a><span class="php-comment">         *
+</span></span><span id="157" class="l"><a class="l" href="#157">157: </a><span class="php-comment">         * @return string $content
+</span></span><span id="158" class="l"><a class="l" href="#158">158: </a><span class="php-comment">         * @access public
+</span></span><span id="159" class="l"><a class="l" href="#159">159: </a><span class="php-comment">         * @since  WPMVCBase 0.1
+</span></span><span id="160" class="l"><a class="l" href="#160">160: </a><span class="php-comment">         */</span>
+</span><span id="161" class="l"><a class="l" href="#161">161: </a>        
+</span><span id="162" class="l"><a class="l" href="#162">162: </a>        <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_get_content" href="#_get_content">get_content</a>()
+</span><span id="163" class="l"><a class="l" href="#163">163: </a>        {
+</span><span id="164" class="l"><a class="l" href="#164">164: </a>            <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;content;
+</span><span id="165" class="l"><a class="l" href="#165">165: </a>        }
+</span><span id="166" class="l"><a class="l" href="#166">166: </a>    }
+</span><span id="167" class="l"><a class="l" href="#167">167: </a><span class="php-keyword1">endif</span>;
+</span><span id="168" class="l"><a class="l" href="#168">168: </a></span></code></pre>
 
 	<div id="footer">
 		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

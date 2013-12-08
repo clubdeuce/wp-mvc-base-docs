@@ -6,8 +6,8 @@
 
 	<title>Class Base_Model_JS_Object</title>
 
-	<script type="text/javascript" src="resources/combined.js?699355046"></script>
-	<script type="text/javascript" src="elementlist.js?1623231360"></script>
+	<script type="text/javascript" src="resources/combined.js?4058929694"></script>
+	<script type="text/javascript" src="elementlist.js?2335409893"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -42,6 +42,7 @@
 			<h3>Classes</h3>
 			<ul>
 				<li><a href="class-Base_Model.html">Base_Model</a></li>
+				<li><a href="class-Base_Model_Admin_Notice.html">Base_Model_Admin_Notice</a></li>
 				<li><a href="class-Base_Model_CPT.html">Base_Model_CPT</a></li>
 				<li><a href="class-Base_Model_Help_Tab.html">Base_Model_Help_Tab</a></li>
 				<li class="active"><a href="class-Base_Model_JS_Object.html">Base_Model_JS_Object</a></li>
@@ -85,9 +86,6 @@
 			<li>
 				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
 			</li>
-			<li>
-				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
-			</li>
 		</ul>
 		<ul>
 		</ul>
@@ -100,76 +98,6 @@
 	<div class="description">
 	
 <p>The base javascript object model.</p>
-
-<p>Example:</p>
-
-<pre>
-<span class="php-var">$script</span> = <span
-class="php-keyword1">new</span> Base_Model_JS_Object(
-                <span
-class="php-quote">'my-script'</span>
-                <span
-class="php-quote">'http://example.com/wp-content/plugins/my-plugin/js/my-script.js'</span>,
-                <span
-class="php-keyword1">array</span>( <span
-class="php-quote">'jquery'</span>, <span
-class="php-quote">'jquery-ui'</span> ),
-                <span
-class="php-quote">'5.4.17'</span>
-                <span
-class="php-keyword1">false</span>,
-                <span
-class="php-quote">'myscriptl10n'</span>,
-        <span
-class="php-keyword1">array</span>( <span
-class="php-quote">'errorMessage'</span> =&gt; __( <span
-class="php-quote">'There was an error.'</span>, <span
-class="php-quote">'mytxtdomain'</span>)
-);
-</pre>
-
-<p>This class exposes two filters, ah_base_filter_script_src-$handle and
-ah_base_filter_script_localization_args-$handle. These are included to allow the
-plugin controller to modify these elements immediately prior to enqueuing of the
-script.</p>
-
-<p>Example:</p>
-
-<pre>
-<span class="php-keyword1">public</span> <span
-class="php-keyword1">function</span> filter_script_source( <span
-class="php-var">$source</span> )
-{
-                <span
-class="php-var">$source</span> = <span
-class="php-quote">'http://example.com/wp-content/plugins/my-plugin/js/my-script.min.js'</span>;
-                <span
-class="php-keyword1">return</span> <span
-class="php-var">$source</span>;
-}
-add_filter( <span
-class="php-quote">'ah_base_filter_script_src-my-script'</span>, <span
-class="php-quote">'filter_script_source'</span> );
-
-<span
-class="php-keyword1">public</span> <span
-class="php-keyword1">function</span> filter_script_localization( <span
-class="php-var">$args</span> )
-{
-                <span
-class="php-var">$args</span>[<span class="php-quote">'my_arg'</span>] = <span
-class="php-quote">'foo'</span>;
-                <span
-class="php-keyword1">return</span> <span
-class="php-var">$args</span>;
-}
-add_filter( <span
-class="php-quote">'ah_base_filter_script_localization_args-my-script'</span>, <span
-class="php-quote">'filter_script_localization'</span> );
-</pre>
-
-<p>If using a script already registered by WordPress, you need only specify the
-handle.</p>
 
 	</div>
 
@@ -187,12 +115,9 @@ handle.</p>
 		
 		<b>Package:</b> <a href="package-WPMVCBase.html">WPMVCBase</a>\<a href="package-WPMVCBase.Models.html">Models</a><br />
 
-				<b>Author:</b>
-				Daryl Lozupone &lt;<a
-href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<br />
 				<b>Since:</b>
 				WPMVCBase 0.1<br />
-		<b>Located at</b> <a href="source-class-Base_Model_JS_Object.html#10-228" title="Go to source code">models/base_model_js_object.php</a><br />
+		<b>Located at</b> <a href="source-class-Base_Model_JS_Object.html#19-299" title="Go to source code">models/class-base-model-js-object.php</a><br />
 	</div>
 
 
@@ -210,7 +135,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Base_Model_JS_Object.html#135-156" title="Go to source code">__construct</a>( <span>string <var>$handle</var></span>, <span>string <var>$src</var> = <span class="php-keyword1">false</span></span>, <span>array <var>$deps</var> = <span class="php-keyword1">array</span>()</span>, <span>string|boolean <var>$version</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$in_footer</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$localization_var</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$localization_args</var> = <span class="php-keyword1">null</span> </span> )</code>
+		<code><a href="source-class-Base_Model_JS_Object.html#120-142" title="Go to source code">__construct</a>( <span>string <var>$handle</var></span>, <span>string <var>$src</var> = <span class="php-keyword1">false</span></span>, <span>array <var>$deps</var> = <span class="php-keyword1">array</span>()</span>, <span>string|boolean <var>$version</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$in_footer</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$localization_var</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$localization_args</var> = <span class="php-keyword1">null</span> </span> )</code>
 
 		<div class="description short">
 			
@@ -246,7 +171,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -264,7 +189,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_register">#</a>
-		<code><a href="source-class-Base_Model_JS_Object.html#159-169" title="Go to source code">register</a>( )</code>
+		<code><a href="source-class-Base_Model_JS_Object.html#144-154" title="Go to source code">register</a>( )</code>
 
 		<div class="description short">
 			
@@ -283,7 +208,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 				<h4>Link</h4>
 				<div class="list">
@@ -305,7 +230,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_enqueue">#</a>
-		<code><a href="source-class-Base_Model_JS_Object.html#171-187" title="Go to source code">enqueue</a>( )</code>
+		<code><a href="source-class-Base_Model_JS_Object.html#156-173" title="Go to source code">enqueue</a>( )</code>
 
 		<div class="description short">
 			
@@ -324,7 +249,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 				<h4>Link</h4>
 				<div class="list">
@@ -346,7 +271,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_localize">#</a>
-		<code><a href="source-class-Base_Model_JS_Object.html#189-203" title="Go to source code">localize</a>( )</code>
+		<code><a href="source-class-Base_Model_JS_Object.html#175-189" title="Go to source code">localize</a>( )</code>
 
 		<div class="description short">
 			
@@ -369,7 +294,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 				<h4>Link</h4>
 				<div class="list">
@@ -391,7 +316,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_dequeue">#</a>
-		<code><a href="source-class-Base_Model_JS_Object.html#205-215" title="Go to source code">dequeue</a>( )</code>
+		<code><a href="source-class-Base_Model_JS_Object.html#191-201" title="Go to source code">dequeue</a>( )</code>
 
 		<div class="description short">
 			
@@ -410,7 +335,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 				<h4>Link</h4>
 				<div class="list">
@@ -432,7 +357,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_deregister">#</a>
-		<code><a href="source-class-Base_Model_JS_Object.html#217-227" title="Go to source code">deregister</a>( )</code>
+		<code><a href="source-class-Base_Model_JS_Object.html#203-213" title="Go to source code">deregister</a>( )</code>
 
 		<div class="description short">
 			
@@ -451,11 +376,298 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 				<h4>Link</h4>
 				<div class="list">
 						<a href="http://codex.wordpress.org/Function_Reference/wp_deregister_script">http://codex.wordpress.org/Function_Reference/wp_deregister_script</a><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_handle" id="_get_handle">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_handle">#</a>
+		<code><a href="source-class-Base_Model_JS_Object.html#215-224" title="Go to source code">get_handle</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the script handle.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the script handle.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$handle<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.3<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_src" id="_get_src">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_src">#</a>
+		<code><a href="source-class-Base_Model_JS_Object.html#226-235" title="Go to source code">get_src</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the script source.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the script source.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$src<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.3<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_deps" id="_get_deps">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_deps">#</a>
+		<code><a href="source-class-Base_Model_JS_Object.html#237-246" title="Go to source code">get_deps</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the script dependencies.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the script dependencies.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>$deps<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.3<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_version" id="_get_version">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_version">#</a>
+		<code><a href="source-class-Base_Model_JS_Object.html#248-257" title="Go to source code">get_version</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the script version.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the script version.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$version<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.3<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_in_footer" id="_get_in_footer">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_in_footer">#</a>
+		<code><a href="source-class-Base_Model_JS_Object.html#259-268" title="Go to source code">get_in_footer</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the script placement.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the script placement.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$in_footer<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.3<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_localization_var" id="_get_localization_var">
+
+		<td class="attributes"><code>
+			 public 
+			string|boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_localization_var">#</a>
+		<code><a href="source-class-Base_Model_JS_Object.html#270-283" title="Go to source code">get_localization_var</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the script localization variable name.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the script localization variable name.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string|boolean</code><br>$localization_var if set, FALSE if not.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.3<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_localization_args" id="_get_localization_args">
+
+		<td class="attributes"><code>
+			 public 
+			string|boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_localization_args">#</a>
+		<code><a href="source-class-Base_Model_JS_Object.html#285-298" title="Go to source code">get_localization_args</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the script localization arguments.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the script localization arguments.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string|boolean</code><br>$localization_args if set, FALSE if not.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.3<br />
 				</div>
 
 
@@ -475,6 +687,264 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 
 
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="handle" id="$handle">
+		<td class="attributes"><code>
+			private  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_JS_Object.html#27-38" title="Go to source code"><var>$handle</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$handle" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The script handle.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The script handle.</p>
+
+<p>Name used as a handle for the script. As a special case, if the string
+contains a '?' character, the preceding part of the string refers to the
+registered handle, and the succeeding part is appended to the URL as a query
+string.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="src" id="$src">
+		<td class="attributes"><code>
+			private  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_JS_Object.html#40-53" title="Go to source code"><var>$src</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$src" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The script source uri.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The script source uri.</p>
+
+<p>URL to the script, e.g. <a
+href="http://example.com/wp-content/themes/my-theme/my-theme-script.js">http://example.com/wp-content/themes/my-theme/my-theme-script.js</a>.
+You should never hardcode URLs to local scripts. To get a proper URL to local
+scripts, use plugins_url() for plugins and get_template_directory_uri() for
+themes. Remote scripts can be specified with a protocol-agnostic URL, e.g.
+//otherdomain.com/js/their-script.js. This parameter is only required when the
+script with the given $handle has not been already registered using
+wp_register_script().</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="deps" id="$deps">
+		<td class="attributes"><code>
+			private  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_JS_Object.html#55-65" title="Go to source code"><var>$deps</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$deps" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The script dependencies.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The script dependencies.</p>
+
+<p>Array of the handles of all the registered scripts upon which this script
+depends, that is the scripts that must be loaded before this script. Set false
+if there are no dependencies.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="version" id="$version">
+		<td class="attributes"><code>
+			private  
+			string|boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_JS_Object.html#67-80" title="Go to source code"><var>$version</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$version" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The script version number.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The script version number.</p>
+
+<p>String specifying the script version number, if it has one, which is
+concatenated to the end of the path as a query string. If no version is
+specified or set to false, then WordPress automatically adds a version number
+equal to the current version of WordPress you are running. If set to null no
+version is added. This parameter is used to ensure that the correct version is
+sent to the client regardless of caching, and so should be included if a version
+number is available and makes sense for the script.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="in_footer" id="$in_footer">
+		<td class="attributes"><code>
+			private  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_JS_Object.html#82-92" title="Go to source code"><var>$in_footer</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$in_footer" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Script placement.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Script placement.</p>
+
+<p>Normally, scripts are placed in &lt;head&gt; of the HTML document. If this
+parameter is true, the script is placed before the &lt;/body&gt; end tag.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="localization_var" id="$localization_var">
+		<td class="attributes"><code>
+			private  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_JS_Object.html#94-105" title="Go to source code"><var>$localization_var</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$localization_var" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The localization variable name.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The localization variable name.</p>
+
+<p>String specifying the localization variable name to be used in the
+wp_localize_script() function. If set, the $localization_args property is
+required and this class will attempt to localize the script immediately after
+enqueuing the script.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="localization_args" id="$localization_args">
+		<td class="attributes"><code>
+			private  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_JS_Object.html#107-118" title="Go to source code"><var>$localization_args</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$localization_args" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The localization arguments.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The localization arguments.</p>
+
+<p>An array of key/value pairs containing the argument name(s) and value(s). If
+the $localization_var property is set, this will be used as the $args parameter
+of the wp_localize_script function.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	</table>
 
 
 

@@ -6,8 +6,8 @@
 
 	<title>Class Base_Controller_Settings</title>
 
-	<script type="text/javascript" src="resources/combined.js?699355046"></script>
-	<script type="text/javascript" src="elementlist.js?1623231360"></script>
+	<script type="text/javascript" src="resources/combined.js?4058929694"></script>
+	<script type="text/javascript" src="elementlist.js?2335409893"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -81,9 +81,6 @@
 			<li>
 				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
 			</li>
-			<li>
-				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
-			</li>
 		</ul>
 		<ul>
 		</ul>
@@ -127,9 +124,11 @@
 		
 		<b>Package:</b> <a href="package-WPMVCBase.html">WPMVCBase</a>\<a href="package-WPMVCBase.Controllers.html">Controllers</a><br />
 
-				<b>Since:</b>
+				<b>Version:</b>
 				0.2<br />
-		<b>Located at</b> <a href="source-class-Base_Controller_Settings.html#5-305" title="Go to source code">controllers/base_controller_settings.php</a><br />
+				<b>Since:</b>
+				WPMVCBase 0.2<br />
+		<b>Located at</b> <a href="source-class-Base_Controller_Settings.html#21-308" title="Go to source code">controllers/class-base-controller-settings.php</a><br />
 	</div>
 
 
@@ -147,7 +146,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Base_Controller_Settings.html#21-50" title="Go to source code">__construct</a>( <span>mixed <var>$model</var></span> )</code>
+		<code><a href="source-class-Base_Controller_Settings.html#38-64" title="Go to source code">__construct</a>( <span><code><a href="class-Base_Model_Settings.html">Base_Model_Settings</a></code> <var>$model</var></span> )</code>
 
 		<div class="description short">
 			
@@ -161,12 +160,17 @@
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code>object</code><br>$model The Base_Model_Settings object.</dd>
+				</dl></div>
 
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.2<br />
+						WPMVCBase 0.2<br />
 				</div>
 
 				<h4>Overrides</h4>
@@ -186,7 +190,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_register_options">#</a>
-		<code><a href="source-class-Base_Controller_Settings.html#52-71" title="Go to source code">register_options</a>( )</code>
+		<code><a href="source-class-Base_Controller_Settings.html#66-85" title="Go to source code">register_options</a>( )</code>
 
 		<div class="description short">
 			
@@ -205,7 +209,7 @@
 
 				<h4>Since</h4>
 				<div class="list">
-						0.2<br />
+						WPMVCBase 0.2<br />
 				</div>
 				<h4>Internal</h4>
 				<div class="list">
@@ -219,33 +223,37 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean|object
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add_menu_pages">#</a>
-		<code><a href="source-class-Base_Controller_Settings.html#73-147" title="Go to source code">add_menu_pages</a>( )</code>
+		<code><a href="source-class-Base_Controller_Settings.html#87-132" title="Go to source code">add_menu_pages</a>( )</code>
 
 		<div class="description short">
 			
-<p>Add the options pages.</p>
+<p>Add the menu pages.</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Add the options pages.</p>
+<p>Add the menu pages.</p>
 
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean|object</code><br>TRUE on success, WP_Error on failure.<br />
+				</div>
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 				<h4>Link</h4>
 				<div class="list">
@@ -271,7 +279,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add_settings_sections">#</a>
-		<code><a href="source-class-Base_Controller_Settings.html#149-170" title="Go to source code">add_settings_sections</a>( )</code>
+		<code><a href="source-class-Base_Controller_Settings.html#134-156" title="Go to source code">add_settings_sections</a>( )</code>
 
 		<div class="description short">
 			
@@ -290,7 +298,7 @@
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 				<h4>Internal</h4>
 				<div class="list">
@@ -311,7 +319,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add_settings_fields">#</a>
-		<code><a href="source-class-Base_Controller_Settings.html#172-194" title="Go to source code">add_settings_fields</a>( )</code>
+		<code><a href="source-class-Base_Controller_Settings.html#158-182" title="Go to source code">add_settings_fields</a>( )</code>
 
 		<div class="description short">
 			
@@ -330,7 +338,7 @@
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 				<h4>Internal</h4>
 				<div class="list">
@@ -351,7 +359,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_render_options_page">#</a>
-		<code><a href="source-class-Base_Controller_Settings.html#196-229" title="Go to source code">render_options_page</a>( )</code>
+		<code><a href="source-class-Base_Controller_Settings.html#184-227" title="Go to source code">render_options_page</a>( )</code>
 
 		<div class="description short">
 			
@@ -375,7 +383,7 @@ it exists, otherwise it will use a generic template included in this package
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 				<h4>Link</h4>
 				<div class="list">
@@ -402,7 +410,7 @@ it exists, otherwise it will use a generic template included in this package
 
 		<td class="name"><div>
 		<a class="anchor" href="#_render_settings_section">#</a>
-		<code><a href="source-class-Base_Controller_Settings.html#231-257" title="Go to source code">render_settings_section</a>( <span>object <var>$section</var></span> )</code>
+		<code><a href="source-class-Base_Controller_Settings.html#229-261" title="Go to source code">render_settings_section</a>( <span>object <var>$section</var></span> )</code>
 
 		<div class="description short">
 			
@@ -429,7 +437,7 @@ add_settings_sections().</p>
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 				<h4>Link</h4>
 				<div class="list">
@@ -454,7 +462,7 @@ add_settings_sections().</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_render_settings_field">#</a>
-		<code><a href="source-class-Base_Controller_Settings.html#259-304" title="Go to source code">render_settings_field</a>( <span>array <var>$args</var></span>, <span>string <var>$echo</var> = <span class="php-quote">'echo'</span> </span> )</code>
+		<code><a href="source-class-Base_Controller_Settings.html#263-307" title="Go to source code">render_settings_field</a>( <span>array <var>$args</var></span>, <span>string <var>$echo</var> = <span class="php-quote">'echo'</span> </span> )</code>
 
 		<div class="description short">
 			
@@ -485,7 +493,7 @@ add_settings_sections().</p>
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -500,6 +508,8 @@ add_settings_sections().</p>
 		<td><code>
 			<a href="class-Base_Controller.html#_add_meta_boxes">add_meta_boxes()</a>, 
 			<a href="class-Base_Controller.html#_add_shortcodes">add_shortcodes()</a>, 
+			<a href="class-Base_Controller.html#_enqueue_scripts">enqueue_scripts()</a>, 
+			<a href="class-Base_Controller.html#_render_help_tab">render_help_tab()</a>, 
 			<a href="class-Base_Controller.html#_render_metabox">render_metabox()</a>
 		</code></td>
 	</tr>
@@ -524,7 +534,7 @@ add_settings_sections().</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Base_Controller_Settings.html#13-19" title="Go to source code"><var>$model</var></a>
+				<a href="source-class-Base_Controller_Settings.html#30-36" title="Go to source code"><var>$model</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -543,13 +553,25 @@ add_settings_sections().</p>
 
 					<h4>Since</h4>
 					<div class="list">
-							0.2<br />
+							WPMVCBase 0.2<br />
 					</div>
 			</div>
 		</div></td>
 	</tr>
 	</table>
 
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Base_Controller.html#properties">Base_Controller</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Base_Controller.html#$_app_path"><var>$_app_path</var></a>, 
+			<a href="class-Base_Controller.html#$_base_path"><var>$_base_path</var></a>, 
+			<a href="class-Base_Controller.html#$_main_plugin_file"><var>$_main_plugin_file</var></a>, 
+			<a href="class-Base_Controller.html#$_txtdomain"><var>$_txtdomain</var></a>, 
+			<a href="class-Base_Controller.html#$_uri"><var>$_uri</var></a>
+		</code></td>
+	</tr>
+	</table>
 
 
 

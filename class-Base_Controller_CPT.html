@@ -6,8 +6,8 @@
 
 	<title>Class Base_Controller_CPT</title>
 
-	<script type="text/javascript" src="resources/combined.js?699355046"></script>
-	<script type="text/javascript" src="elementlist.js?1623231360"></script>
+	<script type="text/javascript" src="resources/combined.js?4058929694"></script>
+	<script type="text/javascript" src="elementlist.js?2335409893"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -81,9 +81,6 @@
 			<li>
 				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
 			</li>
-			<li>
-				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
-			</li>
 		</ul>
 		<ul>
 		</ul>
@@ -99,6 +96,20 @@
 
 	</div>
 
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Base_Controller.html"><span>Base_Controller</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Base_Controller_CPT</span></b>			
+			
+			
+		</dd>
+	</dl>
 
 
 
@@ -114,10 +125,10 @@
 		<b>Package:</b> <a href="package-WPMVCBase.html">WPMVCBase</a>\<a href="package-WPMVCBase.Controllers.html">Controllers</a><br />
 
 				<b>Version:</b>
-				0.1<br />
+				0.2<br />
 				<b>Since:</b>
-				WP_Base 0.3<br />
-		<b>Located at</b> <a href="source-class-Base_Controller_CPT.html#19-113" title="Go to source code">controllers/base_controller_cpt.php</a><br />
+				WPMVCBase 0.2<br />
+		<b>Located at</b> <a href="source-class-Base_Controller_CPT.html#20-255" title="Go to source code">controllers/class-base-controller-cpt.php</a><br />
 	</div>
 
 
@@ -135,20 +146,30 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Base_Controller_CPT.html#37-47" title="Go to source code">__construct</a>( <span>mixed <var>$cpt_model</var></span> )</code>
+		<code><a href="source-class-Base_Controller_CPT.html#38-50" title="Go to source code">__construct</a>( )</code>
 
 		<div class="description short">
 			
+<p>The class constructor.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>The class constructor.</p>
 
 
 
 
 
 
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Base_Controller.html#___construct">Base_Controller::__construct()</a></code></div>
 
 		</div>
 		</div></td>
@@ -157,14 +178,14 @@
 
 		<td class="attributes"><code>
 			 public 
-			
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add_model">#</a>
-		<code><a href="source-class-Base_Controller_CPT.html#49-80" title="Go to source code">add_model</a>( <span>object <var>$model</var></span>, <span>mixed <var>$the_post</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$save_post</var> = <span class="php-keyword1">null</span> </span>, <span>mixed <var>$delete_post</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Base_Controller_CPT.html#52-86" title="Go to source code">add_model</a>( <span>Base_Model_Cpt <var>$model</var></span> )</code>
 
 		<div class="description short">
 			
@@ -182,19 +203,17 @@
 				<div class="list"><dl>
 					<dt><var>$model</var></dt>
 					<dd><code>object</code><br>$model The Base_Model_CPT for this controller.</dd>
-					<dt><var>$the_post</var></dt>
-					<dd></dd>
-					<dt><var>$save_post</var></dt>
-					<dd></dd>
-					<dt><var>$delete_post</var></dt>
-					<dd></dd>
 				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>$_cpt_models<br />
+				</div>
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.3<br />
+						WPMVCBase 0.2<br />
 				</div>
 
 
@@ -205,14 +224,14 @@
 
 		<td class="attributes"><code>
 			 public 
-			object
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_register">#</a>
-		<code><a href="source-class-Base_Controller_CPT.html#82-92" title="Go to source code">register</a>( )</code>
+		<code><a href="source-class-Base_Controller_CPT.html#88-104" title="Go to source code">register</a>( )</code>
 
 		<div class="description short">
 			
@@ -229,13 +248,18 @@
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>object</code><br>The registered post type object on success, WP_Error object on failure<br />
+					<code>array</code><br>An array containing the registered post type objects on success, WP_Error object
+on failure<br />
 				</div>
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.3<br />
+						WPMVCBase 0.2<br />
+				</div>
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://codex.wordpress.org/Function_Reference/register_post_type">http://codex.wordpress.org/Function_Reference/register_post_type</a><br />
 				</div>
 
 
@@ -253,17 +277,17 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_post_updated_messages">#</a>
-		<code><a href="source-class-Base_Controller_CPT.html#94-112" title="Go to source code">post_updated_messages</a>( <span>array <var>$messages</var></span> )</code>
+		<code><a href="source-class-Base_Controller_CPT.html#106-162" title="Go to source code">post_updated_messages</a>( <span>array <var>$messages</var></span> )</code>
 
 		<div class="description short">
 			
-<p>Filter to ensure the CPT label is displayed when user updates the CPT</p>
+<p>Filter to ensure the CPT labels are displayed when user updates the CPT</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Filter to ensure the CPT label is displayed when user updates the CPT</p>
+<p>Filter to ensure the CPT labels are displayed when user updates the CPT</p>
 
 
 
@@ -281,7 +305,11 @@
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
+				</div>
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://codex.wordpress.org/Plugin_API/Filter_Reference">http://codex.wordpress.org/Plugin_API/Filter_Reference</a><br />
 				</div>
 				<h4>Internal</h4>
 				<div class="list">
@@ -291,8 +319,169 @@
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="add_meta_boxes" id="_add_meta_boxes">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_add_meta_boxes">#</a>
+		<code><a href="source-class-Base_Controller_CPT.html#164-181" title="Go to source code">add_meta_boxes</a>( )</code>
+
+		<div class="description short">
+			
+<p>Add the metaboxes necessary for the custom post types.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add the metaboxes necessary for the custom post types.</p>
+
+
+
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.2<br />
+				</div>
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Base_Controller.html#_add_meta_boxes">Base_Controller::add_meta_boxes()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="admin_enqueue_scripts" id="_admin_enqueue_scripts">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_admin_enqueue_scripts">#</a>
+		<code><a href="source-class-Base_Controller_CPT.html#183-206" title="Go to source code">admin_enqueue_scripts</a>( )</code>
+
+		<div class="description short">
+			
+<p>The admin_enqueue_scripts_callback.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The admin_enqueue_scripts_callback.</p>
+
+
+
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.2<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="wp_enqueue_scripts" id="_wp_enqueue_scripts">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_wp_enqueue_scripts">#</a>
+		<code><a href="source-class-Base_Controller_CPT.html#208-231" title="Go to source code">wp_enqueue_scripts</a>( )</code>
+
+		<div class="description short">
+			
+<p>The wp_enqueue_scripts_callback.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The wp_enqueue_scripts_callback.</p>
+
+
+
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.2<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="render_help_tabs" id="_render_help_tabs">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_render_help_tabs">#</a>
+		<code><a href="source-class-Base_Controller_CPT.html#233-254" title="Go to source code">render_help_tabs</a>( )</code>
+
+		<div class="description short">
+			
+<p>Render the help tabs for the attached cpts</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Render the help tabs for the attached cpts</p>
+
+
+
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.2<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
 	</table>
 
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Base_Controller.html#methods">Base_Controller</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Base_Controller.html#_add_shortcodes">add_shortcodes()</a>, 
+			<a href="class-Base_Controller.html#_enqueue_scripts">enqueue_scripts()</a>, 
+			<a href="class-Base_Controller.html#_render_help_tab">render_help_tab()</a>, 
+			<a href="class-Base_Controller.html#_render_metabox">render_metabox()</a>
+		</code></td>
+	</tr>
+	</table>
 
 
 
@@ -306,39 +495,51 @@
 
 	<table class="summary" id="properties">
 	<caption>Properties summary</caption>
-	<tr data-order="cpt_model" id="$cpt_model">
+	<tr data-order="_cpt_models" id="$_cpt_models">
 		<td class="attributes"><code>
 			protected  
-			object
+			array
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Base_Controller_CPT.html#28-35" title="Go to source code"><var>$cpt_model</var></a>
+				<a href="source-class-Base_Controller_CPT.html#29-36" title="Go to source code"><var>$_cpt_models</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
-			<a href="#$cpt_model" class="anchor">#</a>
+			<a href="#$_cpt_models" class="anchor">#</a>
 
 			<div class="description short">
 				
-<p>The CPT model</p>
+<p>The attached custom post type models.</p>
 
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>The CPT model</p>
+<p>The attached custom post type models.</p>
 
 
 					<h4>Since</h4>
 					<div class="list">
-							0.1<br />
+							WPMVCBase 0.1<br />
 					</div>
 			</div>
 		</div></td>
 	</tr>
 	</table>
 
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Base_Controller.html#properties">Base_Controller</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Base_Controller.html#$_app_path"><var>$_app_path</var></a>, 
+			<a href="class-Base_Controller.html#$_base_path"><var>$_base_path</var></a>, 
+			<a href="class-Base_Controller.html#$_main_plugin_file"><var>$_main_plugin_file</var></a>, 
+			<a href="class-Base_Controller.html#$_txtdomain"><var>$_txtdomain</var></a>, 
+			<a href="class-Base_Controller.html#$_uri"><var>$_uri</var></a>
+		</code></td>
+	</tr>
+	</table>
 
 
 

@@ -6,8 +6,8 @@
 
 	<title>Class Base_Model_Metabox</title>
 
-	<script type="text/javascript" src="resources/combined.js?699355046"></script>
-	<script type="text/javascript" src="elementlist.js?1623231360"></script>
+	<script type="text/javascript" src="resources/combined.js?4058929694"></script>
+	<script type="text/javascript" src="elementlist.js?2335409893"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -42,6 +42,7 @@
 			<h3>Classes</h3>
 			<ul>
 				<li><a href="class-Base_Model.html">Base_Model</a></li>
+				<li><a href="class-Base_Model_Admin_Notice.html">Base_Model_Admin_Notice</a></li>
 				<li><a href="class-Base_Model_CPT.html">Base_Model_CPT</a></li>
 				<li><a href="class-Base_Model_Help_Tab.html">Base_Model_Help_Tab</a></li>
 				<li><a href="class-Base_Model_JS_Object.html">Base_Model_JS_Object</a></li>
@@ -85,9 +86,6 @@
 			<li>
 				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
 			</li>
-			<li>
-				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
-			</li>
 		</ul>
 		<ul>
 		</ul>
@@ -100,30 +98,6 @@
 	<div class="description">
 	
 <p>The base metabox object model.</p>
-
-<p>Example:</p>
-
-<pre>
-<span class="php-var">$sample_metabox</span> = <span
-class="php-keyword1">new</span> Base_Model_Metabox(
-        <span
-class="php-quote">'sample_metabox'</span>,
-        __( <span
-class="php-quote">'Sample Metabox'</span>, <span
-class="php-quote">'mytextdomain'</span> ),
-        <span
-class="php-quote">'my_callback'</span>, <span
-class="php-comment">//set this to null to use default plugin render_metabox callback</span>
-        <span
-class="php-quote">'post'</span>,
-        <span
-class="php-quote">'normal'</span>,
-        <span
-class="php-quote">'default'</span>
-);
-<span
-class="php-var">$sample_metabox</span>-&gt;add();
-</pre>
 
 	</div>
 
@@ -141,14 +115,11 @@ class="php-var">$sample_metabox</span>-&gt;add();
 		
 		<b>Package:</b> <a href="package-WPMVCBase.html">WPMVCBase</a>\<a href="package-WPMVCBase.Models.html">Models</a><br />
 
-				<b>Author:</b>
-				Daryl Lozupone &lt;<a
-href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<br />
 				<b>Version:</b>
 				0.1<br />
 				<b>Since:</b>
 				WPMVCBase 0.1<br />
-		<b>Located at</b> <a href="source-class-Base_Model_Metabox.html#11-352" title="Go to source code">models/base_model_metabox.php</a><br />
+		<b>Located at</b> <a href="source-class-Base_Model_Metabox.html#19-385" title="Go to source code">models/class-base-model-metabox.php</a><br />
 	</div>
 
 
@@ -166,17 +137,43 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Base_Model_Metabox.html#130-159" title="Go to source code">__construct</a>( <span>string <var>$id</var></span>, <span>string <var>$title</var></span>, <span>string <var>$callback</var></span>, <span>string <var>$post_type</var></span>, <span>string <var>$context</var></span>, <span>string <var>$priority</var></span>, <span>array <var>$callback_args</var></span> )</code>
+		<code><a href="source-class-Base_Model_Metabox.html#131-173" title="Go to source code">__construct</a>( <span>string <var>$id</var></span>, <span>string <var>$title</var></span>, <span>string <var>$callback</var></span>, <span>array <var>$post_type</var></span>, <span>string <var>$context</var></span>, <span>string <var>$priority</var></span>, <span>array <var>$callback_args</var> = <span class="php-keyword1">array</span>() </span> )</code>
 
 		<div class="description short">
 			
-<p>the class constructor</p>
+<p>The class constructor.</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>the class constructor</p>
+<p>The class constructor.</p>
+
+<p>Example:</p>
+
+<pre>
+<span class="php-var">$sample_metabox</span> = <span
+class="php-keyword1">new</span> Base_Model_Metabox(
+     <span
+class="php-quote">'sample_metabox'</span>,
+     __( <span
+class="php-quote">'Sample Metabox'</span>, <span
+class="php-quote">'mytextdomain'</span> ),
+     <span
+class="php-quote">'my_callback'</span>, <span
+class="php-comment">//set this to null to use default plugin render_metabox callback</span>
+     <span
+class="php-keyword1">array</span>( <span class="php-quote">'post'</span>, <span
+class="php-quote">'page'</span>, <span
+class="php-quote">'my-custom-cpt'</span>,
+     <span
+class="php-quote">'post'</span>,
+     <span
+class="php-quote">'normal'</span>,
+     <span
+class="php-quote">'default'</span>
+);
+</pre>
 
 
 
@@ -189,7 +186,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 					<dt><var>$callback</var></dt>
 					<dd><code>string</code><br>$callback</dd>
 					<dt><var>$post_type</var></dt>
-					<dd><code>string</code><br>$post_type</dd>
+					<dd><code>array</code><br>$post_type</dd>
 					<dt><var>$context</var></dt>
 					<dd><code>string</code><br>$context</dd>
 					<dt><var>$priority</var></dt>
@@ -202,7 +199,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -220,7 +217,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add">#</a>
-		<code><a href="source-class-Base_Model_Metabox.html#161-178" title="Go to source code">add</a>( )</code>
+		<code><a href="source-class-Base_Model_Metabox.html#175-195" title="Go to source code">add</a>( )</code>
 
 		<div class="description short">
 			
@@ -239,7 +236,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -257,7 +254,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_remove">#</a>
-		<code><a href="source-class-Base_Model_Metabox.html#180-189" title="Go to source code">remove</a>( )</code>
+		<code><a href="source-class-Base_Model_Metabox.html#197-209" title="Go to source code">remove</a>( )</code>
 
 		<div class="description short">
 			
@@ -276,7 +273,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -294,7 +291,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_id">#</a>
-		<code><a href="source-class-Base_Model_Metabox.html#191-201" title="Go to source code">set_id</a>( <span>string <var>$id</var></span> )</code>
+		<code><a href="source-class-Base_Model_Metabox.html#211-222" title="Go to source code">set_id</a>( <span>string <var>$id</var></span> )</code>
 
 		<div class="description short">
 			
@@ -318,7 +315,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -336,7 +333,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_title">#</a>
-		<code><a href="source-class-Base_Model_Metabox.html#203-213" title="Go to source code">set_title</a>( <span>string <var>$title</var></span> )</code>
+		<code><a href="source-class-Base_Model_Metabox.html#224-235" title="Go to source code">set_title</a>( <span>string <var>$title</var></span> )</code>
 
 		<div class="description short">
 			
@@ -360,7 +357,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -378,7 +375,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_callback">#</a>
-		<code><a href="source-class-Base_Model_Metabox.html#215-225" title="Go to source code">set_callback</a>( <span>string <var>$callback</var></span> )</code>
+		<code><a href="source-class-Base_Model_Metabox.html#237-248" title="Go to source code">set_callback</a>( <span>string <var>$callback</var></span> )</code>
 
 		<div class="description short">
 			
@@ -402,7 +399,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -420,31 +417,31 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_post_type">#</a>
-		<code><a href="source-class-Base_Model_Metabox.html#227-237" title="Go to source code">set_post_type</a>( <span>string <var>$post_type</var></span> )</code>
+		<code><a href="source-class-Base_Model_Metabox.html#250-261" title="Go to source code">set_post_type</a>( <span>array <var>$post_types</var></span> )</code>
 
 		<div class="description short">
 			
-<p>set the title</p>
+<p>set the post types</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>set the title</p>
+<p>set the post types</p>
 
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$post_type</var></dt>
-					<dd><code>string</code><br>$post_type</dd>
+					<dt><var>$post_types</var></dt>
+					<dd><code>array</code><br>$post_type</dd>
 				</dl></div>
 
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -462,7 +459,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_context">#</a>
-		<code><a href="source-class-Base_Model_Metabox.html#239-249" title="Go to source code">set_context</a>( <span>string <var>$context</var></span> )</code>
+		<code><a href="source-class-Base_Model_Metabox.html#263-274" title="Go to source code">set_context</a>( <span>string <var>$context</var></span> )</code>
 
 		<div class="description short">
 			
@@ -486,7 +483,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -504,7 +501,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_priority">#</a>
-		<code><a href="source-class-Base_Model_Metabox.html#252-262" title="Go to source code">set_priority</a>( <span>string <var>$priority</var></span> )</code>
+		<code><a href="source-class-Base_Model_Metabox.html#276-287" title="Go to source code">set_priority</a>( <span>string <var>$priority</var></span> )</code>
 
 		<div class="description short">
 			
@@ -528,7 +525,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -546,7 +543,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_callback_args">#</a>
-		<code><a href="source-class-Base_Model_Metabox.html#264-274" title="Go to source code">set_callback_args</a>( <span>array <var>$callback_args</var></span> )</code>
+		<code><a href="source-class-Base_Model_Metabox.html#289-300" title="Go to source code">set_callback_args</a>( <span>array <var>$callback_args</var></span> )</code>
 
 		<div class="description short">
 			
@@ -570,7 +567,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -588,7 +585,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_id">#</a>
-		<code><a href="source-class-Base_Model_Metabox.html#276-285" title="Go to source code">get_id</a>( )</code>
+		<code><a href="source-class-Base_Model_Metabox.html#302-312" title="Go to source code">get_id</a>( )</code>
 
 		<div class="description short">
 			
@@ -611,7 +608,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -629,7 +626,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_title">#</a>
-		<code><a href="source-class-Base_Model_Metabox.html#287-296" title="Go to source code">get_title</a>( )</code>
+		<code><a href="source-class-Base_Model_Metabox.html#314-324" title="Go to source code">get_title</a>( )</code>
 
 		<div class="description short">
 			
@@ -652,7 +649,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -670,7 +667,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_callback">#</a>
-		<code><a href="source-class-Base_Model_Metabox.html#298-307" title="Go to source code">get_callback</a>( )</code>
+		<code><a href="source-class-Base_Model_Metabox.html#326-336" title="Go to source code">get_callback</a>( )</code>
 
 		<div class="description short">
 			
@@ -693,14 +690,14 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="get_post_type" id="_get_post_type">
+	<tr data-order="get_post_types" id="_get_post_types">
 
 		<td class="attributes"><code>
 			 public 
@@ -710,8 +707,8 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_get_post_type">#</a>
-		<code><a href="source-class-Base_Model_Metabox.html#309-318" title="Go to source code">get_post_type</a>( )</code>
+		<a class="anchor" href="#_get_post_types">#</a>
+		<code><a href="source-class-Base_Model_Metabox.html#338-348" title="Go to source code">get_post_types</a>( )</code>
 
 		<div class="description short">
 			
@@ -734,7 +731,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -752,7 +749,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_context">#</a>
-		<code><a href="source-class-Base_Model_Metabox.html#320-329" title="Go to source code">get_context</a>( )</code>
+		<code><a href="source-class-Base_Model_Metabox.html#350-360" title="Go to source code">get_context</a>( )</code>
 
 		<div class="description short">
 			
@@ -775,7 +772,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -793,7 +790,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_priority">#</a>
-		<code><a href="source-class-Base_Model_Metabox.html#331-340" title="Go to source code">get_priority</a>( )</code>
+		<code><a href="source-class-Base_Model_Metabox.html#362-372" title="Go to source code">get_priority</a>( )</code>
 
 		<div class="description short">
 			
@@ -816,7 +813,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -834,7 +831,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_callback_args">#</a>
-		<code><a href="source-class-Base_Model_Metabox.html#342-351" title="Go to source code">get_callback_args</a>( )</code>
+		<code><a href="source-class-Base_Model_Metabox.html#374-384" title="Go to source code">get_callback_args</a>( )</code>
 
 		<div class="description short">
 			
@@ -857,7 +854,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -877,6 +874,297 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 
 
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="id" id="$id">
+		<td class="attributes"><code>
+			private  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Metabox.html#28-37" title="Go to source code"><var>$id</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'sample_metabox'</span></code></td>
+		<td class="description"><div>
+			<a href="#$id" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The metabox id</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The metabox id</p>
+
+<p>HTML 'id' attribute of the edit screen section</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="title" id="$title">
+		<td class="attributes"><code>
+			private  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Metabox.html#39-48" title="Go to source code"><var>$title</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'Sample Metabox'</span></code></td>
+		<td class="description"><div>
+			<a href="#$title" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The metabox title</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The metabox title</p>
+
+<p>Title of the edit screen section, visible to user</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="callback" id="$callback">
+		<td class="attributes"><code>
+			private  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Metabox.html#50-61" title="Go to source code"><var>$callback</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$callback" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>the metabox callback</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>the metabox callback</p>
+
+<p>Function that prints out the HTML for the edit screen section. The function
+name as a string, or, within a class, an array to call one of the class's
+methods. The callback function will recieve up to two parameters, the post
+object and the Base_Model_Metabox-&gt;callback_args.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="post_type" id="$post_type">
+		<td class="attributes"><code>
+			private  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Metabox.html#63-72" title="Go to source code"><var>$post_type</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>( <span class="php-quote">'post'</span> )</code></td>
+		<td class="description"><div>
+			<a href="#$post_type" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>the post types to which this metabox applies</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>the post types to which this metabox applies</p>
+
+<p>The type of Write screen on which to show the edit screen section ('post',
+'page', 'link', 'attachment' or 'custom_post_type' where custom_post_type is the
+custom post type slug)</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="context" id="$context">
+		<td class="attributes"><code>
+			private  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Metabox.html#74-84" title="Go to source code"><var>$context</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'normal'</span></code></td>
+		<td class="description"><div>
+			<a href="#$context" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>the metabox context</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>the metabox context</p>
+
+<p>The part of the page where the edit screen section should be shown. Valid
+values are 'normal', 'advanced', or 'side'.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="priority" id="$priority">
+		<td class="attributes"><code>
+			private  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Metabox.html#86-96" title="Go to source code"><var>$priority</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'default'</span></code></td>
+		<td class="description"><div>
+			<a href="#$priority" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>the metabox priority</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>the metabox priority</p>
+
+<p>The priority within the context where the boxes should be shown. Valid values
+are 'high', 'core', 'default', or 'low'.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="callback_args" id="$callback_args">
+		<td class="attributes"><code>
+			private  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Metabox.html#98-129" title="Go to source code"><var>$callback_args</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$callback_args" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>the metabox callback arguments</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>the metabox callback arguments</p>
+
+<p>Arguments to pass into your callback function. The callback will receive the
+$post object and whatever parameters are passed through this variable.</p>
+
+<p>Example:</p>
+
+<p>Setting the callback args:</p>
+
+<pre>
+<span class="php-var">$sample_metabox</span>-&gt;callback_args = <span
+class="php-keyword1">array</span>( <span
+class="php-quote">'foo'</span> =&gt; <span
+class="php-quote">'this'</span>, <span
+class="php-quote">&quot;bar =&gt; 'that' );
+</span></pre>
+
+<p>The metabox callback:</p>
+
+<pre>
+<span
+class="php-comment">// $post is an object containing the current post (as a $post object)</span>
+<span
+class="php-comment">// $metabox is an array with metabox id, title, callback, and args elements.</span>
+<span
+class="php-comment">// The args element is an array containing your passed $callback_args variables.</span>
+
+<span
+class="php-keyword1">function</span> my_metabox_callback ( <span
+class="php-var">$post</span>, <span class="php-var">$metabox</span> ) {
+  <span
+class="php-keyword1">echo</span> <span
+class="php-quote">'Last Modified: '</span>.<span
+class="php-var">$post</span>-&gt;post_modified;            <span
+class="php-comment">// outputs last time the post was modified</span>
+  <span
+class="php-keyword1">echo</span> <span class="php-var">$metabox</span>[<span
+class="php-quote">'args'</span>][<span
+class="php-quote">'foo'</span>];                                                 <span
+class="php-comment">// outputs 'this'</span>
+  <span
+class="php-keyword1">echo</span> <span class="php-var">$metabox</span>[<span
+class="php-quote">'args'</span>][<span
+class="php-quote">'bar'</span>];                                                 <span
+class="php-comment">// outputs 'that'</span>
+  <span
+class="php-keyword1">echo</span> get_post_meta(<span
+class="php-var">$post</span>-&gt;ID,<span
+class="php-quote">'my_custom_field'</span>,<span
+class="php-keyword1">true</span>); <span
+class="php-comment">// outputs value of custom field</span>
+}
+</pre>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	</table>
 
 
 

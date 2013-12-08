@@ -6,8 +6,8 @@
 
 	<title>Class Base_Controller</title>
 
-	<script type="text/javascript" src="resources/combined.js?699355046"></script>
-	<script type="text/javascript" src="elementlist.js?1623231360"></script>
+	<script type="text/javascript" src="resources/combined.js?4058929694"></script>
+	<script type="text/javascript" src="elementlist.js?2335409893"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -81,9 +81,6 @@
 			<li>
 				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
 			</li>
-			<li>
-				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
-			</li>
 		</ul>
 		<ul>
 		</ul>
@@ -103,6 +100,7 @@
 
 	<div>
 		<h4>Direct known subclasses</h4>
+			<a href="class-Base_Controller_CPT.html">Base_Controller_CPT</a>, 
 			<a href="class-Base_Controller_Plugin.html">Base_Controller_Plugin</a>, 
 			<a href="class-Base_Controller_Settings.html">Base_Controller_Settings</a>
 	</div>
@@ -118,14 +116,11 @@
 		
 		<b>Package:</b> <a href="package-WPMVCBase.html">WPMVCBase</a>\<a href="package-WPMVCBase.Controllers.html">Controllers</a><br />
 
-				<b>Author:</b>
-				Daryl Lozupone &lt;<a
-href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<br />
 				<b>Version:</b>
-				0.1<br />
+				0.2<br />
 				<b>Since:</b>
-				WP_Base 0.3<br />
-		<b>Located at</b> <a href="source-class-Base_Controller.html#26-138" title="Go to source code">controllers/base_controller.php</a><br />
+				WPMVCBase 0.2<br />
+		<b>Located at</b> <a href="source-class-Base_Controller.html#19-254" title="Go to source code">controllers/class-base-controller.php</a><br />
 	</div>
 
 
@@ -143,19 +138,27 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Base_Controller.html#36-40" title="Go to source code">__construct</a>( )</code>
+		<code><a href="source-class-Base_Controller.html#74-85" title="Go to source code">__construct</a>( )</code>
 
 		<div class="description short">
 			
+<p>The class constructor</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>The class constructor</p>
 
 
 
 
 
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
 
 
 		</div>
@@ -172,19 +175,32 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add_shortcodes">#</a>
-		<code><a href="source-class-Base_Controller.html#42-54" title="Go to source code">add_shortcodes</a>( <span>mixed <var>$shortcodes</var></span> )</code>
+		<code><a href="source-class-Base_Controller.html#87-107" title="Go to source code">add_shortcodes</a>( <span>array <var>$shortcodes</var></span> )</code>
 
 		<div class="description short">
 			
+<p>Add shortcodes to WP.</p>
+
 		</div>
 
 		<div class="description detailed hidden">
 			
+<p>Add shortcodes to WP.</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$shortcodes</var></dt>
+					<dd><code>array</code><br>$shortcodes</dd>
+				</dl></div>
 
 
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.1<br />
+				</div>
 
 
 		</div>
@@ -201,7 +217,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add_meta_boxes">#</a>
-		<code><a href="source-class-Base_Controller.html#56-77" title="Go to source code">add_meta_boxes</a>( )</code>
+		<code><a href="source-class-Base_Controller.html#109-135" title="Go to source code">add_meta_boxes</a>( <span>array <var>$metaboxes</var></span> )</code>
 
 		<div class="description short">
 			
@@ -215,15 +231,70 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$metaboxes</var></dt>
+					<dd><code>array</code><br>$metaboxes Array containing Base_Model_Metabox objects.</dd>
+				</dl></div>
 
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
+				</div>
+				<h4>See</h4>
+				<div class="list">
+						<code><code><a href="class-Base_Model_Metabox.html">Base_Model_Metabox</a></code></code><br />
 				</div>
 				<h4>Internal</h4>
 				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="enqueue_scripts" id="_enqueue_scripts">
+
+		<td class="attributes"><code>
+			 public 
+			|object
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_enqueue_scripts">#</a>
+		<code><a href="source-class-Base_Controller.html#137-183" title="Go to source code">enqueue_scripts</a>( <span>array <var>$scripts</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Enqueue scripts.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Enqueue scripts.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$scripts</var></dt>
+					<dd><code>array</code><br>$scripts Array containing Base_Model_JS objects</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>|object</code><br>WP_Error object on failure.<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.3<br />
 				</div>
 
 
@@ -241,7 +312,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#_render_metabox">#</a>
-		<code><a href="source-class-Base_Controller.html#79-137" title="Go to source code">render_metabox</a>( <span>object <var>$post</var></span>, <span>object <var>$metabox</var></span> )</code>
+		<code><a href="source-class-Base_Controller.html#185-233" title="Go to source code">render_metabox</a>( <span>WP_Post <var>$post</var></span>, <span>object <var>$metabox</var></span> )</code>
 
 		<div class="description short">
 			
@@ -269,10 +340,52 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 				<h4>Internal</h4>
 				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="render_help_tab" id="_render_help_tab">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_render_help_tab">#</a>
+		<code><a href="source-class-Base_Controller.html#235-253" title="Go to source code">render_help_tab</a>( <span><code><a href="class-Base_Model_Help_Tab.html">Base_Model_Help_Tab</a></code> <var>$tab</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Render a help tab.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Render a help tab.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tab</var></dt>
+					<dd><code>object</code><br>Base_Model_Help_Tab access public</dd>
+				</dl></div>
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.0<br />
 				</div>
 
 
@@ -292,6 +405,164 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 
 
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="_main_plugin_file" id="$_main_plugin_file">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Controller.html#29-36" title="Go to source code"><var>$_main_plugin_file</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$_main_plugin_file" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The absolute path to the main plugin file. Ends with a slash.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The absolute path to the main plugin file. Ends with a slash.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.2<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_app_path" id="$_app_path">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Controller.html#38-45" title="Go to source code"><var>$_app_path</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$_app_path" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The absolute path to the plugin app path. Ends with a slash.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The absolute path to the plugin app path. Ends with a slash.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.2<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_base_path" id="$_base_path">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Controller.html#47-54" title="Go to source code"><var>$_base_path</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$_base_path" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The absolute path to the WPMVC Base path. Ends with a slash.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The absolute path to the WPMVC Base path. Ends with a slash.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.2<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_uri" id="$_uri">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Controller.html#56-63" title="Go to source code"><var>$_uri</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$_uri" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The uri to the plugin directory. Ends with a slash.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The uri to the plugin directory. Ends with a slash.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.2<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_txtdomain" id="$_txtdomain">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Controller.html#65-72" title="Go to source code"><var>$_txtdomain</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$_txtdomain" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The plugin text domain.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The plugin text domain.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.2<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	</table>
 
 
 

@@ -6,8 +6,8 @@
 
 	<title>Class Base_Model_Help_Tab</title>
 
-	<script type="text/javascript" src="resources/combined.js?699355046"></script>
-	<script type="text/javascript" src="elementlist.js?1623231360"></script>
+	<script type="text/javascript" src="resources/combined.js?4058929694"></script>
+	<script type="text/javascript" src="elementlist.js?2335409893"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -42,6 +42,7 @@
 			<h3>Classes</h3>
 			<ul>
 				<li><a href="class-Base_Model.html">Base_Model</a></li>
+				<li><a href="class-Base_Model_Admin_Notice.html">Base_Model_Admin_Notice</a></li>
 				<li><a href="class-Base_Model_CPT.html">Base_Model_CPT</a></li>
 				<li class="active"><a href="class-Base_Model_Help_Tab.html">Base_Model_Help_Tab</a></li>
 				<li><a href="class-Base_Model_JS_Object.html">Base_Model_JS_Object</a></li>
@@ -85,9 +86,6 @@
 			<li>
 				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
 			</li>
-			<li>
-				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
-			</li>
 		</ul>
 		<ul>
 		</ul>
@@ -117,14 +115,9 @@
 		
 		<b>Package:</b> <a href="package-WPMVCBase.html">WPMVCBase</a>\<a href="package-WPMVCBase.Models.html">Models</a><br />
 
-				<b>Copyright:</b>
-				2013<br />
-				<b>Author:</b>
-				Daryl Lozupone &lt;<a
-href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<br />
 				<b>Since:</b>
-				0.1<br />
-		<b>Located at</b> <a href="source-class-Base_Model_Help_Tab.html#12-154" title="Go to source code">models/base_model_help_tab.php</a><br />
+				WPMVCBase 0.1<br />
+		<b>Located at</b> <a href="source-class-Base_Model_Help_Tab.html#19-166" title="Go to source code">models/class-base-model-help-tab.php</a><br />
 	</div>
 
 
@@ -142,7 +135,7 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Base_Model_Help_Tab.html#63-86" title="Go to source code">__construct</a>( <span>string <var>$title</var></span>, <span>string <var>$id</var></span>, <span>string <var>$content</var> = <span class="php-keyword1">null</span></span>, <span>string|array <var>$callback</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$view</var> = <span class="php-keyword1">null</span> </span> )</code>
+		<code><a href="source-class-Base_Model_Help_Tab.html#88-106" title="Go to source code">__construct</a>( <span>string <var>$id</var></span>, <span>string <var>$title</var></span>, <span>array <var>$screens</var></span>, <span>array <var>$post_types</var></span>, <span>string <var>$content</var></span> )</code>
 
 		<div class="description short">
 			
@@ -158,67 +151,24 @@ href="mailto:daryl&#64;actionhook.com">daryl&#64;<!---->actionhook.com</a>&gt;<b
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$title</var></dt>
-					<dd><code>string</code><br>$title The help tab title.</dd>
 					<dt><var>$id</var></dt>
+					<dd><code>string</code><br>$title The help tab title.</dd>
+					<dt><var>$title</var></dt>
 					<dd><code>string</code><br>$id The help tab id.</dd>
+					<dt><var>$screens</var></dt>
+					<dd><code>array</code><br>$screens The screens on which to add the help screen tab.</dd>
+					<dt><var>$post_types</var></dt>
+					<dd><code>array</code><br>$post_types The post types on which to display this help tab</dd>
 					<dt><var>$content</var></dt>
 					<dd><code>string</code><br>$content The help tab content. If null, the callback will be used to populate
 the content.</dd>
-					<dt><var>$callback</var></dt>
-					<dd><code>string|array</code><br>$callback The help tab callback. If null, the view will be used to populate the
-content.</dd>
-					<dt><var>$view</var></dt>
-					<dd><code>string</code><br>$view The absolute path to the view file used to render this help tab. Must be
-set if $content and $callback are null.</dd>
 				</dl></div>
 
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
-				</div>
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="add" id="_add">
-
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_add">#</a>
-		<code><a href="source-class-Base_Model_Help_Tab.html#88-102" title="Go to source code">add</a>( )</code>
-
-		<div class="description short">
-			
-<p>Add this help tab to the current screen.</p>
-
-		</div>
-
-		<div class="description detailed hidden">
-			
-<p>Add this help tab to the current screen.</p>
-
-
-
-
-
-
-				<h4>Since</h4>
-				<div class="list">
-						0.1<br />
-				</div>
-				<h4>Link</h4>
-				<div class="list">
-						<a href="http://codex.wordpress.org/Function_Reference/add_help_tab">http://codex.wordpress.org/Function_Reference/add_help_tab</a><br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -236,7 +186,7 @@ set if $content and $callback are null.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_title">#</a>
-		<code><a href="source-class-Base_Model_Help_Tab.html#104-112" title="Go to source code">get_title</a>( )</code>
+		<code><a href="source-class-Base_Model_Help_Tab.html#108-117" title="Go to source code">get_title</a>( )</code>
 
 		<div class="description short">
 			
@@ -255,7 +205,7 @@ set if $content and $callback are null.</dd>
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -273,7 +223,7 @@ set if $content and $callback are null.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_id">#</a>
-		<code><a href="source-class-Base_Model_Help_Tab.html#114-122" title="Go to source code">get_id</a>( )</code>
+		<code><a href="source-class-Base_Model_Help_Tab.html#119-128" title="Go to source code">get_id</a>( )</code>
 
 		<div class="description short">
 			
@@ -292,67 +242,111 @@ set if $content and $callback are null.</dd>
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="set_callback" id="_set_callback">
+	<tr data-order="get_screens" id="_get_screens">
 
 		<td class="attributes"><code>
 			 public 
-			
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_set_callback">#</a>
-		<code><a href="source-class-Base_Model_Help_Tab.html#124-142" title="Go to source code">set_callback</a>( <span>string|array <var>$callback</var></span> )</code>
+		<a class="anchor" href="#_get_screens">#</a>
+		<code><a href="source-class-Base_Model_Help_Tab.html#130-140" title="Go to source code">get_screens</a>( )</code>
 
 		<div class="description short">
 			
-<p>Set the help tab callback.</p>
+<p>Get the help tab screens.</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Set the help tab callback.</p>
+<p>Get the help tab screens.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$callback</var></dt>
-					<dd><code>string|array</code><br>$callback The help tab callback.</dd>
-				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>$screens<br />
+				</div>
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.2<br />
+				</div>
+				<h4>Used by</h4>
+				<div class="list">
+						<code><code><a href="class-Base_Controller_Plugin.html#_init_help_tabs">Base_Controller_Plugin::init_help_tabs()</a></code></code> <br />
 				</div>
 
 
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="set_content" id="_set_content">
+	<tr data-order="get_post_types" id="_get_post_types">
 
 		<td class="attributes"><code>
 			 public 
-			
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_set_content">#</a>
-		<code><a href="source-class-Base_Model_Help_Tab.html#144-153" title="Go to source code">set_content</a>( <span>string <var>$content</var></span> )</code>
+		<a class="anchor" href="#_get_post_types">#</a>
+		<code><a href="source-class-Base_Model_Help_Tab.html#142-152" title="Go to source code">get_post_types</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the post types associated with this help tab.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the post types associated with this help tab.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>$post_types<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						WPMVCBase 0.2<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_content" id="_get_content">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_content">#</a>
+		<code><a href="source-class-Base_Model_Help_Tab.html#155-165" title="Go to source code">get_content</a>( )</code>
 
 		<div class="description short">
 			
@@ -366,17 +360,16 @@ set if $content and $callback are null.</dd>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$content</var></dt>
-					<dd><code>string</code><br>$content The help tab content.</dd>
-				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$content<br />
+				</div>
 
 
 				<h4>Since</h4>
 				<div class="list">
-						0.1<br />
+						WPMVCBase 0.1<br />
 				</div>
 
 
@@ -396,6 +389,186 @@ set if $content and $callback are null.</dd>
 
 
 
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="id" id="$id">
+		<td class="attributes"><code>
+			private  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Help_Tab.html#27-35" title="Go to source code"><var>$id</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$id" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The help tab id.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The help tab id.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://codex.wordpress.org/Function_Reference/add_help_tab">http://codex.wordpress.org/Function_Reference/add_help_tab</a><br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="title" id="$title">
+		<td class="attributes"><code>
+			private  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Help_Tab.html#37-44" title="Go to source code"><var>$title</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$title" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The help tab title.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The help tab title.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="screens" id="$screens">
+		<td class="attributes"><code>
+			private  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Help_Tab.html#46-62" title="Go to source code"><var>$screens</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$screens" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The admin screens on which to display this help tab.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The admin screens on which to display this help tab.</p>
+
+<p>This array contains the WP screen id's for the screens on which to load this
+help tab ( e.g. 'Add New Post', 'Reading Settings', etc ). There is a highly
+incomplete listing of screen ids</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.2<br />
+					</div>
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://codex.wordpress.org/Plugin_API/Admin_Screen_Reference">Primarily, the most used are:
+load-post.php      The &#039;All Posts&#039; page. This also applies to pages and custom post types.
+load-post-edit.php The page loaded to edit an existing post/page/cpt.
+load-post-new.php  The page loaded when creating a new post/page/cpt.</a><br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="post_types" id="$post_types">
+		<td class="attributes"><code>
+			private  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Help_Tab.html#64-77" title="Go to source code"><var>$post_types</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$post_types" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The post types on which to display this help tab.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The post types on which to display this help tab.</p>
+
+<p>This property is used in conjunction with the $screens property to determine
+upon which admin pages to display this help tab.</p>
+
+<p>For example, if the post_types property is set to 'post' and the $screens
+property is set to 'load-post-new.php', this tab will appear on only the Create
+New Post page for posts ( not pages ).</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.2<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="content" id="$content">
+		<td class="attributes"><code>
+			private  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Base_Model_Help_Tab.html#79-86" title="Go to source code"><var>$content</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$content" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The help tab content.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The help tab content.</p>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							WPMVCBase 0.1<br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	</table>
 
 
 
